@@ -1,0 +1,2131 @@
+{
+ "generated_ist": "2026-07-26 14:02",
+ "universe_size": 130,
+ "fetched": 130,
+ "passed_filters": 57,
+ "method": {
+  "weights": {
+   "quality": 50,
+   "value": 35,
+   "growth": 15
+  },
+  "quality_factors": [
+   "Return on equity",
+   "Return on assets",
+   "Operating margin",
+   "Low debt",
+   "Profit converts to cash"
+  ],
+  "value_factors": [
+   "Earnings yield",
+   "Price to book",
+   "P/E vs sector median",
+   "Position in 3-year range"
+  ],
+  "growth_factors": [
+   "Revenue growth",
+   "Earnings growth"
+  ],
+  "hard_filters": [
+   "Profitable on a trailing basis",
+   "Market cap above ₹1,000 cr",
+   "Debt/equity below 1.5x",
+   "P/E below 80",
+   "CFO/PAT above 0.4x",
+   "ROE above 10%",
+   "Banks, NBFCs and insurers excluded — these tests do not fit their model"
+  ],
+  "news_policy": "Headlines can only REMOVE a name from the list. They never promote one onto it."
+ },
+ "shortlist": [
+  {
+   "symbol": "BLS",
+   "name": "BLS International Services Limited",
+   "sector": "Industrials",
+   "industry": "Specialty Business Services",
+   "price": 233.6,
+   "mcap_cr": 9613.1596288,
+   "eps": 16.63,
+   "book_value": 59.856,
+   "pe": 14.046905,
+   "pb": 3.9027,
+   "roe": 30.142999999999997,
+   "roa": 13.786000000000001,
+   "opm": 21.951,
+   "npm": 22.904,
+   "de": 0.15468,
+   "rev_growth": 17.599999999999998,
+   "eps_growth": 31.4,
+   "div_yield": 1.28,
+   "cash_conv": 1.3148940662833004,
+   "pos_in_3y_range": 0.08202846461538427,
+   "scores": {
+    "total": 89.5,
+    "quality": 93.2,
+    "value": 82.3,
+    "growth": 94.0,
+    "coverage": 100,
+    "detail": {
+     "quality": [
+      {
+       "factor": "Return on equity",
+       "score": 100,
+       "weight": 30
+      },
+      {
+       "factor": "Return on assets",
+       "score": 90,
+       "weight": 15
+      },
+      {
+       "factor": "Operating margin",
+       "score": 82,
+       "weight": 15
+      },
+      {
+       "factor": "Low debt",
+       "score": 87,
+       "weight": 20
+      },
+      {
+       "factor": "Profit converts to cash",
+       "score": 100,
+       "weight": 20
+      }
+     ],
+     "value": [
+      {
+       "factor": "Earnings yield",
+       "score": 73,
+       "weight": 35
+      },
+      {
+       "factor": "Price to book",
+       "score": 59,
+       "weight": 20
+      },
+      {
+       "factor": "P/E vs sector median",
+       "score": 100,
+       "weight": 30
+      },
+      {
+       "factor": "Position in 3-year range",
+       "score": 100,
+       "weight": 15
+      }
+     ],
+     "growth": [
+      {
+       "factor": "Revenue growth",
+       "score": 88,
+       "weight": 50
+      },
+      {
+       "factor": "Earnings growth",
+       "score": 100,
+       "weight": 50
+      }
+     ]
+    }
+   },
+   "sector_median_pe": 48.8,
+   "news": {
+    "headlines": [
+     {
+      "title": "NIFTY 500 Indices - NIFTY 500 Share/Stock Price LIVE Today - livemint.com",
+      "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE1fcWdTTnBuRUY0OXV5SXRNcks1bmlGOWFHZFZqV3A5eUdubjR5MGlCblV1TjBFS0hRU29Idmg1Z2hKVmdHUm90cUY4QXh0ZXhJSE5VczFjaUFhX1pFZjZOTFUxVjQ?oc=5"
+     },
+     {
+      "title": "13 Best Low P/E Ratio Stocks In India July 2026 - Samco",
+      "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxNb3ZXVFlEbHJybWpqVTRDaHlVd1pDRUdKbG5oTHFoM3FkT2ZqVWlnQXppYXNSU0ozTlVSX0NNQkpFUnRiSWQ5TmhLeUtUbzlzaFdKTmJSVnZzOUlnRkR4OGVfMEJtNFdhWENzcHF4alpUaTR2ZmlHMUpwdUp1VzRxSnFB?oc=5"
+     },
+     {
+      "title": "CALIBER MINING AND LOGISTICS LTD. Stock/Share price , NSE/BSE Forecast News and Live Quotes - Equitymaster",
+      "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxPajZqcjU4aHFCTUpHMXJyZ1dyc2hYRk94emthTnhuMnozdWl2WFA0ZXJJMGlfRmVyT1M2Rk9TSmdaMGlCUFJMajE5MDlKaWJ0NVF2ZHZWX05ySTdVVTduVnBCSzZkdTJpcTkya25pQ2RsOFdydEtZWEJfX2F1RG9nTVRrSUNlUEhRN0NWRUF4eDVnMjBVUnpCX1VxeVJTci0wVHMxeg?oc=5"
+     },
+     {
+      "title": "Indian passport services in UAE outsourced to AlHind Tours and Travels from July 22 - Khaleej Times",
+      "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxQTkp2RTZIdUNieDc1cFdYcVJTcGFCOVJsY2VBcGpyU3NTcHpkYTRwellaa3pmTUhrNmZZU1FiUGlOdUx4NDRKcmVDc2FlY2MwZEF6TDd2WVlSQ3RWUUM3YmRreWZOYXhpVnRHQ2dhRkpjc1M1bjktaHFjZVdXeHU1bmlRcWROVlQtdDBibWVvdVFscy1fdEQ1Z19SdmxReTlNZy1zQlM4N2xxVG9RdDlOUFg3cGNoQ0XSAb8BQVVfeXFMTlJPVVEzbDZxNWxTdXJOMXhCTGVNdWdkeXlIb0lOR2VSeUVQU0RLVlhfOXJNWFkzU21yRkVWbjVRWG5ZMGhLNG4wckQ1M2tPUkJBRWpsTTVaZEt2WHJQekJxdnduUjRyS2p1ZUVBcUQxdWcySHNoejZuUS1GRVV3N0xSZVJSaThXQjVEUTE0NHdsWVJDczlDUExtR2lPWGROZmNHOWtKTGo2Q1ktU091Qm95blNPT1J5aU1CcVpxbDg?oc=5"
+     },
+     {
+      "title": "BLS Pharmaceuticals Strengthens Psychedelic Therapeutics Manufacturing via Cayman Chemical Referral Deal - Kalkine Media",
+      "url": "https://news.google.com/rss/articles/CBMi5gFBVV95cUxQbl85SE5tN084ZHFqY3pEN1VZYTRfZDJPcDJJOEVEb3ZVakFpNjZ0OHhsNVpQYXU3bC1NX3ozdUMzQjRwOWxPelZqazJBY3h6RTc4UnhJaF8xMjNIZXNEUVFwYW5ZcTR0TUN0MVRuZlhXdEk0WHNiTEN5Q0V5NU5iR1lOdTM0QktrWVhBd1pvYzB2X01aLXpwc0pHRHotZ2cyNGl0X1lMaUpfTzFZcjZYc2N2MFUzOWtSQl9Ic2pudHgtWEV2Zm9CM0lFeklQVC1QaHdHV0xxUFBiLWVuRkdPQ1JlWTA3UQ?oc=5"
+     },
+     {
+      "title": "Smartworks Coworking Spaces Ltd Reports Rs 131.48 Million Profit in Q1 FY27, Acquires Singapore Firm - Whalesbook",
+      "url": "https://news.google.com/rss/articles/CBMikwJBVV95cUxPZWpGVHRKMFdNZEJpQ3dWQWl3VmxEdWZZeDZLazVKdEhKc2JORHk0NDQ0cDBsS3dJNmUwaFI1UkszVEYzWmR1TnF4TF9XRDRNYlhrQ0VVTUdaNFc2bzJHN2lPVHhud0dwSDczV2JDTGZSMW1pYS1ZOUcyNjVad2s2SmJzMjRBeWhoY2JqX1F3TmhrTy14WVBXUjQ0Ymg5X2RCemtSNjhrSlBTMTg1NlJhd0l0OUdVS0o2bDU2NUhicFg2LXFDaFN6UkU0VHk0X3U4MFEwSWhuTGtDdHl3Uy1OMW9OeWZRNHlPSEJsTExxcS1yNnlVZ1Y1Y2dHRUViUUlJYzhXbF9FN1JPNTR0YUpmM29tOA?oc=5"
+     }
+    ],
+    "red": [],
+    "watch": [],
+    "checked": true
+   }
+  },
+  {
+   "symbol": "BBTC",
+   "name": "The Bombay Burmah Trading Corporation Limited",
+   "sector": "Consumer Defensive",
+   "industry": "Packaged Foods",
+   "price": 1458.2,
+   "mcap_cr": 10174.1387776,
+   "eps": 178.05,
+   "book_value": 1009.286,
+   "pe": 8.189834,
+   "pb": 1.4447837,
+   "roe": 28.709,
+   "roa": 15.559000000000001,
+   "opm": 16.669,
+   "npm": 6.264,
+   "de": 0.16570000000000001,
+   "rev_growth": 7.5,
+   "eps_growth": 43.8,
+   "div_yield": 2.33,
+   "cash_conv": 1.9463011216148656,
+   "pos_in_3y_range": 0.2699984439640918,
+   "scores": {
+    "total": 89.0,
+    "quality": 89.9,
+    "value": 96.5,
+    "growth": 68.8,
+    "coverage": 100,
+    "detail": {
+     "quality": [
+      {
+       "factor": "Return on equity",
+       "score": 100,
+       "weight": 30
+      },
+      {
+       "factor": "Return on assets",
+       "score": 100,
+       "weight": 15
+      },
+      {
+       "factor": "Operating margin",
+       "score": 51,
+       "weight": 15
+      },
+      {
+       "factor": "Low debt",
+       "score": 86,
+       "weight": 20
+      },
+      {
+       "factor": "Profit converts to cash",
+       "score": 100,
+       "weight": 20
+      }
+     ],
+     "value": [
+      {
+       "factor": "Earnings yield",
+       "score": 100,
+       "weight": 35
+      },
+      {
+       "factor": "Price to book",
+       "score": 94,
+       "weight": 20
+      },
+      {
+       "factor": "P/E vs sector median",
+       "score": 100,
+       "weight": 30
+      },
+      {
+       "factor": "Position in 3-year range",
+       "score": 85,
+       "weight": 15
+      }
+     ],
+     "growth": [
+      {
+       "factor": "Revenue growth",
+       "score": 38,
+       "weight": 50
+      },
+      {
+       "factor": "Earnings growth",
+       "score": 100,
+       "weight": 50
+      }
+     ]
+    }
+   },
+   "sector_median_pe": 42.7,
+   "news": {
+    "headlines": [
+     {
+      "title": "Bombay Burmah Trading Asks Supreme Court to Overturn ₹4,655 Crs Lease Rent Views on Singampatti Tea Estate - scanx.trade",
+      "url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxOYk0yTHY0WHB1OGJpYUc0R25LLWxDTWt5ZUZiSURCdlFlZUNJeUp2ZWFDcFdVV2N3VmVjN09xUVF4aENOTWpkeVF6Z1dDNVM1a21fMGxUWUpLRTBnakZkNE42T2lFNVpFa1IzbW9mNTJPZW9YRFNrN2taS3FUTnFXQXFVX3pjOXZVQ3lpOFpaeXFYbHZ0ZXJ1amROU051Rllsc2NQTUlrazd5X18ycGsxbUJJQkpHRUU1UDQyUnducmxkNHZ0U19pNDJRY1ptc1pPWDRUamFB?oc=5"
+     },
+     {
+      "title": "Bombay Burmah Files SC Application to Recall Observations on ₹4,655-Crore Lease Rent Demand - Sahi",
+      "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxOcGkxeGQxTVY2S0xETWVDN1l6Y01VcHZRSE5MYzF5TlQ1T3JtM2dEU0JFa3Z5SUpaMF8zT0gydmExeVRsazNMMHBJa1o1UDVMY0ZTNEFsWkk4RVI4aGs5eEFTY3dudHdWOXNzQTdiZm03ZGlJSHZUZmZDVXh4Z2JYalVTVFZEVDNGUHoyNW05VnNmU19RVXNTNXJLWHllcUwxUlZZWlpGcVZ0OHFqVHhIT2FDaVg5TzZJTFdReUttSjFRZFJsSE1Leg?oc=5"
+     },
+     {
+      "title": "Bombay Burmah Moves Supreme Court To Remove Lease Rent Observations In Singampatti Tea Estate Case - Studycafe",
+      "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxOQzUzMHRxaHZQbGVhVmYySHZyUlBueTJPVnJLVVk4WmZJMmpyLUhzTng3ZDZrQmFnTXgwZlhqaFRTMVdXU0xnYjZSeVdicVhFcHFjZWVKY2tVZFhoOGc4amsxRmtIOHlESzNhdm9NMG5uZGNhTy1WeXFqSWVsRkppN1RfaWxUSmVwSGVtNTVVVGZFcHhfOUtiMmdVZlZHRy1KX1NxX3RMZ04tZUVnM0lmZFpJQ1psWkoxQ3JyNzVrQlZoRGF1a3UxcDBCdw?oc=5"
+     },
+     {
+      "title": "13 Best Low P/E Ratio Stocks In India July 2026 - Samco",
+      "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxNb3ZXVFlEbHJybWpqVTRDaHlVd1pDRUdKbG5oTHFoM3FkT2ZqVWlnQXppYXNSU0ozTlVSX0NNQkpFUnRiSWQ5TmhLeUtUbzlzaFdKTmJSVnZzOUlnRkR4OGVfMEJtNFdhWENzcHF4alpUaTR2ZmlHMUpwdUp1VzRxSnFB?oc=5"
+     },
+     {
+      "title": "Stocks To Watch Today: Bandhan Bank, Anant Raj, PC Jeweller, Indian Hotels, JSW Infra - NDTV Profit",
+      "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxOMTVxWG83emwwWXp0eV8yX2hNSDRIN0d1NFN3U3czTkg2eTNsMFR5UzJVajJSZjFiLUR4b1plS1lGNTNjcmtsWDJERGVHVGk3ZmNmUHBSTTRtMXNCamRNMzd6R2czcnlnQjVuRWZVYWZGSWtHcDFqWXNhM0o1QmVsTXYtcFBxVUtKM0RpbnhlbEZwX05XS2h6YnIzT1libDI0SmdlTlE4Z194QjM1MTJmOHhkaDVsb3lmNG5hWEQ4NEJmZ9IBygFBVV95cUxQOTBKNUpvdEJrZmNGZk9pMFR3dHRUalprYWdhX2E2ZTkySmZUTmEyWktpcjlPLV9DcGZObF9Qbmg3NmtCR21HRDVBUDkyVEdXbmlJVERlTGxqZUhvMnVHZzZlNlc2Vmhtb0xmdTNjM0JRVS10MXpVMVJLSXowWUZlcVBYNWtWM09xenlqRjdXcThTNUJRSzRsZk95ZHJnR0dnMzBjZThKSS1STTBrc2FCcEo4UEtVYUM2SkdQUm1CY3piNnhVTGVBdnBn?oc=5"
+     },
+     {
+      "title": "Bombay Burmah Asks Supreme Court To Overturn ₹4,655 Crore Singampatti Lease Rent View - Sahi",
+      "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxOYjA5ekRpY1AwbVYxN293SHVWSWtnR19fUnRDeERBR192cEhYM2JFZGMtZkVSb0RFS2VXa0tNQUUycFY2dDV1VXY5NTJCYjRTRlZHQ3pOazN1UldyQVRIeVhMejV6OWF2bFNWZG9TdlhMeTVhWDA0WU5td29EcEs4ZmpCbE9ZZlpxZ2h1R3oxU2Rsd0hBTjF3RzNmTjRWQ2otYzJwTFRqZEhURl95ZlpickdvYzR0M0Z6V015SmQ1Uko?oc=5"
+     }
+    ],
+    "red": [],
+    "watch": [
+     {
+      "keyword": "recall",
+      "headline": "Bombay Burmah Files SC Application to Recall Observations on ₹4,655-Crore Lease Rent Demand - Sahi",
+      "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxOcGkxeGQxTVY2S0xETWVDN1l6Y01VcHZRSE5MYzF5TlQ1T3JtM2dEU0JFa3Z5SUpaMF8zT0gydmExeVRsazNMMHBJa1o1UDVMY0ZTNEFsWkk4RVI4aGs5eEFTY3dudHdWOXNzQTdiZm03ZGlJSHZUZmZDVXh4Z2JYalVTVFZEVDNGUHoyNW05VnNmU19RVXNTNXJLWHllcUwxUlZZWlpGcVZ0OHFqVHhIT2FDaVg5TzZJTFdReUttSjFRZFJsSE1Leg?oc=5"
+     }
+    ],
+    "checked": true
+   }
+  },
+  {
+   "symbol": "COALINDIA",
+   "name": "Coal India Limited",
+   "sector": "Energy",
+   "industry": "Thermal Coal",
+   "price": 427.4,
+   "mcap_cr": 263395.0035968,
+   "eps": 50.48,
+   "book_value": 193.28,
+   "pe": 8.46672,
+   "pb": 2.2112997,
+   "roe": 28.124001999999997,
+   "roa": 7.123,
+   "opm": 20.922,
+   "npm": 18.465,
+   "de": 0.11628999999999999,
+   "rev_growth": 16.2,
+   "eps_growth": 12.9,
+   "div_yield": 4.91,
+   "cash_conv": 1.3897921473873944,
+   "pos_in_3y_range": 0.8173742807306551,
+   "scores": {
+    "total": 81.7,
+    "quality": 84.6,
+    "value": 84.0,
+    "growth": 66.3,
+    "coverage": 100,
+    "detail": {
+     "quality": [
+      {
+       "factor": "Return on equity",
+       "score": 100,
+       "weight": 30
+      },
+      {
+       "factor": "Return on assets",
+       "score": 34,
+       "weight": 15
+      },
+      {
+       "factor": "Operating margin",
+       "score": 76,
+       "weight": 15
+      },
+      {
+       "factor": "Low debt",
+       "score": 90,
+       "weight": 20
+      },
+      {
+       "factor": "Profit converts to cash",
+       "score": 100,
+       "weight": 20
+      }
+     ],
+     "value": [
+      {
+       "factor": "Earnings yield",
+       "score": 100,
+       "weight": 35
+      },
+      {
+       "factor": "Price to book",
+       "score": 83,
+       "weight": 20
+      },
+      {
+       "factor": "P/E vs sector median",
+       "score": 100,
+       "weight": 30
+      },
+      {
+       "factor": "Position in 3-year range",
+       "score": 17,
+       "weight": 15
+      }
+     ],
+     "growth": [
+      {
+       "factor": "Revenue growth",
+       "score": 81,
+       "weight": 50
+      },
+      {
+       "factor": "Earnings growth",
+       "score": 52,
+       "weight": 50
+      }
+     ]
+    }
+   },
+   "sector_median_pe": 19.1,
+   "news": {
+    "headlines": [
+     {
+      "title": "BHARAT COKING COAL LTD Share Price - Live NSE: BHARATCOAL Stock Price &amp; Chart - Upstox",
+      "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE13MHNIelNXNWlvX2JJLTBBTnk4TldBQ1FORVQzeVNzVEtlRlFCclFrOGsxTEhkZzhuZ2JtQjkwa1dnM2JKMVhmckVjcmtHVUswYjZRVjd2c1AxcHFPdzJLMWVQTDFUckxwa3dIbjZn?oc=5"
+     },
+     {
+      "title": "Bharat Coking Coal shares crash 8% as Coal India arm posts surprise Q1 loss - Business Standard",
+      "url": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxNQ3NoV2tGc2h6dzBfM2hkenNIYzRTamY1a2JkWnZubThZOTJuNDNUZUlOLVBDa0FsUHhWOEUzZDVxME1xSlAwdFpLWEtaRkpTU0tZSWZ4Z0YxVjRDOFlyd3RGQ1hTaGFYRnY5S2IwTS1XZ2prWk41MHUyQUlrSFctNmxJR1FXSEdyc2lTZGE0b1l6aFQzLU42YWNqM2VrbzJSNXpJRVVrR1ptTVlSMnJvenlqZlVoRkZjQURJOEdwcVBlWnJTSEhzbmM1YVcwM2c0bU1iNEQ3QzfSAd4BQVVfeXFMT0wwampzajgxYXJRUmt1X0NmUTJ0eXpWMlN2Z0ZqckRPOGxBMmo1VFJiZHBvMTFHVnF0Ql95bk56NXEwWFZVNHctZmllRlFGQU96LUM3UnNFUWZSUWRaVUd5OG9mUmZ5RXhxeElxeHd2bzRIaG94Nk92eWZuNEE5VlBJdUdxOEV0R0NlZVd5WTBfWWRUNTZiNmZqNFFaRmdrbFdsT1dtMkdmNVVBOVl3eGNibTFtMnhaR015ZmFuYmg2N05rLUFDTlNUX1RMSGtYeTJOdWhOSGd1ZndkZlh3?oc=5"
+     },
+     {
+      "title": "4 Reasons To Buy Coal India Shares Amid Macro Tailwinds For Rs 500 Target - Goodreturns",
+      "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxOWjFCWEw1NTI0UkhnRy1yQXZHY1c4cGZJT0tyenk2U2RLT2FKR2o2VlJGbUkyeHBpak54dXYzbzFqTzRPVEgwWXZnVVhIQ0gxMEp2clZ0YXJzR3VOaUREYm9kclEtZ1RpMGlYamxoMnJyaXgyRFdCS0NKYzJOQnQwanJBdVdjZTRIOEZtcHhKOVBqNEdjZUkzYkp4TFpTREZZMWVkeVpvUVNBRk1Jdm5RQTFjcnVHbEJ1bUE?oc=5"
+     },
+     {
+      "title": "Bharat Coking Coal Share Price Slumps 7% As Coal India Subsidiary Reports Q1 Net Loss - NDTV Profit",
+      "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxPcUZCdUsyMkJ1Y244S0w1d05DV3JpTlRPOWtpYmdPTGVsaVQ5VFNURk8yYjdqM2hIRGpDMVQ5S2ZQQXVEY3NMbHowelNQNE8xMk05SGU4UVFxYy1EZkZwTkh0S0JqRTlSazY4S3dPcTVSbHRMaThzSjUyRC0wVnJzOFItMWhsUGFOdE1XUkhUbEJKRXZpUjV2UFpOcmlCQ2VvSkN1YXpkVXFRckI1cUFvTWNUT0EzQUVoWGtoQTc4TFY3akpiNTVxbGV3STdXazJN0gHYAUFVX3lxTFBXcjdaaVhaOXNZdlN0ZHZycmpveFZoajNEZTZ0YXJ6OEpZamd6UjRkcVAzcFAwUndkejVqeGVzVmJPc01qZmlmQnFCVGFHekRaQjhtQ2l2dlNBU2R3R0RoSkROc0pRUmdFN0tlUTRVazBkNG4wenVJc09Ec1VSbDZ6NDRLOUg4RmxvejdSS2JDYnUwYjBFdEEyUHl1ZWxfWkJOYjZLZlZNTUhJQnlGbVJKeWhRYmVvSHJzazI4Ti01SUd5eDhyLWtGSUc1dW5ZQzZLY29VQ2RRNg?oc=5"
+     },
+     {
+      "title": "PSU stock Coal India sets board meeting date to declare final dividend for FY26, record date. Details here - livemint.com",
+      "url": "https://news.google.com/rss/articles/CBMihAJBVV95cUxPTXU2VzE2SWdJOWhiUTV1ZHVTUWU4TFlOamJFeV82TzhZQ3hWb1l2UWpNcmZ5N3l3UjlnbWx0OXc1WlBORnJIajdSZi1wRDZqM1ptOVVDbjFGVzN1TTIwQy1IOXZvNU5RNXo3MkRLRC1QamhPUW0zLXcySHRlOEFmVHhPcWtaVVVTNGN3ZnhZeWVoVUFLTHpPeWtlWjh3S1Z5UWw1bk5CQm5kekVxTzI1MzgyNXpybHFXdDhwbUpydTNGQmVSUHhUNEVxal9SUWNJNms1VEZZZ25OM2MxVjdoV3NtSHdLNWR2NUpubEZ2TC0tTkJXTWJLNFUwYjltS01oZUZtRtIBigJBVV95cUxNTXJKWEdJMzlNNERhejhzakpYTngyOTZNRUxSaEZCeFhCQ1d4TlQ0WkE4R1o4YnltUWpFdXJSbWh1ajJ0Z1JrMlBudDZtN2YwdmxhbGFSX3hFbGlKN0Y0MHpEWUptWEk2SVc5QXpGeHNrSGl2dGNWWTJCaHBoYTFDbHZBbG52S0R6UmtXc0pjWl9acG1wM0RlajBDVnhKMXAtRG5QVVBJeFhXQkJBX1VsSWRObklLdjdHamYzaFlZejlwNlVVWkFyWlk0aTNkT0xKcnRjZGV2XzVWNno0c21VemwwUW81R0lkMUhpLVhhVWxfWG9GTVZrYUhnTTFkSHhFdFZ5c1YyTjIydw?oc=5"
+     },
+     {
+      "title": "Bharat Coking Coal shares drop over 7% after Q1 net loss, lower offtake - CNBC TV18",
+      "url": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxQN2Qwc3B4NEJZZHVNSm9xcGd6dmlMajEwYkM0U1hGSUQtTkNpdjl3LUQ0V04tUEpxcWRJOVZROTRpVDJCc0FDSnQyUUV0azQxWUlZRGxudEE0Rk8wenR2eFhRdXlWa2FvQlJ0ZExLZVFUMjlNYkhOZ2JhSkVsLU5HNzZVUXFlVVRpVWlCZXhWc3FXWFNVVGJxaVExLWhMZWN4OGNLR01kYjh6RTRJSzh4U1dnRDVUQnFwVnl5bE1CQWxPbzNpSDdnNzRYckJ3QVhJcWJYS0luQnRyRTBiY1lDdkpR0gHnAUFVX3lxTFBsYk9FRE96cXR2UHprWXUzLTdlbTJPNG5BUDk5ajVEcm83YTZLdHFUd1phdzJESWRGMjJxOVJhRXQwVGcyWGplWWxpSUxlTTVFeDZudWNGOVV0bUQ1V1k2QUQ5Z00zT0lGR3RnV0x2S3M5amVTclVNcUlfQ2lFa2YzbUFQQjZpMnEyaXVFTTFNR0pYTFp2OGQ4YWt2UGFmbThjdnRKZUN5ZERyMllkNWJoM2hKOXY1YS02b1pwU0liRWY0RmIzc3Z4eFVIMWt4TFA1MGY5cDFISUFVMzNOQ1NYbVlCMVZaQQ?oc=5"
+     }
+    ],
+    "red": [],
+    "watch": [],
+    "checked": true
+   }
+  },
+  {
+   "symbol": "ATUL",
+   "name": "Atul Ltd",
+   "sector": "Basic Materials",
+   "industry": "Specialty Chemicals",
+   "price": 6407.5,
+   "mcap_cr": 18864.8046592,
+   "eps": 270.4,
+   "book_value": 2113.312,
+   "pe": 23.696377,
+   "pb": 3.0319707,
+   "roe": null,
+   "roa": null,
+   "opm": 18.539,
+   "npm": 11.959999999999999,
+   "de": 0.02907,
+   "rev_growth": 27.3,
+   "eps_growth": 92.0,
+   "div_yield": 0.47,
+   "cash_conv": null,
+   "pos_in_3y_range": 0.4298736138397359,
+   "scores": {
+    "total": 77.8,
+    "quality": 82.3,
+    "value": 61.7,
+    "growth": 100.0,
+    "coverage": 68,
+    "detail": {
+     "quality": [
+      {
+       "factor": "Return on equity",
+       "score": null,
+       "weight": 30
+      },
+      {
+       "factor": "Return on assets",
+       "score": null,
+       "weight": 15
+      },
+      {
+       "factor": "Operating margin",
+       "score": 62,
+       "weight": 15
+      },
+      {
+       "factor": "Low debt",
+       "score": 98,
+       "weight": 20
+      },
+      {
+       "factor": "Profit converts to cash",
+       "score": null,
+       "weight": 20
+      }
+     ],
+     "value": [
+      {
+       "factor": "Earnings yield",
+       "score": 32,
+       "weight": 35
+      },
+      {
+       "factor": "Price to book",
+       "score": 71,
+       "weight": 20
+      },
+      {
+       "factor": "P/E vs sector median",
+       "score": 89,
+       "weight": 30
+      },
+      {
+       "factor": "Position in 3-year range",
+       "score": 65,
+       "weight": 15
+      }
+     ],
+     "growth": [
+      {
+       "factor": "Revenue growth",
+       "score": 100,
+       "weight": 50
+      },
+      {
+       "factor": "Earnings growth",
+       "score": 100,
+       "weight": 50
+      }
+     ]
+    }
+   },
+   "sector_median_pe": 33.3,
+   "news": {
+    "headlines": [
+     {
+      "title": "Atul Ltd Q1 Results: Revenue Jumps to 18.5B Rupees, Net Profit Nearly Doubles YoY - scanx.trade",
+      "url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxPQ1VoV2VMV25SNS14V0dNa29YdG9IOTJ1X1cxeHk4Q2tBNTFBUS1rWDF3bUVDQlBZWmwyUklHOVNwYzVlWlVpTkUwSXB3dEFXUExYOTR2YkFXYzNCcjR3OTR5TWFBUzIxbEhTeWdMYmFYalBVaGk5SEszdUl4UW95ZmtlY3BkQl9JMFoxTkJ6Y0t6OUZQdlJuMGxDcXFMaXR1V0Z0TnZoc2VmT0pJeEh3R25hR3kwOU90NlhfeG84OVh4dlJfTzBrOEFkZWx3NU9jTFE?oc=5"
+     },
+     {
+      "title": "Atul Q1 FY27 profit nearly doubles on strong chemical segment growth - Indian Chemical News",
+      "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxPTnFOSHZScnhrMUhBRGkyMEdTSTRJc1FlSUxKVGl4MXpFQkZGcWc0MlcwUGxwTHlreEZBdXZ3ZnNjbFBydWRBa1huV1A1Z3FVZXdWTlBMQ1ZVNmtjeXpIUmROc0RDcGFkenptQXdBQTZLY3AyTWFTbmdtUjZuYndnbDNsckk5ZnNmLW1yQ21uUGk2b3dpU0N0TEFQMDlIWTc3eTNacGNGNjdOSVN6bklfeHY1SjBzZzhtSGfSAcABQVVfeXFMTVd0QzNyVV9SVHNwLURiSm12cVJTY1Ixb0Fzd3pvSWh3TDJqX3NuQjY3ek9DVVVVa0lnTTNNUnNDUTN1aTh4S2VKX0tYa3ptSHdVUEhYVS0tOTBmb3g2RFNwbGJIRHc1M21EdVFCZkVFMGtXYWRWUURVem1XbmlNZENMYm5ZSE1LWDR3elZpSnRVYTZ6T3FiTjRYNF9hdUZfd2Y2SjBvYnBJdk05b2h2ajduUWlNYWhPRmJTZFYzTEpf?oc=5"
+     },
+     {
+      "title": "Atul (500027) Q1 26/27 earnings summary - Quartr",
+      "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTFBFX2p2aWtaX3FWbjRtUmVkMUNkS2VhNV9KNE9zVXktcDZYUTh3bl9INktqYktEMERfdUlGQkoyeG1kM0NjcTZIdmttTVZtYW9GOXZIVzA0cnkweTg5NGV1cTlUSkx4YjZrY1Bz?oc=5"
+     },
+     {
+      "title": "Atul Ltd Reports Earnings Results for the First Quarter Ended June 30, 2026 - marketscreener.com",
+      "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxOeElEWWExT1U2VVJyTllXalloVk11YXRMclowX0tfcU1xTjRqREQ0VGcyc1dKQWNoQ2dmOEw0UjhWa09rTGhlTUlyUHlOdTN1ZFdEZHNfUUNVeHNqaTZOdnhYdTZyYUtpMk1QOEZ3Q3dTcDNmVUFuSFRDQlBOSE0xLWhoVnJ1NTF6U3FtMzFab05rRmx3T3RKaG94b0hsdGxFdUVuNG9FV2tHamZWWlgxYjRSVkN1eVJHcWNCZ1pxLUxoeEYwcGc?oc=5"
+     },
+     {
+      "title": "Buy Atul Ltd for the Target Rs 8,400 by Motilal Oswal Financial Services Ltd - Investment Guru",
+      "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxOM3F2ZFpXWUlPclRxR0lnNlY1bTlEZzc2WERHVWdyendNVEdTdTZtNl93WVAzbW5taHF3RGlGYllPal9HQkNjemxKTWVFRWtKZUVaaE9kUjdTYmx5c19zVUozWk9SVFFPNXA5SXpnWGJnaWhSbjBkQUVCRnhBMngxZzVJZ2FSSlRtdWl6eDB0SWotT2I3ZnFMZXRjcUkzSzBxWGtYWGY3Vm1iVm5JejlOUU8tZ2xraFlYay1NMThCclVlNG8?oc=5"
+     },
+     {
+      "title": "Atul Q1 Results: Net Profit Jumps 92%, Revenue Rises 25% To Rs 1,848 Crore - NDTV Profit",
+      "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxNSW9mVDJBR0JQMHdtM2U3S2xMRzlMUmZpSFRlRllScVJVWVc3Q1B1TE1BOEhick9DRTVvdGlQTDA0ZHVzUFFvRGl3Qjd4WDNOMDRDQXg2dXhDUS1UTVFtWThjLWNKQkdGOWZ5UXlhVXQyTkNUSU9wSXI4T3NiX3F6Z1BFb09iVk8wTE5MTFZCOVg5OEpXdXBNRnlXTThiVk9SMFRXZkluUVVqdWlpY0tNdnlvLXPSAbwBQVVfeXFMTXBXUnE1MzMtREd6ajlsZVE2SXdLSUFDSkRUdnpqUTZ0RTFxTW9ZdmZNdjB1cXAtUjU4dzZyWjdlY19JU3habWNiZWVKeldVN2FGNm9jQnhDcW9VV1pPYmNzMlV6Rk9HOGlNT2dyTlY2X0tHbFRQWTU1LU5qWUh2TUd2aHZZVUp5ODJ1bUxhei0zTjlMdlB5N1NLeXcwYnRTQlpPMk1CY3RBZFNuTTk0aHF5Ml9mVU90UFh4ZW4?oc=5"
+     }
+    ],
+    "red": [],
+    "watch": [],
+    "checked": true
+   }
+  },
+  {
+   "symbol": "CHENNPETRO",
+   "name": "Chennai Petroleum Corporation Limited",
+   "sector": "Energy",
+   "industry": "Oil & Gas Refining & Marketing",
+   "price": 1214.8,
+   "mcap_cr": 18089.7562624,
+   "eps": 280.25,
+   "book_value": 746.005,
+   "pe": 4.3347015,
+   "pb": 1.6284074,
+   "roe": 32.126,
+   "roa": 13.972999,
+   "opm": 11.215,
+   "npm": 4.875,
+   "de": 0.17679999999999998,
+   "rev_growth": -2.5,
+   "eps_growth": 202.5,
+   "div_yield": 4.74,
+   "cash_conv": 0.9491604632161977,
+   "pos_in_3y_range": 0.9999999445958555,
+   "scores": {
+    "total": 75.9,
+    "quality": 78.6,
+    "value": 83.2,
+    "growth": 50.0,
+    "coverage": 100,
+    "detail": {
+     "quality": [
+      {
+       "factor": "Return on equity",
+       "score": 100,
+       "weight": 30
+      },
+      {
+       "factor": "Return on assets",
+       "score": 91,
+       "weight": 15
+      },
+      {
+       "factor": "Operating margin",
+       "score": 19,
+       "weight": 15
+      },
+      {
+       "factor": "Low debt",
+       "score": 85,
+       "weight": 20
+      },
+      {
+       "factor": "Profit converts to cash",
+       "score": 75,
+       "weight": 20
+      }
+     ],
+     "value": [
+      {
+       "factor": "Earnings yield",
+       "score": 100,
+       "weight": 35
+      },
+      {
+       "factor": "Price to book",
+       "score": 91,
+       "weight": 20
+      },
+      {
+       "factor": "P/E vs sector median",
+       "score": 100,
+       "weight": 30
+      },
+      {
+       "factor": "Position in 3-year range",
+       "score": 0,
+       "weight": 15
+      }
+     ],
+     "growth": [
+      {
+       "factor": "Revenue growth",
+       "score": 0,
+       "weight": 50
+      },
+      {
+       "factor": "Earnings growth",
+       "score": 100,
+       "weight": 50
+      }
+     ]
+    }
+   },
+   "sector_median_pe": 19.1,
+   "news": {
+    "headlines": [
+     {
+      "title": "Chennai Petroleum shares tumble 10% after Q1 profit drops sequentially, margins halve - CNBC TV18",
+      "url": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxQZkVVU3ZqMzVfclhHSkszaHEtZGtrRzhZYktGbVlmeE1GeUtVZjFzZUU2aFVMdXRHQ1Y0NGpUc1A4Y2JCYThCVG9ZNFZrRDRGRWNrTVVMWTRqSlhPeEw4emI3bWRzdnpoMTZmLW41bFJtR0REcFlkcS1KeDZlaW02RGVndHA0azlKam9jcXpONE5KMW0xTko0YnVCZmowMVIwT3ZfVkVXc2F6TUx2OW1Ed2t5Z0xZS3A0NWlfLUo2RzZUazBIMGt5YlplbTYzZk1jcGFrU3dkeGlzRUVHd3huTmd30gHnAUFVX3lxTE1CaTRqMW5QQVo2Y29WbmFEdjcwWV9sY3pSSHBuMjRocXQwZVp4U0piWWRaR3hXXzFBU3JfSjctY1pIZlVqdXpIM3hvLTZGai1OWTdDSmdfcE1DU3RKeko0RHJUZTRSeWJqT21OX1Npa1BMQjRHLXFWQUZNeC1fbUEzTkhCT2U1RW5vamIzQm14OThERXVpUWQ2a3Y4ejBLTWE3Sk5sRUE5R0hrSWhJN19ZRTYtUGhSWlNUeEhSYmlwckNHVWJ4bDd0NmJDNmZEOEF4V1pRWmRlNmplOHVhdEJYRzQzMERJTQ?oc=5"
+     },
+     {
+      "title": "Chennai Petroleum Q1 Standalone Net Profit Falls To ₹1,000 Crore From ₹1,400 Crore QoQ - Sahi",
+      "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxORlBycFlTc2tUQ2tCR1c3c2cyZmFNaldVNm5tSHVjQ2M0VUU3aEpRZ21neHB4eDkwVWFjN0g1Wlk4X2RtSTFKWlFvNXkyb05BaUNzS0g4RERyb3dBdk5OS0FLdmVuc2N2Vm5SNlhmUE5oVm1iOE94UU1Uazd2eWZnVl84VThSUjZRZVUwOF9FRk1fMTJjMzhxWVRiV2Q3WTZfR0JUcFRWSV91NzRnUlRmT2ZGTGFYLTg2ekVoZTlybXM?oc=5"
+     },
+     {
+      "title": "Chennai Petroleum fixes record date for Rs 54 final dividend - scanx.trade",
+      "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxPSzZqUjNoMFgzR0ZMVFZkTXJZWnVvY3MtbktRbUZIeXF6ZUJMU19ab0tuMFdCeUticlB6MmRReTJwVWtxMGphZlRjZGpmUkZid2JoMXNPeURKejhFczE2NE9hdzFLazJhb05iSUp2US12Z0JBLTI1bDJyZ3pnMVVXQVFYdFExMWx0dnhNdmpxWUp2dDJBVkl3elZMU3VGTXEyelJWZ3FyMWhxck9XdkNYM2EycFk4MmhY?oc=5"
+     },
+     {
+      "title": "BPCL Share Price - Upstox",
+      "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE4wdklFdjVkWllQRXhvR3NyZUNqdXJ5Z2t4eHo3Q05LaUprY2RFZlBDNmJURVI2Rnk3ODk3ajIyR1B3dWtKSjBzZ082X00yM0RNT0l2YmN0OWhtOWhRT1dQVmdtUndWaEYtaENnUGQtZ1A?oc=5"
+     },
+     {
+      "title": "Chennai Petroleum consolidated Q1 net at ₹1,031 crore on stronger refining margins - BusinessLine",
+      "url": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxOZzdwNHhGRU9IS3MySjdER1FSeTBVQXhoQkRBMlRQMHRtMUhzOTY3NHJvS1Z1eWxkT3pSSTFJbmFwd04xd3FYdEdTUE1GdS1UN3JocWxPeXRQeWxYdi02SzRaMHUzN0JVYkEyakNtNzJwRXdKcDVUbnFrWDlEdEpIREFvTmFaR0Q0MlhyZkRFRHpwajFPWUdMdGxLZEVoQnJXYm1RRnJpY2VmSlFSRTRvSXJ3VVJWX1lQX1E0NUVNQUlJTlBWVWxWRTVZTElEUnJuZzdKdXhSXzVHSDVZNmhCX9IB4AFBVV95cUxOZzdwNHhGRU9IS3MySjdER1FSeTBVQXhoQkRBMlRQMHRtMUhzOTY3NHJvS1Z1eWxkT3pSSTFJbmFwd04xd3FYdEdTUE1GdS1UN3JocWxPeXRQeWxYdi02SzRaMHUzN0JVYkEyakNtNzJwRXdKcDVUbnFrWDlEdEpIREFvTmFaR0Q0MlhyZkRFRHpwajFPWUdMdGxLZEVoQnJXYm1RRnJpY2VmSlFSRTRvSXJ3VVJWX1lQX1E0NUVNQUlJTlBWVWxWRTVZTElEUnJuZzdKdXhSXzVHSDVZNmhCXw?oc=5"
+     },
+     {
+      "title": "CPCL swings to ₹1,017 crore Q1 profit on better refining margins - The Times of India",
+      "url": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxNNGxueWVfY01xdWptWlRvRVg3b2R5VWRudi1md3kwQWduM0hMOHowVVg5OFA5d0VLT1dTOG42NWdQdXpINFJ2SlJiZjNweU12UDVsZm1rSk9hak0zLWpyVmhabmxGclh6V0s2WjR1dTdpcThfeEFSaDdWSjN3dG82Qk9pQVc3eTZvQzdRb0NFMFRQM05KckhoSUpPUWlTelE1Z29xUjhGLTFudWdFbGFxUFpFOGNCbnF1UE1oV25HUzFoSmJKWE93MXJCeEc1djhjZGpQbFlyZXHSAdgBQVVfeXFMTTRsbnllX2NNcXVqbVpUb0VYN29keVVkbnYtZnd5MEFnbjNITDh6MFVYOThQOXdFS09XUzhuNjVnUHV6SDRSdkpSYmYzcHlNdlA1bGZta0pPYWpNMy1qclZoWm5sRnJYeldLNlo0dXU3aXE4X3hBUmg3Vkozd3RvNkJPaUFXN3k2b0M3UW9DRTBUUDNOSnJIaElKT1FpU3pRNWdvcVI4Ri0xbnVnRWxhcVBaRThjQm5xdVBNaFduR1MxaEpiSlhPdzFyQnhHNXY4Y2RqUGxZcmVx?oc=5"
+     }
+    ],
+    "red": [],
+    "watch": [
+     {
+      "keyword": "profit falls",
+      "headline": "Chennai Petroleum Q1 Standalone Net Profit Falls To ₹1,000 Crore From ₹1,400 Crore QoQ - Sahi",
+      "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxORlBycFlTc2tUQ2tCR1c3c2cyZmFNaldVNm5tSHVjQ2M0VUU3aEpRZ21neHB4eDkwVWFjN0g1Wlk4X2RtSTFKWlFvNXkyb05BaUNzS0g4RERyb3dBdk5OS0FLdmVuc2N2Vm5SNlhmUE5oVm1iOE94UU1Uazd2eWZnVl84VThSUjZRZVUwOF9FRk1fMTJjMzhxWVRiV2Q3WTZfR0JUcFRWSV91NzRnUlRmT2ZGTGFYLTg2ekVoZTlybXM?oc=5"
+     },
+     {
+      "keyword": "profit falls",
+      "headline": "Chennai Petroleum Q1 revenue jumps, profit falls on higher costs - scanx.trade",
+      "url": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxPeVRHZnpWWFo5MmE5eWo0ODJidzFGaXhEZXdPS01OY1FkMXNpUURoR0ZuWjRJSzNvQ29TYUlUWC1FaXpHRmxRWnNHOUlsSTZQZGlULXZnZXJMOE1BamZxV1ZfaEE0VlBUQWFwRWh5d0xHRXctZHI3dEw4RnVBSmdBajJHaDFQS1hkU0ZJbV9ybWo0LWJTMW9MTkcyeTlpeWtJYVVJaUVZODBMWTFTOWlWRVRCOFE1eFd5VFdlYktHSkppRlVvd0JTNGRSZWZITjJGRUMzYWpFWXpKQ2t6Mk5ydQ?oc=5"
+     }
+    ],
+    "checked": true
+   }
+  },
+  {
+   "symbol": "ACE",
+   "name": "Action Construction Equipment Limited",
+   "sector": "Industrials",
+   "industry": "Farm & Heavy Construction Machinery",
+   "price": 1039.4,
+   "mcap_cr": 12371.759104,
+   "eps": 36.69,
+   "book_value": 168.988,
+   "pe": 28.329247,
+   "pb": 6.1507325,
+   "roe": null,
+   "roa": null,
+   "opm": 13.841999999999999,
+   "npm": 12.796,
+   "de": 0.00393,
+   "rev_growth": 20.5,
+   "eps_growth": 22.3,
+   "div_yield": 0.19,
+   "cash_conv": null,
+   "pos_in_3y_range": 0.4078984111253563,
+   "scores": {
+    "total": 68.6,
+    "quality": 71.7,
+    "value": 53.1,
+    "growth": 94.6,
+    "coverage": 68,
+    "detail": {
+     "quality": [
+      {
+       "factor": "Return on equity",
+       "score": null,
+       "weight": 30
+      },
+      {
+       "factor": "Return on assets",
+       "score": null,
+       "weight": 15
+      },
+      {
+       "factor": "Operating margin",
+       "score": 34,
+       "weight": 15
+      },
+      {
+       "factor": "Low debt",
+       "score": 100,
+       "weight": 20
+      },
+      {
+       "factor": "Profit converts to cash",
+       "score": null,
+       "weight": 20
+      }
+     ],
+     "value": [
+      {
+       "factor": "Earnings yield",
+       "score": 22,
+       "weight": 35
+      },
+      {
+       "factor": "Price to book",
+       "score": 26,
+       "weight": 20
+      },
+      {
+       "factor": "P/E vs sector median",
+       "score": 100,
+       "weight": 30
+      },
+      {
+       "factor": "Position in 3-year range",
+       "score": 68,
+       "weight": 15
+      }
+     ],
+     "growth": [
+      {
+       "factor": "Revenue growth",
+       "score": 100,
+       "weight": 50
+      },
+      {
+       "factor": "Earnings growth",
+       "score": 89,
+       "weight": 50
+      }
+     ]
+    }
+   },
+   "sector_median_pe": 48.8,
+   "news": {
+    "headlines": [
+     {
+      "title": "Earnings call transcript: Action Construction Equipment posts best-ever Q1 2026 - Investing.com",
+      "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxNMHdjRmNzRF9PdmFkWDhUeTlkSXBWWWNJYnhQNWtuV1kzR2tLVzVYY2tYUk9CSU5PeU5xT1pya1diMy1uamFCVGpZZVpoekN0b1V2TUdvelp6WlVra0pDMVBGcjBMeDlheHJpQW5SR0s5eFFybWpFVTVzZFhoX2pDaWFsSUpSYXZrQ2JXaFZoeDJtVEt3ekF4UGIzcFZ0aUVTMmtyTjM4NVVwaE9lWG5jSi1DOXpYcGRQOHVGR3ROZGUtZEJoR2dLV0E1ODd0dw?oc=5"
+     },
+     {
+      "title": "Volumes spurt at Action Construction Equipment Ltd counter - Business Standard",
+      "url": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxOek0wYWtMV0Yyclk5SFloblFiR3puXzFHQi1lU0NfTEwyaTlDazdkRWxUVnhScjhEcjBqVTFYLTlkSUVKR2U3YU5vTjBiZklGLWhBRUtQNTlRWjVYUklKTU84Y1F4MjJtOEJmQ3FOT1RwWjhyR1BSYjdySDBOb2xLcnhUZV9fTXJEQUxpU2RfSm5obXFIUlBUOXFDcmFoUWZPR0JGdDJ1NnZCWE9ILUZhWDBFUEt4c2ZkeWEtOTdXdGZDQ283V2V6NXF0b0UyMEt0NnphNnlzb9IB3AFBVV95cUxQMU5CTWNmd0NhZnZfMzdicGY5T0RNVzdBVFl1QTd0VF9pYjloTDl2RXZ1Rm83SWJISUwxU3dqTVJlc0RzQi0yOGNwMkJGU2EwamhvT3dmMkxDOHl5ZkxRS2N2dDBfeGNSeExtWFVfbU5EWEFjNmpTVFZ3c2JGV3hrcEZxS1dBcEY3TWlFM3VyQnhuNlBlWWt4Tm9tVEJuU3NCR3VtOHptWFpNTjlTa0NoMV9IUFpxbHdwV0hJYnM3QVo1VVV5eW5pTUJWUFdEcUJ1c1pCN0E2VGZLMmVt?oc=5"
+     },
+     {
+      "title": "Action Construction Equipment Q1 Standalone Net Profit Rises to 1.2B Rupees vs 977M YoY - Sahi",
+      "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxPbkxmNk84SC0zU05VZTNQRzk5TkVJdk5jcFNoRlRLY2xOOFJXaDhBbVZZbGNybFFUS3pEbWx2UGtXcHdNd1Q5TUd0Nk5iN3ZCQVlEeXlacmFHc28tbDhsOGRiQ3RBcEZvTFVMOEtrc0JHWGlxSzZTYm5hWDVqbU1fLUxUZFYyVko1ZVVGNWU0b0ltajNjWUw3SE5zYVNNQWNvc2d4ZjJxOFNzWnlvbWdUeXlGZ3Q2M1kzVmJaWXBpWkR1VVJX?oc=5"
+     },
+     {
+      "title": "Action Construction Equipment Q1FY26: PAT Rises, EBITDA Margin Expands to 14.86% - scanx.trade",
+      "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxPaHdBZGJiZXRzWTVHUldlSWlNUFdieDk4ZXJnRzZFcWNlbEFfMEhNaWU5OS1uWnV6Z21GQXdsUGlhNkxjNnR3MlpCZm0yX2laaTk0NUwya2R1azZmRktEYzk1STc1dUVUQ29OdDhDNVoyYjVZMThUaWNHVllLekdDVlZGWWhDeFpNWjJoRFhJWmFvb3NNZWtqZzRUWHNuRGc5TU1YeldyY0NRbmhlOHRkd1hONC1ZMGcyR2pGM1pwLVU5QQ?oc=5"
+     },
+     {
+      "title": "Action Construction Equipment Limited Q1 FY27 Results: Consolidated Net Profit Rises 22.3% YoY to ₹119.49 Crore - EquityBulls",
+      "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE5iQ1g2T1RkcUhlV1F2aEVIWDJuVFlEa215YklMTGtfLU1BUlB0ajdTWkw4ZXVCdDdmN0ZvVjRQaEZIZnlDOHFkZmo2OWdURHhhUmhfUEYyazRpZGp4eXZF?oc=5"
+     },
+     {
+      "title": "Action Construction Equipment sees 10% price hikes offsetting 12% input inflation - scanx.trade",
+      "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxOWUJIYWxza0V4bkZXdXZBXzFQU0JRdUh5OHBadm9MWEhQQU9kUE51bkZwWElWd2s1SnhlN3A5b0gyVWpoZHRWNkpXb2x6TEktV3ZUbGRpLW1jTmFUeVd2R242aHQxb0gtUHFTUWQwV1NnRjJOR0NscXE4ZzF2WnhsOTlFOGt4SVp5d2dnTEZzUEE0X25ja2xhMmc2c2V0U2NqQ0pRR1FwSW8zSi1ISkx0blpyUTlPWnk4cXJzcWVvUGlsMTMy?oc=5"
+     }
+    ],
+    "red": [],
+    "watch": [],
+    "checked": true
+   }
+  },
+  {
+   "symbol": "BSOFT",
+   "name": "Birlasoft Limited",
+   "sector": "Technology",
+   "industry": "Information Technology Services",
+   "price": 282.4,
+   "mcap_cr": 7895.3275392,
+   "eps": 18.5,
+   "book_value": 147.155,
+   "pe": 15.264865,
+   "pb": 1.9190649,
+   "roe": 13.656999,
+   "roa": 10.095,
+   "opm": 17.044999999999998,
+   "npm": 9.762,
+   "de": 0.03422,
+   "rev_growth": 2.4,
+   "eps_growth": 43.8,
+   "div_yield": 2.3,
+   "cash_conv": 0.9278181103419938,
+   "pos_in_3y_range": 0.0074155121612749465,
+   "scores": {
+    "total": 67.1,
+    "quality": 57.9,
+    "value": 85.1,
+    "growth": 56.0,
+    "coverage": 100,
+    "detail": {
+     "quality": [
+      {
+       "factor": "Return on equity",
+       "score": 24,
+       "weight": 30
+      },
+      {
+       "factor": "Return on assets",
+       "score": 59,
+       "weight": 15
+      },
+      {
+       "factor": "Operating margin",
+       "score": 53,
+       "weight": 15
+      },
+      {
+       "factor": "Low debt",
+       "score": 97,
+       "weight": 20
+      },
+      {
+       "factor": "Profit converts to cash",
+       "score": 71,
+       "weight": 20
+      }
+     ],
+     "value": [
+      {
+       "factor": "Earnings yield",
+       "score": 65,
+       "weight": 35
+      },
+      {
+       "factor": "Price to book",
+       "score": 87,
+       "weight": 20
+      },
+      {
+       "factor": "P/E vs sector median",
+       "score": 100,
+       "weight": 30
+      },
+      {
+       "factor": "Position in 3-year range",
+       "score": 100,
+       "weight": 15
+      }
+     ],
+     "growth": [
+      {
+       "factor": "Revenue growth",
+       "score": 12,
+       "weight": 50
+      },
+      {
+       "factor": "Earnings growth",
+       "score": 100,
+       "weight": 50
+      }
+     ]
+    }
+   },
+   "sector_median_pe": 36.9,
+   "news": {
+    "headlines": [
+     {
+      "title": "Birlasoft to host Q1FY27 earnings call on July 28, 2026 - scanx.trade",
+      "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxNZWR4R0dWS2RmYW1UeXQ0TGRtaFBHTTZadlBqTFpXcGsyTDMwUlo0Q3FFMlgzek50Um1WZ0dyWUdVd2ZIRmdiajk4U09VVGthVl9qcXB1UWE0S0JJeld5MmNISVM1N2lvZ25jUENUczdLcTJPM2dWZGNKV0dmdnh1a00zOENmRTd5b3N2ZmNYNXJlQWs5TVFpOTVXc003MG84YjRJR0N0czdNXzFfaDFMNA?oc=5"
+     },
+     {
+      "title": "HCL Technologies Limited (HCLTECH.BO) Stock Price, News, Quote &amp; History - Yahoo! Finance Canada",
+      "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTFBEZWJHZ3pwZk8yejJQZWE3VFdpYlg3dkc3ZzZrNmVyX01oMmhsZnRhQ1l5c1psX0NyZTJwX21OeGRiYXB5WlJHOE40d2RDTm9xdmJ3S0k1aC1Jdw?oc=5"
+     },
+     {
+      "title": "BSE Information Technology - Business Today",
+      "url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE5IMjdlQUpseGRLb2lPQlc4aDhPQ2RfU2xONkRVbmROT21TUTVxOVZ2aHRCdFhkU1RBbjd6b0J1VE91dWFrZkVBYmkxQ01RNTlhVW9HYm1mckx0Ml9JSlJrTzR3VQ?oc=5"
+     },
+     {
+      "title": "Triveni Engineering - Rajesh Exports, Inox Wind among 10 worst Nifty smallcap 250 performers YTD. Do you own any? - The Economic Times",
+      "url": "https://news.google.com/rss/articles/CBMijAJBVV95cUxQYTZ4ZkhYbjMzZ0c0TXJNM05Ba1hFVm53cGFseGg4TXQ3SS04OTJDNnRUSS1wRkE3QnJJTVFzNU1MMzdzRVNLRWtoOE45RnVibUgtSlpYZ21FcWhZeFRtVUxDMFpURHhCYWlZZ3VxLWYwUHEzelJZMnoyM3p6U1VuVUt5Sl9DV3VCTmExWkpXYmwyS1JlZ3M3NVlYTlBlempvaTRuLTN6WlpSMktJWjA4RDhiaUxsV1VzVFgydjkxdm5CRUFhakRUZDUwUUY0NTRiYjJBUW91eEJOS1VfME9JY3ZYNEtoLWlYczR4bmE4ekJlRTZXdkVYbVVXVjJWZ2F3WUdXeGxNNFM5djFp?oc=5"
+     },
+     {
+      "title": "L&amp;T Technology Services Limited (LTTS.NS) stock price, news, quote and history - Yahoo Finance UK",
+      "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE5qZU9WZENwdURQN3N3RW5BMFNRN1BaclVsM1BnaTVPazhhR25RM1dKdlB3Tl9vRFU1c0c5TFkwMzk0MHljWWJUdWdyaXhJQ3NzQzBSZzd3?oc=5"
+     },
+     {
+      "title": "Nifty India Digital Index Index Price Today, Nifty India Digital Index share price, Nifty India Digital Index Live Charts - Business Today",
+      "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTFA2cEpEajFsUjZyZmpxN2w2WENrNWRPYlRyU0xjTkJheG5VeEZJYjl2SWNyZVlWVk14TkRGRkhBWGJUcUxCSlRYWlFkOXpweFpPSDRmNDlzYjVDdkdBaW9HWWtKYkV3SWU5eWVNTnlWSQ?oc=5"
+     }
+    ],
+    "red": [],
+    "watch": [],
+    "checked": true
+   }
+  },
+  {
+   "symbol": "COFORGE",
+   "name": "Coforge Limited",
+   "sector": "Technology",
+   "industry": "Information Technology Services",
+   "price": 1484.7,
+   "mcap_cr": 65726.3034368,
+   "eps": 43.8,
+   "book_value": 283.963,
+   "pe": 33.89726,
+   "pb": 5.2284975,
+   "roe": 18.596001,
+   "roa": 10.7980005,
+   "opm": 16.555999,
+   "npm": 9.4840005,
+   "de": 0.07518,
+   "rev_growth": 30.5,
+   "eps_growth": 134.0,
+   "div_yield": 1.08,
+   "cash_conv": 1.2061258568029583,
+   "pos_in_3y_range": 0.5555087874727197,
+   "scores": {
+    "total": 65.8,
+    "quality": 73.2,
+    "value": 40.5,
+    "growth": 100.0,
+    "coverage": 100,
+    "detail": {
+     "quality": [
+      {
+       "factor": "Return on equity",
+       "score": 57,
+       "weight": 30
+      },
+      {
+       "factor": "Return on assets",
+       "score": 65,
+       "weight": 15
+      },
+      {
+       "factor": "Operating margin",
+       "score": 50,
+       "weight": 15
+      },
+      {
+       "factor": "Low debt",
+       "score": 94,
+       "weight": 20
+      },
+      {
+       "factor": "Profit converts to cash",
+       "score": 100,
+       "weight": 20
+      }
+     ],
+     "value": [
+      {
+       "factor": "Earnings yield",
+       "score": 14,
+       "weight": 35
+      },
+      {
+       "factor": "Price to book",
+       "score": 40,
+       "weight": 20
+      },
+      {
+       "factor": "P/E vs sector median",
+       "score": 68,
+       "weight": 30
+      },
+      {
+       "factor": "Position in 3-year range",
+       "score": 49,
+       "weight": 15
+      }
+     ],
+     "growth": [
+      {
+       "factor": "Revenue growth",
+       "score": 100,
+       "weight": 50
+      },
+      {
+       "factor": "Earnings growth",
+       "score": 100,
+       "weight": 50
+      }
+     ]
+    }
+   },
+   "sector_median_pe": 36.9,
+   "news": {
+    "headlines": [
+     {
+      "title": "Coforge Limited (COFORGE.NS) stock price, news, quote and history - Yahoo Finance UK",
+      "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE9aRVNmNkVFUnN4Z3MtX0FGNTcxWFVOdF9hVUFELS1zV0xIVlVhNk1UN25OZTBVNjlKRDE5WEtjZzVQdUFwVEd2SGNOd3pHNFhmbkdQM0V2Y1ZWQQ?oc=5"
+     },
+     {
+      "title": "Coforge Bags $230 Million-Plus Five-Year Deal; Shares Rise 1.36% - HDFC Sky",
+      "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxNSXg1MkRHOGhzSmkzM1lRNF9aQXp3cl9WV0x4VGpVWVhTeG9nRHp4MWl1MjNPdWt3MTU5M1Jjc25HVkYxVms3dnpBaUhJeDdCZ2JIVHQ4Sjh4X1dzUmM2enBZTllmYVRBbkQyUW1tamN1UmllWlUyaDNpT0RVQy1GVk94QkNhWjYyNnpoczh2VjVlTUk5VlBSag?oc=5"
+     },
+     {
+      "title": "Coforge Ltd down for fifth straight session - Business Standard",
+      "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxPZzdXckVIRTRhUXoxTXJzTFd4ZXVTdk5wQVhkNEYtWDBqYWxrZU95ci1rXzM2U2ljWHJ1eUJjd1lob3hTMmdiZWdVTElIZ21Pc0taNDJfQ3Nha0ttemlTY3drOF9LVl9hTElKWlpQYW45N2poakVnc1o3SldIaWxVaFQ2TjhOMkpsVk5Ha2kwWlU5R1BsTFhvWmtzQVFXeVVDTWlfTTRRd1duUHdpQ0lRb3VkcU1QWWh3bHAtaFhNRW41b1HSAcgBQVVfeXFMT1dNbm8zVndrZkxzSzFuRmdHV0pYbk1TS0V3MjB5UGhxc3hoM1hBUVZoUzFpRnF5WlVaUDI4YjR6SGxIamVMd0trQ3cwMnlkTVI2WmlfVHRsMzdnQU5rOFFoc2tpaGVYZW5vWDk4Mzl6OE4tY3pRWkZwU3dRV2NyZnNySDZIdHJySXZMaUpnLVdTS1IxMTFOdXUwRkxpZkZFVFpqZ0JvQUNsTG5VRFZ6Y3FOczhNNHRENzlnMjZTMjdYamdUVDRRT2U?oc=5"
+     },
+     {
+      "title": "India's Coforge secures over $230 million AI transformation contract with European client - Euronext Markets: Real-time Stock Market Data | live",
+      "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxNNjJEZlllQkNfNmNiSUNvb1ZpSWk0M21rN0wtTDkxZHd3dmdfQS1QTGdvVWdoMGpTZ3c3TGp1VmFKZzlmejBraUlBdkotNXJOTVc4V28xWXA2N1Fyd1d0U29vTzUtbjVJNnEteXk2XzhDWm5iWVExOVdxSnlJbmxXQWhFN21IYXU3UUF3WWI3enc0cFo1U1h6Yk1XazhlNk5SMUFGZEtUZEt0dUlCQXhtYi1pT2x0SEFHRlc4Y0ZYVVd2Sm9a?oc=5"
+     },
+     {
+      "title": "Coforge Shares Rise 2% on $230-Million AI Deal Win - Equitypandit",
+      "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxQQ3htSXFxOGNRdG5zLTN0aTlLZnEzZWlJZUx5NFliOENKSWMwSnBTSU4zR3k4WDhkdHNXVHdaVUN2NEktTVRxSXhnMmdzUzUyWnhpY3dRSjI5Vl9uUWRXQk1qSzZnY2tNM085TnVlemxPWmZUUjh2V3YxLVBXRlZCU0RwQmY?oc=5"
+     },
+     {
+      "title": "Coforge Bags Over $230 Million AI Transformation Deal In Europe; Shares Up 2% - NDTV Profit",
+      "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxNSEE2LW9DWVB2bW5yaUJnazVPQ29yTWlwOFdXMkI3RnN5MkY2VEJjb3FfMWx0bE0wYjZHSkV5V2VaZV9EYnVZZmF0Q19jSVExdFp0VWZ6RFlRVUxWRVg1LVJRWjZiRWRkRi0xcjYtRkNibXpHMWlFNC1ZenVFaHdMNWViQTVFNG1faURIdDdFNEVuV0lCVHdkQzEtOFpsbFFkUzZyUk81YUZOTlZOMTE4VjhBZ1FnV0NwS1RyWTBGbEVjSGdo0gHMAUFVX3lxTE9DTHBVNmtFMzNXTjdVM19LeV9ZQkJYa3NkMnFTbkxLZ3Bodnc2dXFLM3VmdUxGcEthbnFjblJ4QlMyVVhrNWZCQzZoY3Qtc21GLUVVemNseXR5Q3p3VDE3aGtUTnVFQzR4ck9CR2xDQUxDYUJyendBS2ZQVmRZTWVWWTVxbVBKaFJ0bTFQU1h0Y3dhUzZTWGxrcG4zMlJodThKblktYjJRa2YzU1B2Q25DOXd0Vk4zcFBBMHVTZXZsdzdEanJXOTZCbzItdQ?oc=5"
+     }
+    ],
+    "red": [],
+    "watch": [],
+    "checked": true
+   }
+  },
+  {
+   "symbol": "CAMS",
+   "name": "Computer Age Management Services Limited",
+   "sector": "Technology",
+   "industry": "Information Technology Services",
+   "price": 761.45,
+   "mcap_cr": 18899.550208,
+   "eps": 19.11,
+   "book_value": 53.266,
+   "pe": 39.84563,
+   "pb": 14.295236,
+   "roe": 38.694,
+   "roa": 21.461001,
+   "opm": 39.255002,
+   "npm": 31.394,
+   "de": 0.04863000000000001,
+   "rev_growth": 11.0,
+   "eps_growth": 10.7,
+   "div_yield": 1.64,
+   "cash_conv": 1.2274252107080725,
+   "pos_in_3y_range": 0.5652103905889952,
+   "scores": {
+    "total": 65.8,
+    "quality": 99.2,
+    "value": 25.3,
+    "growth": 48.9,
+    "coverage": 100,
+    "detail": {
+     "quality": [
+      {
+       "factor": "Return on equity",
+       "score": 100,
+       "weight": 30
+      },
+      {
+       "factor": "Return on assets",
+       "score": 100,
+       "weight": 15
+      },
+      {
+       "factor": "Operating margin",
+       "score": 100,
+       "weight": 15
+      },
+      {
+       "factor": "Low debt",
+       "score": 96,
+       "weight": 20
+      },
+      {
+       "factor": "Profit converts to cash",
+       "score": 100,
+       "weight": 20
+      }
+     ],
+     "value": [
+      {
+       "factor": "Earnings yield",
+       "score": 7,
+       "weight": 35
+      },
+      {
+       "factor": "Price to book",
+       "score": 0,
+       "weight": 20
+      },
+      {
+       "factor": "P/E vs sector median",
+       "score": 52,
+       "weight": 30
+      },
+      {
+       "factor": "Position in 3-year range",
+       "score": 48,
+       "weight": 15
+      }
+     ],
+     "growth": [
+      {
+       "factor": "Revenue growth",
+       "score": 55,
+       "weight": 50
+      },
+      {
+       "factor": "Earnings growth",
+       "score": 43,
+       "weight": 50
+      }
+     ]
+    }
+   },
+   "sector_median_pe": 36.9,
+   "news": {
+    "headlines": [
+     {
+      "title": "JPMorgan raises stake in Computer Age Management Services to 5.05% - scanx.trade",
+      "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxNMGZRTUJmSTg0WnNTVldaM1U2OG5HMEd4YS1DbTFjM1ozenRFRlU3NklFZlFGYU5VSW9UbkNNemtIdGtIc0l1LUJ1bzd1ZTRUYlZ6MG16WElKU1B0ZHAtX0U1VG82dV9QQjNfdEhOQXdfUzNRTV9YMDNoY2U0aklBWFZTNGk4THhueVMzYzZOV0J4OXNCN3R6a09WQlV3X2hwUUswenA4Wkw2Tlotem9PSjNzSUNIbkNjLXRfaG9Maw?oc=5"
+     },
+     {
+      "title": "L&amp;T Technology Services Limited (LTTS.NS) stock price, news, quote and history - Yahoo Finance UK",
+      "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE5qZU9WZENwdURQN3N3RW5BMFNRN1BaclVsM1BnaTVPazhhR25RM1dKdlB3Tl9vRFU1c0c5TFkwMzk0MHljWWJUdWdyaXhJQ3NzQzBSZzd3?oc=5"
+     },
+     {
+      "title": "Dixon Technologies, Paras Defence among 14 new stocks added by this one-year topper mutual fund in June - The Economic Times",
+      "url": "https://news.google.com/rss/articles/CBMi_AFBVV95cUxNc2VxbmlnWWFkYW1KeTM1UlhQcHFhUDZiUVVwOElyTnB6al9XS2pZS1pKTFJBWW5MQ2lGazV5YnktTDVkd1hjcWlyUGh3cmU3TXRCNm9VYi1OVnVNc2FpTVZHYlpIQS1aUjczSjVQXzU0QWtKZ0ZJUGYxcWdYSTZHaDRfN3Bmd0lreEpqZGd0a0lDM1FWMTRacU1YSVpiLU9uaFBXSnJuYXdUZkZxNTEwSkdKb0xWd1J3V1BIbFdrd2hKZVdMTy1VTmJCSGJPVFUza0llWURVcnIzSk1wajV1UlpwcUthMlNfanQtekMzX0lzbEh1bDFCSmlLRFXSAYICQVVfeXFMUG5VMnQyUWlBUTUyMzBSMUluYzhLRHFRYU8xNlFWNHliS2tBelJaOThvek1hSE5vYlg5MnZPLV9QNTFpdXJaZDdHM25hMkplSDYwU2RYMDBXNXV5ajFIUl9OUl9xRl9BUWl3UTBXcGYwWGl3TmQ5WDlnR2dLdGpoOWM0S0VsZ2JoeXFGTWphQ1BSMkFfOXJfYm1kckNIV0RQZy05VXk5Y2dvQ1VESTFwSGRJR1ZnRTAyVFFDMGY1a2JOU0JpQVlvdmpmRzJsX01WU1dPNlhORFg2UTdPelZZVGhLenpiWEdKNnhubHJxUWR5STEzMk1oOGtub3oxN204RzJ3?oc=5"
+     },
+     {
+      "title": "Central Depository Services (India) Ltd Share Price Today,, CDSL Share Price NSE, BSE - Business Today",
+      "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxNSEJNX0RncktITlc0U0ZFWFVFQmhSSGlqNjFDQUlOWnRnWnczUllYcTllSGZhMHRQYVFHcXVHdEp3MGc4MVI2dnh5ZEo2bmplcm80TEJKUDd0ZE0wSW5YTnVzUWhxeGlDWUtuU2hLeE9pZFJyOGk3SF9DZmh3QlJnMlVoYTdaY0lTYkY4YjRsalVoU2V2ajFKMV9ZLUJldw?oc=5"
+     },
+     {
+      "title": "CAMS accepts Kaushik Narayan Badri's resignation as Fintuple CEO - scanx.trade",
+      "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxNc2I0a1lvS2dyTUlsWUhsM19GYTYzbGlJZFJ2UlB2ZGNXd2ZpdjBibE5tZDBlN18wanBQOG9RbkhDTENMN2hYMlRabkRocDh1MEduX1VtZzVGXzFJZlZ0cHk4SVJObFFnSnItdkJFTjJLN2l4U3c5UXJ5b0VZQjZKRFpQV3ZnbmdaY2VyZVlGd29EUEZIUjRpTlRTNDNabEotODNxMFdRVUN6ajZlZlNESjdwWTdRNFBuR2VQNC1R?oc=5"
+     },
+     {
+      "title": "Central Depository Services (India) Limited (CDSL.NS) stock price, news, quote and history - Yahoo Finance Singapore",
+      "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE9MUVpwdUc1Mm1waWZNNXpqMzZXQnJ0UTRGc0ZFNTdLQ3VFaUdJSzg2SUhMZzNiQWZKbHQ0WThCZ2k3NTYwVHM0QnBrbHB1djZXYzNjUmh3?oc=5"
+     }
+    ],
+    "red": [],
+    "watch": [],
+    "checked": true
+   }
+  },
+  {
+   "symbol": "CAPLIPOINT",
+   "name": "Caplin Point Laboratories Limited",
+   "sector": "Healthcare",
+   "industry": "Drug Manufacturers - Specialty & Generic",
+   "price": 2467.1,
+   "mcap_cr": 18752.8462336,
+   "eps": 84.13,
+   "book_value": 462.024,
+   "pe": 29.324856,
+   "pb": 5.339766,
+   "roe": 19.939,
+   "roa": 11.858,
+   "opm": 30.898002,
+   "npm": 29.318002,
+   "de": 0.00127,
+   "rev_growth": 19.0,
+   "eps_growth": 19.400000000000002,
+   "div_yield": 0.32,
+   "cash_conv": 0.8159659296919033,
+   "pos_in_3y_range": 0.9158413733976557,
+   "scores": {
+    "total": 65.6,
+    "quality": 76.5,
+    "value": 41.2,
+    "growth": 86.3,
+    "coverage": 100,
+    "detail": {
+     "quality": [
+      {
+       "factor": "Return on equity",
+       "score": 66,
+       "weight": 30
+      },
+      {
+       "factor": "Return on assets",
+       "score": 74,
+       "weight": 15
+      },
+      {
+       "factor": "Operating margin",
+       "score": 100,
+       "weight": 15
+      },
+      {
+       "factor": "Low debt",
+       "score": 100,
+       "weight": 20
+      },
+      {
+       "factor": "Profit converts to cash",
+       "score": 53,
+       "weight": 20
+      }
+     ],
+     "value": [
+      {
+       "factor": "Earnings yield",
+       "score": 20,
+       "weight": 35
+      },
+      {
+       "factor": "Price to book",
+       "score": 38,
+       "weight": 20
+      },
+      {
+       "factor": "P/E vs sector median",
+       "score": 86,
+       "weight": 30
+      },
+      {
+       "factor": "Position in 3-year range",
+       "score": 4,
+       "weight": 15
+      }
+     ],
+     "growth": [
+      {
+       "factor": "Revenue growth",
+       "score": 95,
+       "weight": 50
+      },
+      {
+       "factor": "Earnings growth",
+       "score": 78,
+       "weight": 50
+      }
+     ]
+    }
+   },
+   "sector_median_pe": 39.8,
+   "news": {
+    "headlines": [
+     {
+      "title": "Weekly Top Picks: These stocks scored 10 on 10 on Stock Reports Plus - The Economic Times",
+      "url": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxOZ2RIYWgwU3hvRUhVVDd4eU1BMlY5RTh6Q3BOR0F5R0JJdnpWbmcybmZmYlZtOWtaMGJyT3VSYVpJNnBYVVo4c19TdTZhdHBBOGhxZndKOWNoRFZIOWRIS2VTeURhY19tei1HSHF0NjJzbWUxdnlQZEh3YktJOHhCeXc2M1p5V0hsbEFHYXlFTy1sY1Z6OWZ4dzMyQ2s4VG1JT0xLcjN6ZTkxMjB4ZnVCS3RjYk1NRXNEcG1FMl9NOU5BbDFqS3dfWk9sMkJ1WUFkRTBxbGYtdznSAd4BQVVfeXFMUFI2X3RoeHI4Wk45a1NqemFrOU02RG91amhhOTk4ejlWZHVnLUc3Y1JfMExFZGp6TFdRMUdoYW5POFNOVzl2Vk5ZRjZpbGtxWkVKcG96cjBaV3NnQWtRSzZwbmt4SndhazNQVU1ySHBaazFRZlotSzNWREgybGVCQTBHdkRZNlliSWo3d2d6cXFVN0tHemVMbVVueXNUVmtkSmdPZllzeS1tb0ExUUpPbmVSWjkyTFp1bVktN0lFTzNDSE9sd1ZMWWNCZC1mdjFWaHA3WVYwODgzeUdtNVNB?oc=5"
+     },
+     {
+      "title": "Top 14 Pharma Stocks To Buy In India July 2026 - Samco",
+      "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxNSmxaNUxpT2wtdzdBOEMwZ18tbzhmM3NVOXN1RXlaTy1wR1N2SmZRb0RKSlZPSUpvRnhxaTlHQnBpYXV5X2RhNHNlYnEtYjctblphSkpUbWJHRDRoRWZwY3ZXMmMwRlBYZWR2TFhMcUhHU0lOd19VVmY4a0pxYUF2djNyOWp0TE9Rc0E?oc=5"
+     },
+     {
+      "title": "Caplin Point Laboratories Ltd Sees Technical Momentum Shift Amid Mixed Indicator Signals - MarketsMojo",
+      "url": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxOZ2Y5NkdvdWIxNGxwR3h6akdqdm44aERoMkg3M3hUdWJnTkE3TFYzYnVqSEVRczVBa29vUllpYjhVN2JJM0ljVVBvQ0ZOVzR3SEVFR1dWdlppdWhxeVR5Z3RqQUdONmIyMVhadExUVmpIQ1dZckc1REZXY3E1T1kxR1M0SWJ0Q0lDc1hDTF84MUJoeTNKcHNoQmlGcXpZSzFVc2E3V3VOSm94VG1hZVI0OWtHa0pvaGxWcHlwVWRDT0ZDU2wwdkpySG82RFJBYmEyOVR0ZWVGUlpKTEZZOXFB?oc=5"
+     }
+    ],
+    "red": [],
+    "watch": [],
+    "checked": true
+   }
+  },
+  {
+   "symbol": "COLPAL",
+   "name": "Colgate-Palmolive (India) Limited",
+   "sector": "Consumer Defensive",
+   "industry": "Household & Personal Products",
+   "price": 2086.1,
+   "mcap_cr": 56738.9257728,
+   "eps": 48.81,
+   "book_value": 58.242,
+   "pe": 42.739193,
+   "pb": 35.817795,
+   "roe": 81.593,
+   "roa": 33.598998,
+   "opm": 29.988,
+   "npm": 21.959999,
+   "de": 0.02993,
+   "rev_growth": 9.1,
+   "eps_growth": -0.5,
+   "div_yield": 2.3,
+   "cash_conv": 1.3629264252291677,
+   "pos_in_3y_range": 0.15404114355385062,
+   "scores": {
+    "total": 65.3,
+    "quality": 99.5,
+    "value": 34.6,
+    "growth": 22.7,
+    "coverage": 100,
+    "detail": {
+     "quality": [
+      {
+       "factor": "Return on equity",
+       "score": 100,
+       "weight": 30
+      },
+      {
+       "factor": "Return on assets",
+       "score": 100,
+       "weight": 15
+      },
+      {
+       "factor": "Operating margin",
+       "score": 100,
+       "weight": 15
+      },
+      {
+       "factor": "Low debt",
+       "score": 98,
+       "weight": 20
+      },
+      {
+       "factor": "Profit converts to cash",
+       "score": 100,
+       "weight": 20
+      }
+     ],
+     "value": [
+      {
+       "factor": "Earnings yield",
+       "score": 5,
+       "weight": 35
+      },
+      {
+       "factor": "Price to book",
+       "score": 0,
+       "weight": 20
+      },
+      {
+       "factor": "P/E vs sector median",
+       "score": 60,
+       "weight": 30
+      },
+      {
+       "factor": "Position in 3-year range",
+       "score": 99,
+       "weight": 15
+      }
+     ],
+     "growth": [
+      {
+       "factor": "Revenue growth",
+       "score": 45,
+       "weight": 50
+      },
+      {
+       "factor": "Earnings growth",
+       "score": 0,
+       "weight": 50
+      }
+     ]
+    }
+   },
+   "sector_median_pe": 42.7,
+   "news": {
+    "headlines": [
+     {
+      "title": "Stock to buy today: Colgate Palmolive (India) (₹2,041.95) - BusinessLine",
+      "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxNR3pWX21wcTBmSWJGa2NOMlVKVWpBbFE2aEFfZEUxVFJ1akVHTjVnSnJDVi1kZWQydl92TUxZRDFRQTVFd0h5WDcwdERxQzdFX1pzM3JzLVExNUJnWm5kaGM3MktYdFZkZW9vZWlHN3hmMDdmUU9yOXRDc21ERlhmeE5tQWdXRTM0TVE0c09vQmJzTk9KcHluMTlKTWY1dFp3Sll1ZFFGNVh5cGFVX0lxaDFYYWtxU0xVdGFReTh1Um9qVXR3bXphcGN6ZERIT0nSAdYBQVVfeXFMT2pzZlFXUl95ZXZpdm1Dam54SnQzWlR3b1FnX0tud2dDaGxpcWkxampiTUVZVGVuVXdkVHFoNno2MnRrNVozVmZtRmxZcTFINUdVcWNVZlBoNEVVRG1BZzBnQlN1eUREMnNsc3NmTVc0MW16ZnFaN3RwZFRWbzBxWXIwMzE0aEtUQ0dnNFRUazBvTmQzRnZiM1JlUHUzY1pWUHNMczctSE92UkE1RW9WdGJXNm9YV3hjc2p5bDNPRWY4NTZFVk94RU5vcXNDM0dJYnh3UFhLZw?oc=5"
+     },
+     {
+      "title": "Colgate stock trades steadily as latest earnings and margin trends shape investor expectations - AD HOC NEWS",
+      "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxPV3U2VXBTclRWYkZraDA2QVN1VUlXWmV2LUYxalNUdl9zazhieHZMeXVVdU05UUVHUXFwOWZZVFNiblUzVE8tR2FhNEZFQ3ZXLWhIMUdBUWVySElsdHMtbU4wQmVrcUxPN3NQaWctckVtSllhTE80dWFVLVdBY2MyRDlGUkxzZGE2dGhzLUtaN3RMcmVaMWlHbExPcGZNQ3RqalpFay0welFrd2FZZGFFTWVUX21mVkFCYklfdjN0V2tlSFFlWlQydU0yVQ?oc=5"
+     },
+     {
+      "title": "Colgate-Palmolive India Ltd PE Option | ₹1920 Strike Price | 25-08-2026 Expiry - India Infoline",
+      "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxQbFFKRUlFSTNZWXo2TWlZQnMycEt2NE83cGN1WTdubC01cVF3RVJodHBUdDU2M2o4RTRGRThObVM2MDAyckpIX3o3YS1TMTRNOWxRWDZ1Vi1jd3pTRGF1b2pVSndEaEtEd0xPRU50cmU1dnRPTjFHTU1LUFZUVTR4SkgzQ3N3ME5nSGswMFJtbUlXMjdra19N?oc=5"
+     },
+     {
+      "title": "Colgate-Palmolive (India) - Union Bank of India among 7 stocks flashing bullish signals, hinting at a possible uptrend - The Economic Times",
+      "url": "https://news.google.com/rss/articles/CBMikwJBVV95cUxQTk13OFFCWk11UGxHZEtyR0U5cUV4QkMxNTR3MUU4SnRlMHFmVmJmcC1yeWx0N0R4ZUMxYTlpeEVDTUEyb2RzdlZxelI4TEcyRFNBczFkTGk1Y0JxRHhmZzVpcS1HUlNOaHBUb1EwbmxNc0dMa0hnVzExdG05a0R6OERKZ3RvVDJ6YVpSdGRuYjBpYmpuOVpRRHZ1eG9vaGE3MktnUXE3S0twLWRCcGFkZjVLTEI5ZzlLSjA3MEEyQ3V5WUJXVUcwazc4bmdsM1N4clBQWm5Hazl2dEROVHp1QkJsY1FGSVZ0SldXZzVGZm5jWVZJWmlsY3M5ODlDU0xNSW1hOWlYRi1oRW5vMEh2UEtwSQ?oc=5"
+     },
+     {
+      "title": "Top gainers and losers, July 20: Axis Bank, HDFC Bank shares drop over 5%, Trent up 3%; check full list - Upstox",
+      "url": "https://news.google.com/rss/articles/CBMi6wFBVV95cUxOZWJIVFpmSWF6U3d5SDJfNUVNdDBZSlJVb3NLTTRnZEZhQUJNa1RBYUJVZGxXZmxlVkhuVHJONzVaZTEzeU4xaXB3X0l1aUFXbVJpRGFsaTU0NFdUOW9QNjcwYWw4VlZuU3VNQ2daTGdpVk5rUmFuU0ZPTERwMU5VUXhfZW5RSkxqZXR3RjdCeXNONzB5bzVyVEE1S0ZHYTNnU01UeDNFbzlZZ1lMZ0N6N1BMTFJNYy1mZ01RdTJjdkU2NXRLR0taUVg4NG1BbjhjdnlLZkRRcE1oV1RnQVJzSWYzN3FsaFQ4OEdn?oc=5"
+     },
+     {
+      "title": "BSE 100 Indices - BSE 100 Share/Stock Price LIVE Today - livemint.com",
+      "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE1nSXl5U3RzM3ZZa3hXTndIZVlqSERKRU9HeVZUeVhlU0dVVEo1SlQ0aWs1d3ZDSGlGWU1hZHkwVnpXSXVvR2JSMmlKVzlocG1meHVpVkJxNk1LSEc3Q2p5cS0zSHJyUQ?oc=5"
+     }
+    ],
+    "red": [],
+    "watch": [
+     {
+      "keyword": "strike",
+      "headline": "Colgate-Palmolive India Ltd PE Option | ₹1920 Strike Price | 25-08-2026 Expiry - India Infoline",
+      "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxQbFFKRUlFSTNZWXo2TWlZQnMycEt2NE83cGN1WTdubC01cVF3RVJodHBUdDU2M2o4RTRGRThObVM2MDAyckpIX3o3YS1TMTRNOWxRWDZ1Vi1jd3pTRGF1b2pVSndEaEtEd0xPRU50cmU1dnRPTjFHTU1LUFZUVTR4SkgzQ3N3ME5nSGswMFJtbUlXMjdra19N?oc=5"
+     }
+    ],
+    "checked": true
+   }
+  },
+  {
+   "symbol": "BAYERCROP",
+   "name": "Bayer CropScience Limited",
+   "sector": "Basic Materials",
+   "industry": "Agricultural Inputs",
+   "price": 4217.5,
+   "mcap_cr": 18954.3268352,
+   "eps": 153.52,
+   "book_value": 659.894,
+   "pe": 27.47199,
+   "pb": 6.391178,
+   "roe": 23.7,
+   "roa": 8.9090005,
+   "opm": 15.053000999999998,
+   "npm": 12.144,
+   "de": 0.02758,
+   "rev_growth": 5.1,
+   "eps_growth": 13.100000000000001,
+   "div_yield": 3.56,
+   "cash_conv": 1.5648578130290771,
+   "pos_in_3y_range": 0.05193897098123498,
+   "scores": {
+    "total": 64.0,
+    "quality": 80.5,
+    "value": 51.1,
+    "growth": 39.0,
+    "coverage": 100,
+    "detail": {
+     "quality": [
+      {
+       "factor": "Return on equity",
+       "score": 91,
+       "weight": 30
+      },
+      {
+       "factor": "Return on assets",
+       "score": 49,
+       "weight": 15
+      },
+      {
+       "factor": "Operating margin",
+       "score": 41,
+       "weight": 15
+      },
+      {
+       "factor": "Low debt",
+       "score": 98,
+       "weight": 20
+      },
+      {
+       "factor": "Profit converts to cash",
+       "score": 100,
+       "weight": 20
+      }
+     ],
+     "value": [
+      {
+       "factor": "Earnings yield",
+       "score": 23,
+       "weight": 35
+      },
+      {
+       "factor": "Price to book",
+       "score": 23,
+       "weight": 20
+      },
+      {
+       "factor": "P/E vs sector median",
+       "score": 78,
+       "weight": 30
+      },
+      {
+       "factor": "Position in 3-year range",
+       "score": 100,
+       "weight": 15
+      }
+     ],
+     "growth": [
+      {
+       "factor": "Revenue growth",
+       "score": 26,
+       "weight": 50
+      },
+      {
+       "factor": "Earnings growth",
+       "score": 52,
+       "weight": 50
+      }
+     ]
+    }
+   },
+   "sector_median_pe": 33.3,
+   "news": {
+    "headlines": [
+     {
+      "title": "Bayer CropScience declares ₹150 dividend for FY26 - scanx.trade",
+      "url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxQVjM3Tk1tMnRsbFFGWGRMdEY5UEJxYmFPc05CYS1lOGQ5MFhweFNpQ2ltTDFCQkd5UlJ5ZHBNVXYwXzhPU0puQzNKYUotU052OUVwZTVaWE1kd2dRUENOY1l6WmFRLUg2NG5tVm1IVGRUa0xpa0lCVEQ2ZnNSZXNLa21haEVpbks0RWExYzlCWkFYMGdqOE5TSkxSUnhBZTN3V082Tks0b2szeXVGNVdVTGJHNXdMUTN6MzA2aVBXcmlVbjBlbFlYREIwNTE4TW5fRlE?oc=5"
+     },
+     {
+      "title": "Bayer AG Acquires 53,54,030 Shares from Bayer CropScience AG in Inter-Se Promoter Transfer - scanx.trade",
+      "url": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxOS1gwUEF4cWdfTmFqdjZ6bTRvRk1HamxzbWJyZ0Z4UkxZZXNlQm5RQ0p4RDhiUjN1X09zVU9PdzZnRjczX2Y5aWFKOWVTa1lIRW1PQmttZFU1SjAzeEIzVG1MNnhtTzhFQnV6cHFiWGlneEdxTmZac0dfa2FwNjd5RlJ0WjlEaEx4b2M3aGJuOWlVZ1k1dHdDTUxraFVXNDk3UF9NU3U4ak1Rb1IzdEk2MmVkeWwzNVV2WEhlXzFDc1oyRFlsQlVOb1gwM3VCZmU1VTRISVVRZWk4YkNURXUxRw?oc=5"
+     },
+     {
+      "title": "Bayer CropScience Q4 FY26 results: net profit rises 13% as total income increases - Goodreturns",
+      "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxNbkdtYkVBYkhuV0RVc3VydmRoczBIWjY1ZVZmMEpnWU5ZdzhuRFRtd3hneEZHMUxLeHAtQkNNekFDN19WYUp3cEVnU0wtRXh0bXIwYmUzRFBHUThCY0dlZjhoMDlEYlNKM3NqelJqN0RDT1g2MENQYjdqVDd3UWpkZnE4Tl9JYlkyTGtaXzFCcGJSLWJSYWNoTEFfQWRhdDIzRGpONnR3Zzh0b0k3ZENfTHdwQTdFOThzUF9GVnJn?oc=5"
+     },
+     {
+      "title": "Bayer stock trades steady as crop science and pharmaceuticals drive mixed earnings picture - AD HOC NEWS",
+      "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxOdUZKN045NHY3bGNISW5EMWlzcy1sTlAxei1fNTNkVWZQakEzYlAyXzNhYWNVSnIzRmNYQVQxN3kzQWhUZ0pBVk41MFA1dUU5U2hud1N0Z2RhSzIxdzBlTHlLVXJ0Z29nNzlnekd3b1NIYW9JX19MYkQ2aWR5aFFlS1BnRzVNRk9aM1gzN0NJODRBSEhUTWQ1UlhkMm1jd3lFSXZ1eXRfNHNfbGh2WFJsQ09wQlVveVFlVzZVYXlCdk9LRHdPX1UwMGV1SUc?oc=5"
+     },
+     {
+      "title": "PHYSICSWALLAH LIMITED Share Price - Live NSE: PWL Stock Price &amp; Chart - Upstox",
+      "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE5heDNtWlVUVDZ6LUdZZ0g3TUhNdzdTcWQzQzBka1FBSk9XRkdhcC01dlVNM0FJdWFWYXF0ckJ4T2wxTkxZc0FYZGNRWk04OVM5eUdpbkxPVDNmMVlqbXlDQ0pVUmRWMTFfUHo3Qw?oc=5"
+     },
+     {
+      "title": "Bayer stock trades steady as crop science and pharma drive mixed earnings picture - AD HOC NEWS",
+      "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxQSG9XbFBNZE10WTVTVnkxMktodXdqOHl0dW5zdFhpWHREXy1JV1Z4alBvTzVHUUlhSUVCLVMtdEdyczBCWU9kZFVxQXFtR0lyWk1Jd05kV1hVd3VQM0xIRmh6ZGNHd1A4cy1Zb0FyclgwRXhSREdWZWExX2NyeE1iNGNEMW0xdWlwN21fUHA0TFNIWHlvcUhDYW5ZV3ZXOERnV3VXRzBqNnB1a3IxRXZ4azRiSG5TVEg1V3BIZHdjd0JzWjhBc2tXekxQajU?oc=5"
+     }
+    ],
+    "red": [],
+    "watch": [],
+    "checked": true
+   }
+  },
+  {
+   "symbol": "CONCOR",
+   "name": "Container Corporation of India Limited",
+   "sector": "Industrials",
+   "industry": "Railroads",
+   "price": 477.55,
+   "mcap_cr": 36371.0644224,
+   "eps": 16.38,
+   "book_value": 169.932,
+   "pe": 29.154457,
+   "pb": 2.8102415,
+   "roe": null,
+   "roa": null,
+   "opm": 16.927,
+   "npm": 13.685,
+   "de": 0.0739,
+   "rev_growth": 4.3,
+   "eps_growth": 0.6,
+   "div_yield": 2.85,
+   "cash_conv": null,
+   "pos_in_3y_range": 0.05891167272419916,
+   "scores": {
+    "total": 63.3,
+    "quality": 76.1,
+    "value": 67.0,
+    "growth": 11.9,
+    "coverage": 68,
+    "detail": {
+     "quality": [
+      {
+       "factor": "Return on equity",
+       "score": null,
+       "weight": 30
+      },
+      {
+       "factor": "Return on assets",
+       "score": null,
+       "weight": 15
+      },
+      {
+       "factor": "Operating margin",
+       "score": 53,
+       "weight": 15
+      },
+      {
+       "factor": "Low debt",
+       "score": 94,
+       "weight": 20
+      },
+      {
+       "factor": "Profit converts to cash",
+       "score": null,
+       "weight": 20
+      }
+     ],
+     "value": [
+      {
+       "factor": "Earnings yield",
+       "score": 20,
+       "weight": 35
+      },
+      {
+       "factor": "Price to book",
+       "score": 74,
+       "weight": 20
+      },
+      {
+       "factor": "P/E vs sector median",
+       "score": 100,
+       "weight": 30
+      },
+      {
+       "factor": "Position in 3-year range",
+       "score": 100,
+       "weight": 15
+      }
+     ],
+     "growth": [
+      {
+       "factor": "Revenue growth",
+       "score": 22,
+       "weight": 50
+      },
+      {
+       "factor": "Earnings growth",
+       "score": 2,
+       "weight": 50
+      }
+     ]
+    }
+   },
+   "sector_median_pe": 48.8,
+   "news": {
+    "headlines": [
+     {
+      "title": "CONCOR Share Price Today - Container Corporation of India on NSE/BSE - scanx.trade",
+      "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE1yazhUMklheWJrYkIzeUFlMEVaS1cydTRhaDE4VUFIeVlMRjBIRXlGdnJ6am1SdUdKS1pMZi1xdGpBbTVZRW5PaVlQTmJCVUp4eTlJcHpVVWxLcFhqMmdjY2Etai1uMHFJQ21qQkYwNA?oc=5"
+     },
+     {
+      "title": "CONCOR Q1 net profit flat at ₹267 crore as revenue stays muted; declares ₹1.60 dividend - CNBC TV18",
+      "url": "https://news.google.com/rss/articles/CBMi6gFBVV95cUxPekJLVmlPZTlQVWdPOTU1T2FSSWFsNUlxdGtOYVFpZ1pxX0tad2pyUkdkZER6RUsyelZyQi12NVZXTm9OTFQ1QnBJWWVtTnpJOXZHNGRLbU13RFFsX1JYcHN3LWQzanJsT25paFhtc0QxNWhySGdOR2tvYjAwbzBEMDhUaW1KQlJRcTZEbE5qRWNyTV9tX2taMllxbU16Ni14LUhLX2o4Vnc0Qm0zV21aYXBkOHlYdldwMmJoY1FXU09mS1g5ZFpGaFhsVUE4TUMyMTdwMHN1OVFnQ3o5RGNOb2hkWVVYMVkySXfSAe8BQVVfeXFMTjJfSzZrdC10OHJtcUpKX3pvNmV0ckRVbnBYS0FCOUpSTFdObGNPQWVzLWxWanVIX0M4NzZwTmNNTm9pU3JQRmZJbk1RcFF0MzlWdG0tWnJhempCZEdueUNXc2RVRVZidVRmekMxZ2JDWERmdHI1VEFlOV93TVlCZE1COEFSeE9URm1WQkxRMHk0RTd6T1AyYlF3aEVJN09HUjRTUGUtVjBldjhWbWs2Zi1iUTAxUmNkWkRhSGFjR1FtVVZTMW96MDhUckRUeXRxSnVTZkdCbHBIUWRHMU5fbl93X0FaMlVsQW84dFkxZ1U?oc=5"
+     },
+     {
+      "title": "CONCOR: Stable revenue and profit, interim dividend declared, and bonus shares issued; LLF uncertainty remains - TradingView",
+      "url": "https://news.google.com/rss/articles/CBMimAJBVV95cUxPUnhBVVBPWHpjd0NPbHJvWFZxRzlISFpMTV94SVJlU2FFUmNMX0IwNzlLRF9vZ3hOclBEOHFNX1YwaC1BdGJLOGQzbVRHMHJXdjNIY3VROS1GQ1NTVWxlSHJQeUY4dGZFa2VoNE1RVVBlSHk0OFFFNEthZlFGTFVHX0xQWXFNOHF1ejdpbzVuTFhGLW94dUk0NldNbXRrdGNUN0dfaWphbGNIRVZ3U0pWMzZ6aVpSc0VGVE9ubEpGd3pHU194dklMSFZBQ2pTNGNRMnVnY010clFCRkxkdlM4VGs0S1BDS0daUHBFMkFVbWZHWkdTemhCWHd4T3BjQ3hIdUdjZUI0SUZkaERiQlNfOEJkTEdId1F0?oc=5"
+     },
+     {
+      "title": "Container Corporation of India Limited Reports Earnings Results for the First Quarter Ended June 30, 2026 - marketscreener.com",
+      "url": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxNd1J3WmRWOWxDdkFoZGRsSTFVc05BZmxFTGVCOEZ1Z1pRSnBuVEZRcTVycWs5SHlRS2tIWFNORkdtYmRYTmYzdlNsWGN5SUJybGFhTUZJM3BWbkV5bm5DRU9UX190UWI4bVRrRGVmZlFHTXdSNW1RdThQeTRzelBkTm43NUVlTUlucDVXR3dDZFlocXdoWWpCSFJFak5qVHVlSVBFZ2N4X1M0ZVlZelZIWXJLSVphclJRSjRSQWs0bE0wSngtcThvTTBMam1vYzlmblllOUVSWjBjb1FDUzY0TnBFQ3FvYjA?oc=5"
+     },
+     {
+      "title": "Concor Q1 Results: Profit, Revenue Stay Flat; Dividend Declared — Check Record Date, Payout Details - NDTV Profit",
+      "url": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxNQnpmd0JyRXNiQ3FaYU1JVUpTNF9MQm9yZlQ4QTQ0QmoyaERPUXcybE9XUkszV1NFWVZiTEdKVld1dHpzUVlwSVR6VWJIRlpwbG1Oay1Lb196RVNMdXRVLS1vdGFFeFg3enlVc1F0VWx4NUNrbXk4ZkxrWHhoYm5jQ25CQ2JKRmllWU9WcGZCalZfZTBsbFo0QmZHUWxQRzNsb0tWVW0yY3l6cU9FMmQ1Rm9CX0dhRmpuMUxxQndzd2NuUlFJcmUwTngydXp2V2JvQVBVQkhHSXNxQ3hwXzFmNTg0ZEhkNm_SAe8BQVVfeXFMT1pVRmpJYkdSaU9lTkZZY3BlcmRleW84V2FDcEVCOWQxeVpzUHc2LWxkSXhmMGJnc1BZdndqelZnWnFvZFUyaVVJV1o4aGFJM21RLUFqQWo3RE9vVUl5NkF6MVM4TTh4QVFlRkI1NFE3UTRNSm14bjJhdzhRLTgtbTczT3NVd1ZkUzd5T1RaWnFROXoyTWpYcG8xVjJwU0tTTVl3WDhXaTczQ3JOX2dwTTFCYlJ6cm4xMFZnOVl6NWk5NVFkOWxURWRCanpwdFlLblU0SkxZNTFlMzF2d1pTRl9HSTFwWnZOMHFqWnNocWM?oc=5"
+     },
+     {
+      "title": "CONCOR Q1 FY27 net profit flat at ₹267 crore - Indiatimes",
+      "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxOVGExRU5oNTNDQkVjTjFhUm01Z1hBMXZkSkUwWC1JSUJqYWdfbXUtRUI1djN1NkZVV2JoQjdWa1RXUUtENGxZWnJKc1lZb3Z2NmdpLXZ6OUY0clBCVjZGYkJLOWRuUDZ3QzctNF9nQ3Q5QWlKYTEyZTk3bEFCbkw5MVoyWEQzUnpISTVIS01tV1NSNmdPT3IxNG1Wc3VKazEyYXNrMFlsdlo5YWRyV1hzN3FTN0NIS081TjR3N9IBwgFBVV95cUxOMjcxWUhILUxLcEVvM19wbTZ6R0JvZHlDWHN4V0dpcEEwT3pVX2dZeEk4NmNrRm9kS3Zvak00M3hmWWo5QkZleG9xbG93VGE5U0pJZGZzaXkwZS1KMkdDc0JYdDByeERKVmxMNDFKR3YyUmlzU18wVTIyZFI3a2hjTmh3QzZZMjJLb3BISmd3VEZPY19zM0VtOEIzaE5XOTllOXktZ1VYTTAzYjdoNTQxNnVqejdLeUx0bkpzblBxU0tOdw?oc=5"
+     }
+    ],
+    "red": [],
+    "watch": [],
+    "checked": true
+   }
+  },
+  {
+   "symbol": "ARE&M",
+   "name": "Amara Raja Energy & Mobility Limited",
+   "sector": "Industrials",
+   "industry": "Electrical Equipment & Parts",
+   "price": 872.9,
+   "mcap_cr": 15976.28416,
+   "eps": 48.97,
+   "book_value": 442.505,
+   "pe": 17.8252,
+   "pb": 1.9726331,
+   "roe": 11.567,
+   "roa": 5.1909998,
+   "opm": 6.669,
+   "npm": 6.485,
+   "de": 0.05015,
+   "rev_growth": 15.5,
+   "eps_growth": 94.5,
+   "div_yield": 1.21,
+   "cash_conv": 1.24841199238113,
+   "pos_in_3y_range": 0.25534956087339555,
+   "scores": {
+    "total": 63.2,
+    "quality": 45.0,
+    "value": 78.3,
+    "growth": 88.8,
+    "coverage": 100,
+    "detail": {
+     "quality": [
+      {
+       "factor": "Return on equity",
+       "score": 10,
+       "weight": 30
+      },
+      {
+       "factor": "Return on assets",
+       "score": 18,
+       "weight": 15
+      },
+      {
+       "factor": "Operating margin",
+       "score": 0,
+       "weight": 15
+      },
+      {
+       "factor": "Low debt",
+       "score": 96,
+       "weight": 20
+      },
+      {
+       "factor": "Profit converts to cash",
+       "score": 100,
+       "weight": 20
+      }
+     ],
+     "value": [
+      {
+       "factor": "Earnings yield",
+       "score": 52,
+       "weight": 35
+      },
+      {
+       "factor": "Price to book",
+       "score": 86,
+       "weight": 20
+      },
+      {
+       "factor": "P/E vs sector median",
+       "score": 100,
+       "weight": 30
+      },
+      {
+       "factor": "Position in 3-year range",
+       "score": 87,
+       "weight": 15
+      }
+     ],
+     "growth": [
+      {
+       "factor": "Revenue growth",
+       "score": 78,
+       "weight": 50
+      },
+      {
+       "factor": "Earnings growth",
+       "score": 100,
+       "weight": 50
+      }
+     ]
+    }
+   },
+   "sector_median_pe": 48.8,
+   "news": {
+    "headlines": [
+     {
+      "title": "Amara Raja Energy &amp; Mobility Releases FY26 Integrated Annual Report; Consolidated Revenue at ₹13,814 Crore - scanx.trade",
+      "url": "https://news.google.com/rss/articles/CBMi9gFBVV95cUxORFY0NFdHZ3A0b2FNVEZqYzF4eEh0dnd1bGlYM0tkekV0LTd3TGdkTEFHZVhoX2FJOF9pa0tmTlpibGVJTDFIUW5ZOVBxbktzZFFPUmFuczdySEZpY0phLU5WaVJGOVFILVc2eG1Qc0tYQjRUX3pZNlQ4d1JGR0pod2FadTZ2STNUN05la3F3UFBzdUdtREp4NW1CNmQ3aXYwOW5WckxYUnJhWWRlcEk0NEtSVUpqaVB1bVU3NE1qdlhkTFg2MlEyUFlVQnlpdHpVWnl1VTRfS1FpcVJMaUlvTjE0bkY1M2dfbHczeExQcEg5eWpSZUE?oc=5"
+     },
+     {
+      "title": "Tata Capital, Wipro, Crisil, DLF, Persistent Systems, Amara Raja, Deepak Nitrite Dividend Record Date: Last Day To Buy Shares To Qualify - NDTV Profit",
+      "url": "https://news.google.com/rss/articles/CBMigwJBVV95cUxPa0VYbWg1aURuLTJDVlpiRDh4UWpRZkJPQjMxWktfeHl2bzdubWFFTktRZl9naklIMmRSQmxIcDl5UEFRTHdka0EwcjRGNVdLSTlGSlo4TTRHYnVZZGk0N3NPSXRHVDdhaGVmZGtMTWJDa0lEdGdud195VGZvWWZRektib1ZjbmNpU01YZFNtdmhZelpsUWdpN2s1ZW8tMXJPVlBSNVYzTmdKN3BtQ044SDgtdlFCM2tZZThmdHBPTGo0ZjFKTGF0RDBMQjVwMXVoTmpCU2ZVbjVBSHk2d1F3MmZxWUEtQlY2WU84Q2Naa0lENUdvaDB6SlpWZ0Z5cVR0V3R30gGLAkFVX3lxTE9aZHhGOWhqQzltUThqWjBWVmk4dEswV3hHUTlhSzVseEhiT0lmdldJaV9QWm9vY0dneGM3TFpkeGVaZi1VM3J2anllQXJkbDFseVRST3JqMU5nd1ZySXB0S2cxX3ZKeTJWWkRuYzRsN0FaVHJRdTJZcWlOLWc2OVN4MzlMM1BHMGNMU0FDck41d2pxd2tKUjRBTFZBblZORmVKS3VWQXVBM0JYWjhmY3dvX25MOEpqQy05a203dWlXRExwcVMzM25zRXBORzdNakZMUjM3MXI5Qk9PbDItS3JNSmtZcVlIZW1JcE9mcHdxT1RLelRieTNtTEpoSWZfMi14cXJnYVBmSzFJNA?oc=5"
+     },
+     {
+      "title": "Unexpected gainer of trouble in the Gulf? 13 stocks from backend of the EV shift, with upside potential of - The Economic Times",
+      "url": "https://news.google.com/rss/articles/CBMilgJBVV95cUxNOURCQ0JLM1pEMy01bDhRci0tX3ZhOEptX2FpSy1telBJUVl0Y0hRSXpZWjFCUGJUamUyakxCbV9xN1dySFk5OTRWdTVYM0VTVXg0d3BZNkNfU01jZ19ISzMyMzBoRV9NTnBoY2JWTngxTkFGSU9uQ01ycDA3Sm5VTjlDTjBJQlNsRXA2aEVGZ202a3F2UV9xZUtSRTVaUHdEMGlrMkpwRjY1SjJxQWxhSHo0SHhyZlB3YTFIRl8tRTRSRlhNSFlIbU8yNFFFM3J0Z1ZmMnhsTjRFSjRsT0FuSlBScUVZejJfVkxObFNORGpqNEowdHhaQjlHdGppWEYyN2JkNkNFZ0JlVHdXTEdxZ2NPWlp3UdIBmwJBVV95cUxNcUEwRVN2amVnRHJycWpoLXdTR25aU2hrNUtRSHN6OGdNdVFWN3lrOVRjYmFuZG16M0lnNzZwaWt6bjJoSHQyYzZKOUZLbEZab2tycFZ0RXY2c0Uxc09WM1hmSzFPUHFrMEpqaVZRdW1SWW5wRHNrc0QteHFPZkVBMUhMMVlteEtYRjZBUmhta0FNcEZteXRUZUZYSTV4cGJxYzVMMGlIQTdFczcwYTlXSHpIemc3emt5LUVmTFNSdzJwZTRDZ0NBdW9BSWRzcTVrekg1bE1TVGxJLXA3LXNNUHAtYW54RnR2Y2V5QTh3UE03cW02c3ZnZndaY1dqeEszSUZvSTAwZmtVeTE5TXVYa3NIRm4wUDVUdTln?oc=5"
+     },
+     {
+      "title": "Upcoming dividend stocks, bonus issue this week: UltraTech, Persistent, Britannia, others in focus; check full list - Upstox",
+      "url": "https://news.google.com/rss/articles/CBMi_gFBVV95cUxQbHJVRzc0eWptcmktU2Fjck5CRjZGLTV3N05neTl2NkZPNUZXV2FYd1ZaN3pBWFBRNjBUdW9PWHU3ZE5sZkdqeDJCVlJKY3J5ODlHcHlibU5UU2ZJcHpKQ29UMGVSV2xBcEk5dWx1NlN1b2NwTnVUaE1xQVdhM0dLaEFqMmJGTkFkdWxRMHNGZjVuMkFIU3Y2dHRGM0ZYM013V3kweFEtVHF2RVh5dnVsZlRpclFUQW1MSThJaGNMTGZfZ1d2WDZlMnk2ZGRxNmdmUUw1UkhDSFN1LUVndjNycUpsU0RaSUxJUmRfVU5TUEZIUTUyUVZDck9hUUxnZw?oc=5"
+     },
+     {
+      "title": "Inside Amara Raja’s 60 MWh Customer Qualification Plant for Lithium-ion Cells - EVreporter",
+      "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxQRmI2XzlzQVNBMG9ENjBKTmVDMVJmY2o1MkctaTZhSHBzMGpIQUlRbG5wSHRoRmg1Q2diSVVtMkNQWHZKOUhfNkFsRFpGN2JWZG1DRk5ZSHIzZFNEOEpGU1RHU09LbkxKRkVubDJrcFowQUs1aXM3Mk51TG5PNTJxQlJwZ0R1S19fejltMjFWY2Z3cmR1c0J2bm5BTEYtRmdZVUE?oc=5"
+     },
+     {
+      "title": "IT stocks Persistent Systems, Wipro to turn ex-dividend next week; today last day to buy - Business Today",
+      "url": "https://news.google.com/rss/articles/CBMi6gFBVV95cUxON3NwZXZmMm9iQVNmczVQUmxjZjNiRHV3REEzR1hqVnRHVVV4S2VkVXdrQkdZN1N6bG1adnJSX2NzU09KVGNaOVJaU294bmlEcUp4LUNHaWF1eGZlVzBhN0M0X1ZBSUtVSzlhb0RiSVJQM2loaVRrTnh0blc0TjY5MHpvelNlVC1sRkhabWo0VzBLQzJGWEFlWDVPUW54eFk2NkFIaFBBSEtKc3BTbHlDTnV4N3BvdG9WelBtU1JRc1dMdkh5X2tfcGhJSGdRZmRwOWdRamVIX2ZENHM4cHZoYkZkZjVHMTM2VGfSAe8BQVVfeXFMT2VwSWxxOGhpSlZZXzl6dHh0V0pxRzZ4c0lldjRBS09wcW5sUVNVNndoa3lYdzd6amhabG5rWUItZFdvYzhhNWVOZmpXeHZhTXBOTk9hWWJNcXE1aGhBZ0xoTUdhQmpVMzI4ajRhS0dET3dUOGRkcFhJOXhNMEpTWEtuVVZrSVBVTUxLcWdsWFFaQkNnZmJkRU1vZDJPTTFvanNkaDJxUlZHNnVlMWhVUFVzSGRSaF9ZZU5UQTBSbFQ1S1FNbVhjeW1EdF8zeVphYlVOZEJqVUowNHZadkc1T2JTNWhLX01jVDQ5SWJCXzQ?oc=5"
+     }
+    ],
+    "red": [],
+    "watch": [
+     {
+      "keyword": "profit declines",
+      "headline": "Zen Technologies Q1 profit declines 28% YoY amid 189% surge in input costs for June quarter; stock in focus - Upstox",
+      "url": "https://news.google.com/rss/articles/CBMi9wFBVV95cUxPN3VTN0I3UHpaUVVVOEdkaW9GVWlPZUVLc1hGTjNuNGpTd3RHMUZacnYyYnY0SWQ5WWlGSEtpOGJxRUd5T1RmcjVQSWp0c1NiYUpzUHkxY1Y0R05OSlpybWp1TElaeGV2Ylp6TzFoQzNnV3RjQlhOcU1Pd20zbzlwdThJeDhaMmwwZURwUkRBMjFUOXhmUEx2MmVhY3QtMGtsWnRJRlpGN0l6RWpfYi01WVR3ZzBXYUVVNmFkczlmb3NWc3dLb0dianFNa3lfaTJ6alAxVm1pemFHXzhRN1BlUlJXVXVEaDM3bGhQWkhySHhDNnNoWXhB?oc=5"
+     }
+    ],
+    "checked": true
+   }
+  },
+  {
+   "symbol": "CHALET",
+   "name": "Chalet Hotels Limited",
+   "sector": "Consumer Cyclical",
+   "industry": "Lodging",
+   "price": 814.4,
+   "mcap_cr": 17834.8818432,
+   "eps": 29.48,
+   "book_value": 168.984,
+   "pe": 27.62551,
+   "pb": 4.8193917,
+   "roe": 19.131999999999998,
+   "roa": 8.327,
+   "opm": 36.835,
+   "npm": 23.291,
+   "de": 0.6404099999999999,
+   "rev_growth": 6.0,
+   "eps_growth": 31.3,
+   "div_yield": 0.25,
+   "cash_conv": 1.6537717111839607,
+   "pos_in_3y_range": 0.6131978668438808,
+   "scores": {
+    "total": 62.5,
+    "quality": 69.2,
+    "value": 51.7,
+    "growth": 65.0,
+    "coverage": 100,
+    "detail": {
+     "quality": [
+      {
+       "factor": "Return on equity",
+       "score": 61,
+       "weight": 30
+      },
+      {
+       "factor": "Return on assets",
+       "score": 44,
+       "weight": 15
+      },
+      {
+       "factor": "Operating margin",
+       "score": 100,
+       "weight": 15
+      },
+      {
+       "factor": "Low debt",
+       "score": 47,
+       "weight": 20
+      },
+      {
+       "factor": "Profit converts to cash",
+       "score": 100,
+       "weight": 20
+      }
+     ],
+     "value": [
+      {
+       "factor": "Earnings yield",
+       "score": 23,
+       "weight": 35
+      },
+      {
+       "factor": "Price to book",
+       "score": 45,
+       "weight": 20
+      },
+      {
+       "factor": "P/E vs sector median",
+       "score": 94,
+       "weight": 30
+      },
+      {
+       "factor": "Position in 3-year range",
+       "score": 42,
+       "weight": 15
+      }
+     ],
+     "growth": [
+      {
+       "factor": "Revenue growth",
+       "score": 30,
+       "weight": 50
+      },
+      {
+       "factor": "Earnings growth",
+       "score": 100,
+       "weight": 50
+      }
+     ]
+    }
+   },
+   "sector_median_pe": 41.8,
+   "news": {
+    "headlines": [
+     {
+      "title": "Chalet Hotels Ltd. Share Price Today - Chalet Hotels Ltd. Stock Price Live NSE/BSE - CNBC TV18",
+      "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE01U3k2OXJMMzFRZnJFbWdQQVNWOHVJMGluQW9iclVHeDlCbUpENzRQdkpFWGxoOHE3LUx1M05HOWRJN05xWVpRblAxbll3bTlIcXVKTXFmajlHaXlFTENvTDVTUkUxcjhvQ0Y4ZFI4bS1PYlMtSDBGeFkxdlB2ZjQ?oc=5"
+     },
+     {
+      "title": "HDFC Mutual Fund increases stake in Chalet Hotels to 9.11% - scanx.trade",
+      "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxPcHRfME9CQWlRY09uUFJoZWVHWXdaMjhxNlhDa1U1blJrT0RfQ3JDZkEtM1ZlNm1VVnRqYVprSGRYNGhXN3J4eHFyVzdrdHdrZ0Q5cTlCV3lHb3dxRGlTUi1KWnF3UllBZlI2YmxDUy10eUp2ZHlIYV81Zkx0bDAtNmxBMjIwRkNjUXg3dUYyamxTakR5T2dybC1ZOHVBSUN0RV9fM0dycktqeTBEV0RycnY4Ukk?oc=5"
+     },
+     {
+      "title": "47 Best Hotel Stocks To Watch In India For July 2026 - Samco",
+      "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE1ic3FzeFQyaEpjMXNXdENnNzR3SU5YdE8xTDR5RjZMVXJHTEhidkpKUGZ2NXhVNWplVVFuZDFZN0tZLWw0MzZGY05QQ1ByYzFDTFlMQTZWeUcxd2tmeURFeWdtc2hYbXZIVW9CWA?oc=5"
+     },
+     {
+      "title": "Manoj Agarwal takes over as new Chief Growth Officer for Chalet Hotels Limited - BW Hotelier",
+      "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxQWmEyM1NwQVpxbVZ4bHpXdFlTVVpIWGhEMzlCVkxlZW85Qm9YY0NEMUo2dHZxelBFWHZmUC1EaVBFd3FtNE5mOERZTDRKWENuRDBkQzl2cFZPTE0wenU3TmV4MlRVTVpBUEREcUtRWGJySFZlbjdoSzBRdTh5VEtCMzVLdVBJQ3p1VlYzR0xRVXBITnFQSG5hcnk2WEVoZUh6RXdYc3NOWm5Wd3BHN0JMRU9uNWdjRmVJVGNldg?oc=5"
+     },
+     {
+      "title": "The Indian Hotels Co. Share Price - Live NSE: INDHOTEL Stock Price &amp; Chart - Upstox",
+      "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE53QTRPYVdIRUJLaUFEOVZ6eHlKNVROUl9KZVAwVnE0el9SWXhUU01kVFY3eTEtcnFaOGlvakE4bEtJbUJDd1ZiLTdVRXpxZk9vaFY3aHJEcnlWcWhDajl0X1BWSjF2S0xYQjdBUFNZekQ?oc=5"
+     },
+     {
+      "title": "Chalet Hotels Appoints Manoj Agarwal As Chief Growth &amp; Product Officer - BW People",
+      "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxPNWtlOGhxb0dvWFM2Wk5MbmhsREpaaW9ubWtObEd4b3haV2JEZFY1NGhwM1NfMHpBU1ZQNEZPWUlTbEQzRm1YU1lOTmRBX1hzUTZ2Z0xWdFRJTVpRZk5qMTVJYTZZck9xV1pQNXllLU42cXplY2NLUGtTd1Y1WTQwcDNiRmpuc0cwcGlkdURHN0FoeTE1Njd4WGttVkhWaG9zWFdlRDB3ekxnYm8?oc=5"
+     }
+    ],
+    "red": [],
+    "watch": [],
+    "checked": true
+   }
+  }
+ ],
+ "removed_on_news": [
+  {
+   "symbol": "CIEINDIA",
+   "name": "CIE Automotive India Limited",
+   "reason": "Red flag in recent headlines: ceo resigns",
+   "headline": "CIE Automotive India CEO resigns from Iron Casting Division - scanx.trade",
+   "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxNdWpfVktSakQ4ck5WYmNQVDBMRlctSEVNTnBRN0ZubnBPWWZDVURZUkI3TnlJdUZLb3VWRFRvXzR1RFA2cjlQaTY2bEtvcGdNSllsYVRvUUlWMjNKYU1FX0FiUlNPSWF1RFR0YWlVdFZGdWVBX09xVTVHa2w3NVVFUnNNcThTT1ZrSl9PVkxLcEYyY3d2YVFJTHBtSzVKSHFqYXdZdWtURFZ1MUxycUVCN1R3MDdoX0k?oc=5"
+  }
+ ],
+ "rejected_sample": [
+  {
+   "symbol": "AUBANK",
+   "name": "AU Small Finance Bank Limited",
+   "reason": "Lender or insurer — the quality tests here do not apply to their business model"
+  },
+  {
+   "symbol": "ACMESOLAR",
+   "name": "ACME SOLAR HOLDINGS LTD",
+   "reason": "Debt/equity of 3.93x is too high"
+  },
+  {
+   "symbol": "ABB",
+   "name": "ABB India Limited",
+   "reason": "P/E of 101 leaves no margin for error"
+  },
+  {
+   "symbol": "360ONE",
+   "name": "360 One Wam Limited",
+   "reason": "Lender or insurer — the quality tests here do not apply to their business model"
+  },
+  {
+   "symbol": "AAVAS",
+   "name": "Aavas Financiers Limited",
+   "reason": "Lender or insurer — the quality tests here do not apply to their business model"
+  },
+  {
+   "symbol": "AARTIIND",
+   "name": "Aarti Industries Limited",
+   "reason": "ROE of 7.2% is below the 10% floor"
+  },
+  {
+   "symbol": "ACUTAAS",
+   "name": "Acutaas Chemicals Limited",
+   "reason": "P/E of 93 leaves no margin for error"
+  },
+  {
+   "symbol": "AADHARHFC",
+   "name": "AADHAR HOUSING FINANCE L",
+   "reason": "Lender or insurer — the quality tests here do not apply to their business model"
+  },
+  {
+   "symbol": "ADANIENSOL",
+   "name": "Adani Energy Solutions Limited",
+   "reason": "Debt/equity of 1.95x is too high"
+  },
+  {
+   "symbol": "ADANIENT",
+   "name": "Adani Enterprises Limited",
+   "reason": "Profits are not converting to cash (CFO/PAT 0.26x)"
+  },
+  {
+   "symbol": "ADANIGREEN",
+   "name": "Adani Green Energy Limited",
+   "reason": "Debt/equity of 3.47x is too high"
+  },
+  {
+   "symbol": "ABCAPITAL",
+   "name": "Aditya Birla Capital Limited",
+   "reason": "Lender or insurer — the quality tests here do not apply to their business model"
+  },
+  {
+   "symbol": "ATGL",
+   "name": "Adani Total Gas Limited",
+   "reason": "P/E of 114 leaves no margin for error"
+  },
+  {
+   "symbol": "ABFRL",
+   "name": "Aditya Birla Fashion and Retail Limited",
+   "reason": "Loss-making on a trailing basis"
+  },
+  {
+   "symbol": "ABLBL",
+   "name": "ADITYA BIRLA LIFES BRAN L",
+   "reason": "Debt/equity of 2.14x is too high"
+  },
+  {
+   "symbol": "ABSLAMC",
+   "name": "Aditya Birla Sun Life AMC Limited",
+   "reason": "Lender or insurer — the quality tests here do not apply to their business model"
+  },
+  {
+   "symbol": "ABREL",
+   "name": "Aditya Birla Real Estate Limited",
+   "reason": "Loss-making on a trailing basis"
+  },
+  {
+   "symbol": "AEGISVOPAK",
+   "name": "AEGIS VOPAK TERMINALS LTD",
+   "reason": "P/E of 103 leaves no margin for error"
+  },
+  {
+   "symbol": "CPPLUS",
+   "name": "ADITYA INFOTECH LIMITED",
+   "reason": "P/E of 111 leaves no margin for error"
+  },
+  {
+   "symbol": "AFCONS",
+   "name": "AFCONS INFRASTRUCTURE LTD",
+   "reason": "Profits are not converting to cash (CFO/PAT -0.51x)"
+  },
+  {
+   "symbol": "AMBER",
+   "name": "Amber Enterprises India Limited",
+   "reason": "P/E of 145 leaves no margin for error"
+  },
+  {
+   "symbol": "ANANDRATHI",
+   "name": "Anand Rathi Wealth Limited",
+   "reason": "Lender or insurer — the quality tests here do not apply to their business model"
+  },
+  {
+   "symbol": "AMBUJACEM",
+   "name": "Ambuja Cements Limited",
+   "reason": "ROE of 8.3% is below the 10% floor"
+  },
+  {
+   "symbol": "ANGELONE",
+   "name": "Angel One Limited",
+   "reason": "Lender or insurer — the quality tests here do not apply to their business model"
+  },
+  {
+   "symbol": "ANANTRAJ",
+   "name": "Anant Raj Limited",
+   "reason": "Profits are not converting to cash (CFO/PAT -0.78x)"
+  },
+  {
+   "symbol": "ANURAS",
+   "name": "Anupam Rasayan India Ltd",
+   "reason": "P/E of 81 leaves no margin for error"
+  },
+  {
+   "symbol": "APTUS",
+   "name": "Aptus Value Housing Finance India Limited",
+   "reason": "Lender or insurer — the quality tests here do not apply to their business model"
+  },
+  {
+   "symbol": "APOLLOTYRE",
+   "name": "Apollo Tyres Limited",
+   "reason": "ROE of 8.7% is below the 10% floor"
+  },
+  {
+   "symbol": "ASHOKLEY",
+   "name": "Ashok Leyland Limited",
+   "reason": "Debt/equity of 3.45x is too high"
+  },
+  {
+   "symbol": "ASTERDM",
+   "name": "Aster DM Quality Care Limited",
+   "reason": "P/E of 104 leaves no margin for error"
+  },
+  {
+   "symbol": "ATHERENERG",
+   "name": "Ather Energy Limited",
+   "reason": "Loss-making on a trailing basis"
+  },
+  {
+   "symbol": "AIIL",
+   "name": "Authum Investment & Infrastructure Limited",
+   "reason": "Lender or insurer — the quality tests here do not apply to their business model"
+  },
+  {
+   "symbol": "AUROPHARMA",
+   "name": "Aurobindo Pharma Limited",
+   "reason": "ROE of 9.9% is below the 10% floor"
+  },
+  {
+   "symbol": "DMART",
+   "name": "Avenue Supermarts Limited",
+   "reason": "P/E of 85 leaves no margin for error"
+  },
+  {
+   "symbol": "AXISBANK",
+   "name": "Axis Bank Limited",
+   "reason": "Lender or insurer — the quality tests here do not apply to their business model"
+  },
+  {
+   "symbol": "BEML",
+   "name": "BEML Limited",
+   "reason": "P/E of 101 leaves no margin for error"
+  },
+  {
+   "symbol": "BSE",
+   "name": "BSE Limited",
+   "reason": "Lender or insurer — the quality tests here do not apply to their business model"
+  },
+  {
+   "symbol": "BAJFINANCE",
+   "name": "Bajaj Finance Limited",
+   "reason": "Lender or insurer — the quality tests here do not apply to their business model"
+  },
+  {
+   "symbol": "BAJAJFINSV",
+   "name": "Bajaj Finserv Ltd.",
+   "reason": "Lender or insurer — the quality tests here do not apply to their business model"
+  },
+  {
+   "symbol": "BAJAJHFL",
+   "name": "BAJAJ HOUSING FINANCE LTD",
+   "reason": "Lender or insurer — the quality tests here do not apply to their business model"
+  }
+ ],
+ "disclaimer": "Not investment advice and not a buy list. This is a reproducible ranking on the stated criteria, meant as a starting point for reading an annual report. Data is from a free unofficial source and may contain errors — verify against company filings."
+}

@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#0d1520">
+<title>Daily Shortlist</title>
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="apple-touch-icon" href="icon-192.png">
+<style>
+:root{
+  --bg:#0d1520;--card:#151f2c;--card2:#1b2836;--line:#26364a;
+  --txt:#e8eff6;--muted:#8fa2b6;--accent:#4da3ff;--good:#3fbf7f;
+  --warn:#e0a33e;--bad:#e05f5f;--gold:#d9a94a;
+}
+*{box-sizing:border-box;-webkit-tap-highlight-color:transparent}
+html,body{margin:0;padding:0}
+body{background:var(--bg);color:var(--txt);font-size:15px;line-height:1.5;
+  font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;
+  padding-bottom:80px}
+header{padding:calc(env(safe-area-inset-top) + 16px) 18px 14px;
+  background:linear-gradient(160deg,#16243a,#111a26);border-bottom:1px solid var(--line);
+  position:sticky;top:0;z-index:10}
+header .t{font-size:17px;font-weight:700;letter-spacing:.2px}
+header .s{font-size:12px;color:var(--muted);margin-top:3px}
+main{padding:14px}
+
+.banner{background:#1a1610;border:1px solid #3d3320;color:#dcbe8c;
+  padding:10px 13px;border-radius:9px;font-size:12px;line-height:1.55;margin-bottom:14px}
+.banner b{color:#f0d5a3}
+
+.tabs{display:flex;gap:6px;margin-bottom:14px;overflow-x:auto;padding-bottom:2px}
+.tabs button{flex:none;background:var(--card);border:1px solid var(--line);color:var(--muted);
+  padding:7px 14px;border-radius:20px;font-size:13px;font-weight:600}
+.tabs button.on{background:var(--accent);color:#08131f;border-color:var(--accent)}
+.pane{display:none}.pane.on{display:block}
+
+.hero{background:linear-gradient(155deg,#1d2b3d,#16202d);border:1px solid #2f4560;
+  border-radius:14px;padding:16px;margin-bottom:14px;position:relative;overflow:hidden}
+.hero:before{content:'';position:absolute;top:-40px;right:-40px;width:130px;height:130px;
+  background:radial-gradient(circle,rgba(217,169,74,.16),transparent 70%)}
+.hero .rk{font-size:10.5px;letter-spacing:1.6px;color:var(--gold);font-weight:700;text-transform:uppercase}
+.hero .sym{font-size:25px;font-weight:800;margin-top:5px;letter-spacing:-.4px}
+.hero .nm{font-size:13px;color:var(--muted);margin-top:1px}
+
+.rowc{background:var(--card);border:1px solid var(--line);border-radius:12px;
+  padding:13px 14px;margin-bottom:9px}
+.rowc .top{display:flex;align-items:baseline;gap:9px}
+.rowc .n{font-size:12px;color:var(--muted);font-weight:700;min-width:20px}
+.rowc .sym{font-size:16px;font-weight:700}
+.rowc .nm{font-size:11.5px;color:var(--muted);margin-top:2px;margin-left:29px}
+
+.sc{display:flex;align-items:center;gap:9px;margin-top:11px}
+.sc .big{font-size:22px;font-weight:800;font-variant-numeric:tabular-nums}
+.sc .lbl{font-size:10px;color:var(--muted);text-transform:uppercase;letter-spacing:.8px}
+.trio{display:flex;gap:7px;margin-top:11px}
+.trio div{flex:1;background:var(--card2);border-radius:8px;padding:7px 4px;text-align:center}
+.trio .v{font-size:15px;font-weight:700;font-variant-numeric:tabular-nums}
+.trio .k{font-size:9.5px;color:var(--muted);text-transform:uppercase;letter-spacing:.5px;margin-top:1px}
+
+.mets{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin-top:12px}
+.mets div{background:var(--card2);border-radius:8px;padding:8px 6px}
+.mets .v{font-size:14px;font-weight:700;font-variant-numeric:tabular-nums}
+.mets .k{font-size:9.5px;color:var(--muted);margin-top:1px}
+
+.bar{height:5px;background:#22303f;border-radius:3px;overflow:hidden;flex:1}
+.bar span{display:block;height:100%}
+.fac{display:flex;align-items:center;gap:9px;font-size:11.5px;padding:4px 0}
+.fac .fn{width:128px;flex:none;color:var(--muted)}
+.fac .fv{width:30px;text-align:right;font-variant-numeric:tabular-nums;font-weight:600}
+
+details{margin-top:11px}
+summary{list-style:none;font-size:12px;color:var(--accent);font-weight:600;padding:5px 0}
+summary::-webkit-details-marker{display:none}
+summary::before{content:'▸ '}
+details[open] summary::before{content:'▾ '}
+h4{margin:13px 0 5px;font-size:10px;color:var(--muted);text-transform:uppercase;letter-spacing:1px}
+
+.chip{display:inline-block;padding:2px 8px;border-radius:12px;font-size:10.5px;font-weight:600;margin-right:5px}
+.c-mut{background:#243343;color:var(--muted)}
+.c-warn{background:rgba(224,163,62,.16);color:var(--warn)}
+.c-bad{background:rgba(224,95,95,.16);color:var(--bad)}
+.c-good{background:rgba(63,191,127,.16);color:var(--good)}
+
+.lnk{display:flex;gap:7px;margin-top:12px;flex-wrap:wrap}
+.lnk a{flex:1;min-width:110px;text-align:center;background:var(--card2);border:1px solid var(--line);
+  color:var(--accent);text-decoration:none;padding:8px;border-radius:8px;font-size:12px;font-weight:600}
+
+.note{font-size:12.5px;color:var(--muted);line-height:1.65}
+.note b{color:var(--txt)}
+ul.pl{padding-left:19px;margin:7px 0;font-size:12.5px;color:var(--muted);line-height:1.7}
+.hl{background:var(--card2);border-left:3px solid var(--line);padding:8px 11px;border-radius:0 7px 7px 0;
+  margin-bottom:7px;font-size:12px}
+.hl a{color:var(--accent);text-decoration:none}
+.hl.red{border-color:var(--bad)}
+.card{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:15px;margin-bottom:12px}
+.card h3{margin:0 0 9px;font-size:13.5px;color:var(--accent)}
+.stale{background:rgba(224,95,95,.12);border:1px solid rgba(224,95,95,.35);color:#f0a5a5;
+  padding:9px 12px;border-radius:9px;font-size:12px;margin-bottom:12px}
+.empty{text-align:center;padding:40px 20px;color:var(--muted);font-size:13.5px}
+button.rf{width:100%;background:var(--accent);color:#08131f;border:none;padding:12px;
+  border-radius:10px;font-weight:700;font-size:14px;margin-top:6px}
+</style>
+</head>
+<body>
+<header>
+  <div class="t">Today's Shortlist</div>
+  <div class="s" id="sub">Loading…</div>
+</header>
+
+<main>
+  <div id="stale"></div>
+
+  <div class="banner">
+    <b>A shortlist, not a recommendation.</b> These are the names that scored highest
+    on fixed, visible criteria — nothing here knows whether the business is actually
+    any good. The score cannot see management, accounting games, competition or
+    litigation. Treat rank 1 as "read this annual report first", not "buy this".
+  </div>
+
+  <div class="tabs">
+    <button class="on" data-p="today">Shortlist</button>
+    <button data-p="method">How it ranks</button>
+    <button data-p="out">Removed</button>
+    <button data-p="about">Read me</button>
+  </div>
+
+  <section id="today" class="pane on"><div id="list"><div class="empty">Loading…</div></div></section>
+
+  <section id="method" class="pane">
+    <div class="card">
+      <h3>The scoring</h3>
+      <p class="note">Every stock in the Nifty 500 is scored on the same criteria each
+      morning. Nothing is hand-picked, and the same inputs always produce the same
+      ranking — you can check the arithmetic.</p>
+      <div id="mth"></div>
+    </div>
+    <div class="card">
+      <h3>Must pass all of these first</h3>
+      <ul class="pl" id="filters"></ul>
+    </div>
+    <div class="card">
+      <h3>Why news can only remove, never promote</h3>
+      <p class="note">Search results and headlines about stocks are saturated with
+      promotional material — brokerage notes, paid articles, "5 stocks to buy today".
+      A tool that <i>ranked</i> on news would rank whatever is being pushed hardest that
+      morning, which is a reliable way to buy at the top.
+      <br><br>So headlines are used one way only: a name with a red flag in the last
+      seven days — fraud allegation, auditor resignation, regulatory action, rating
+      downgrade, promoter selling — is removed from the shortlist. Good news never
+      lifts anything up the ranking.</p>
+    </div>
+    <div class="card">
+      <h3>What the score cannot see</h3>
+      <ul class="pl">
+        <li>Whether management is honest and competent</li>
+        <li>Whether the accounts are truthful</li>
+        <li>Whether a competitor is about to destroy the business</li>
+        <li>Whether the recent numbers were a one-off</li>
+        <li>Pending litigation, tax demands or regulatory risk</li>
+        <li>Whether the company has any durable advantage at all</li>
+      </ul>
+      <p class="note">Every one of those matters more than any ratio on this screen.
+      All of them require reading the annual report. That is the actual work; this app
+      only decides which report to read first.</p>
+    </div>
+  </section>
+
+  <section id="out" class="pane">
+    <div class="card">
+      <h3>Removed on recent headlines</h3>
+      <p class="note">These scored well enough to make the shortlist but were taken out
+      because of something in the last seven days of news. Worth reading — the reason a
+      cheap, high-quality-looking stock is cheap is often right here.</p>
+      <div id="removed" style="margin-top:10px"></div>
+    </div>
+    <div class="card">
+      <h3>Sample of names that failed the filters</h3>
+      <div id="rejected" style="margin-top:6px"></div>
+    </div>
+  </section>
+
+  <section id="about" class="pane">
+    <div class="card">
+      <h3>How to use this</h3>
+      <p class="note">
+        Open it in the morning. Look at rank 1 to 3. Then <b>do nothing today</b>.
+        <br><br>
+        Instead, take one name and spend an evening on it: open the annual report on the
+        company's website, read the Management Discussion and the auditor's report, and
+        work out what the business actually does and who it competes with. Write down
+        what you find. If after that you still like it, run it through the Investment
+        Workbench, size the position properly, and only then consider buying.
+        <br><br>
+        The gap between this shortlist and a purchase should be days, not minutes. The
+        app exists to save you the search, not the thinking.
+      </p>
+    </div>
+    <div class="card">
+      <h3>What the numbers mean</h3>
+      <div class="note" style="line-height:1.9">
+        <b>ROE</b> — profit as a % of shareholders' money. Higher and steadier is better; above 20% is strong.<br>
+        <b>ROA</b> — profit as a % of all assets. Catches businesses that look good only because of leverage.<br>
+        <b>OPM</b> — operating profit as a % of sales. How much of each rupee of revenue survives costs.<br>
+        <b>D/E</b> — borrowed money versus owners' money. Below 0.5x is comfortable.<br>
+        <b>CFO/PAT</b> — cash from operations divided by reported profit. Below 0.7x for years is the single
+        most useful accounting warning available to a retail investor.<br>
+        <b>P/E</b> — price divided by earnings per share. Only meaningful next to the same company's history
+        and its sector.<br>
+        <b>Earnings yield</b> — the inverse of P/E, as a %. Comparable to a deposit rate, loosely.<br>
+        <b>3-year range</b> — where today's price sits between its 3-year low and high.
+      </div>
+    </div>
+    <div class="card">
+      <h3>Honest limitations</h3>
+      <ul class="pl">
+        <li>Data comes from a free, unofficial source. It has gaps and sometimes errors. Verify anything before acting on it.</li>
+        <li>Banks, NBFCs and insurers are excluded entirely — debt and cash-flow tests are meaningless for lenders.</li>
+        <li>The screen favours established, profitable, moderately priced companies. It will never find an early-stage winner, and it will sometimes rank a business in slow decline that merely looks statistically cheap. That is the known weakness of this approach.</li>
+        <li>Holding companies and cyclical commodity businesses often score well for reasons the score misreads. Check what a company actually does before believing its rank.</li>
+        <li>Prices shown are delayed. Check your broker app for live prices.</li>
+      </ul>
+    </div>
+    <div class="card">
+      <h3>Not advice</h3>
+      <p class="note">This is a personal research tool. It is not investment advice, and
+      nothing in it is a recommendation to buy or sell any security. It is not produced
+      by a SEBI-registered investment adviser or research analyst. Do not redistribute
+      its output. If you want advice, consult a registered adviser.</p>
+    </div>
+    <button class="rf" onclick="load(true)">Refresh data</button>
+  </section>
+</main>
+
+<script>
+/* Point this at wherever data.json is published. Relative path works when the
+   app and the data sit in the same place (e.g. GitHub Pages). */
+const DATA_URL = 'data.json';
+const $ = s => document.querySelector(s);
+const esc = s => String(s == null ? '' : s).replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+const n1 = v => v == null || isNaN(v) ? '—' : (+v).toFixed(1);
+const n0 = v => v == null || isNaN(v) ? '—' : Math.round(v).toLocaleString('en-IN');
+const n2 = v => v == null || isNaN(v) ? '—' : (+v).toFixed(2);
+
+document.querySelectorAll('.tabs button').forEach(b => b.onclick = () => {
+  document.querySelectorAll('.tabs button').forEach(x => x.classList.remove('on'));
+  document.querySelectorAll('.pane').forEach(x => x.classList.remove('on'));
+  b.classList.add('on'); $('#' + b.dataset.p).classList.add('on'); scrollTo(0, 0);
+});
+
+const col = v => v >= 75 ? 'var(--good)' : v >= 55 ? 'var(--gold)' : v >= 40 ? 'var(--warn)' : 'var(--bad)';
+
+function factors(det) {
+  let h = '';
+  for (const [grp, label] of [['quality','Quality'],['value','Value'],['growth','Growth']]) {
+    h += `<h4>${label}</h4>`;
+    (det[grp] || []).forEach(f => {
+      const s = f.score;
+      h += `<div class="fac"><div class="fn">${esc(f.factor)}</div>
+        <div class="bar"><span style="width:${s == null ? 0 : s}%;background:${s == null ? '#33475e' : col(s)}"></span></div>
+        <div class="fv" style="color:${s == null ? 'var(--muted)' : col(s)}">${s == null ? 'n/a' : s}</div></div>`;
+    });
+  }
+  return h;
+}
+
+function metrics(r) {
+  const m = [
+    ['ROE', r.roe == null ? '—' : n1(r.roe) + '%'],
+    ['ROA', r.roa == null ? '—' : n1(r.roa) + '%'],
+    ['OPM', r.opm == null ? '—' : n1(r.opm) + '%'],
+    ['D/E', r.de == null ? '—' : n2(r.de) + 'x'],
+    ['CFO/PAT', r.cash_conv == null ? '—' : n2(r.cash_conv) + 'x'],
+    ['P/E', n1(r.pe)],
+    ['P/B', n1(r.pb)],
+    ['Sector P/E', n1(r.sector_median_pe)],
+    ['Div yield', r.div_yield == null ? '—' : n1(r.div_yield) + '%'],
+    ['Rev growth', r.rev_growth == null ? '—' : n1(r.rev_growth) + '%'],
+    ['EPS growth', r.eps_growth == null ? '—' : n1(r.eps_growth) + '%'],
+    ['3y range', r.pos_in_3y_range == null ? '—' : Math.round(r.pos_in_3y_range * 100) + '%'],
+  ];
+  return `<div class="mets">${m.map(x => `<div><div class="v">${x[1]}</div><div class="k">${x[0]}</div></div>`).join('')}</div>`;
+}
+
+function newsBlock(r) {
+  const nw = r.news || {};
+  let h = '';
+  if (nw.watch && nw.watch.length) {
+    h += `<h4>Worth a look before you get excited</h4>`;
+    nw.watch.slice(0, 3).forEach(w => {
+      h += `<div class="hl"><span class="chip c-warn">${esc(w.keyword)}</span>
+        <a href="${esc(w.url)}" target="_blank" rel="noopener">${esc(w.headline)}</a></div>`;
+    });
+  }
+  if (nw.headlines && nw.headlines.length) {
+    h += `<h4>Recent headlines</h4>`;
+    nw.headlines.slice(0, 4).forEach(x => {
+      h += `<div class="hl"><a href="${esc(x.url)}" target="_blank" rel="noopener">${esc(x.title)}</a></div>`;
+    });
+  }
+  return h;
+}
+
+function links(r) {
+  const s = encodeURIComponent(r.symbol);
+  const q = encodeURIComponent(r.name + ' annual report');
+  return `<div class="lnk">
+    <a href="https://www.nseindia.com/get-quotes/equity?symbol=${s}" target="_blank" rel="noopener">NSE quote</a>
+    <a href="https://www.screener.in/company/${s}/consolidated/" target="_blank" rel="noopener">Financials</a>
+    <a href="https://www.google.com/search?q=${q}" target="_blank" rel="noopener">Annual report</a>
+  </div>`;
+}
+
+function flags(r) {
+  const out = [];
+  if (r.scores.coverage < 70) out.push(['c-warn', 'patchy data — ' + r.scores.coverage + '% of factors available']);
+  if (r.de != null && r.de < 0.1) out.push(['c-good', 'nearly debt-free']);
+  if (r.cash_conv != null && r.cash_conv >= 1) out.push(['c-good', 'strong cash conversion']);
+  if (r.div_yield != null && r.div_yield > 3) out.push(['c-good', n1(r.div_yield) + '% dividend']);
+  if (r.eps_growth != null && r.eps_growth < 0) out.push(['c-warn', 'earnings shrinking']);
+  if (r.rev_growth != null && r.rev_growth < 0) out.push(['c-warn', 'revenue shrinking']);
+  if (r.pos_in_3y_range != null && r.pos_in_3y_range < 0.2) out.push(['c-warn', 'near 3-year low — find out why']);
+  if (r.mcap_cr != null && r.mcap_cr < 5000) out.push(['c-warn', 'small cap — thin liquidity']);
+  return out.length ? `<div style="margin-top:10px">${out.map(f => `<span class="chip ${f[0]}">${f[1]}</span>`).join('')}</div>` : '';
+}
+
+function render(d) {
+  $('#sub').textContent = `Updated ${d.generated_ist} IST · ${d.passed_filters} of ${d.fetched} passed the filters`;
+
+  const list = d.shortlist || [];
+  if (!list.length) { $('#list').innerHTML = '<div class="empty">No names cleared the filters today. That is a valid result — some days nothing does.</div>'; }
+  else {
+    let h = '';
+    list.forEach((r, i) => {
+      const sc = r.scores;
+      const trio = `<div class="trio">
+        <div><div class="v" style="color:${col(sc.quality)}">${Math.round(sc.quality)}</div><div class="k">Quality 50%</div></div>
+        <div><div class="v" style="color:${col(sc.value)}">${Math.round(sc.value)}</div><div class="k">Value 35%</div></div>
+        <div><div class="v" style="color:${col(sc.growth)}">${Math.round(sc.growth)}</div><div class="k">Growth 15%</div></div></div>`;
+      const body = trio + flags(r) + metrics(r) +
+        `<details><summary>Score breakdown</summary>${factors(sc.detail)}</details>` +
+        (newsBlock(r) ? `<details><summary>News</summary>${newsBlock(r)}</details>` : '') +
+        links(r);
+
+      if (i === 0) {
+        h += `<div class="hero">
+          <div class="rk">Highest scoring today</div>
+          <div class="sym">${esc(r.symbol)}</div>
+          <div class="nm">${esc(r.name)} · ${esc(r.sector || '')}</div>
+          <div class="sc"><div class="big" style="color:${col(sc.total)}">${n1(sc.total)}</div>
+            <div><div class="lbl">Composite score</div>
+            <div style="font-size:12px;color:var(--muted)">₹${n0(r.price)} · ₹${n0(r.mcap_cr)} cr mcap</div></div></div>
+          ${body}</div>`;
+      } else {
+        h += `<div class="rowc">
+          <div class="top"><div class="n">${i + 1}</div><div>
+            <div class="sym">${esc(r.symbol)}</div></div>
+            <div style="margin-left:auto;font-size:19px;font-weight:800;color:${col(sc.total)};font-variant-numeric:tabular-nums">${n1(sc.total)}</div></div>
+          <div class="nm">${esc(r.name)} · ₹${n0(r.price)}</div>
+          ${body}</div>`;
+      }
+    });
+    $('#list').innerHTML = h;
+  }
+
+  // method
+  const m = d.method || {};
+  $('#mth').innerHTML = ['quality', 'value', 'growth'].map(k => {
+    const w = (m.weights || {})[k];
+    const fs = m[k + '_factors'] || [];
+    return `<h4>${k} — ${w}%</h4><ul class="pl">${fs.map(f => `<li>${esc(f)}</li>`).join('')}</ul>`;
+  }).join('');
+  $('#filters').innerHTML = (m.hard_filters || []).map(f => `<li>${esc(f)}</li>`).join('');
+
+  $('#removed').innerHTML = (d.removed_on_news || []).length
+    ? d.removed_on_news.map(r => `<div class="hl red"><b>${esc(r.symbol)}</b> — ${esc(r.reason)}<br>
+        <a href="${esc(r.url)}" target="_blank" rel="noopener">${esc(r.headline)}</a></div>`).join('')
+    : '<p class="note">Nothing was removed on news today.</p>';
+
+  $('#rejected').innerHTML = (d.rejected_sample || []).length
+    ? `<table style="width:100%;font-size:11.5px;color:var(--muted);border-collapse:collapse">` +
+      d.rejected_sample.map(r => `<tr><td style="padding:5px 6px 5px 0;border-bottom:1px solid #21303f;white-space:nowrap"><b style="color:var(--txt)">${esc(r.symbol)}</b></td>
+        <td style="padding:5px 0;border-bottom:1px solid #21303f">${esc(r.reason)}</td></tr>`).join('') + '</table>'
+    : '<p class="note">—</p>';
+
+  // stale check
+  const gen = (d.generated_ist || '').slice(0, 10);
+  const today = new Date().toISOString().slice(0, 10);
+  const ageDays = gen ? Math.round((Date.parse(today) - Date.parse(gen)) / 864e5) : null;
+  $('#stale').innerHTML = (ageDays != null && ageDays >= 2)
+    ? `<div class="stale">This ranking is ${ageDays} days old — the daily job has not run. Prices and scores below are out of date.</div>` : '';
+}
+
+async function load(force) {
+  try {
+    const r = await fetch(DATA_URL + (force ? '?t=' + Date.now() : ''), { cache: force ? 'reload' : 'default' });
+    if (!r.ok) throw new Error(r.status);
+    const d = await r.json();
+    localStorage.setItem('lastData', JSON.stringify(d));
+    render(d);
+  } catch (e) {
+    const cached = localStorage.getItem('lastData');
+    if (cached) { render(JSON.parse(cached)); $('#sub').textContent += ' · offline, showing last saved'; }
+    else {
+      $('#list').innerHTML = `<div class="empty">Could not load data.json.<br><br>
+        If you have just set this up, run <b>screen.py</b> once so a data.json exists next to this page.</div>`;
+      $('#sub').textContent = 'No data';
+    }
+  }
+}
+load();
+if ('serviceWorker' in navigator) navigator.serviceWorker.register('sw.js').catch(() => {});
+</script>
+</body>
+</html>
