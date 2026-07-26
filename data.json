@@ -1,8 +1,8 @@
 {
- "generated_ist": "2026-07-26 22:41",
+ "generated_ist": "2026-07-26 23:22",
  "universe_size": 500,
- "fetched": 416,
- "passed_filters": 208,
+ "fetched": 424,
+ "passed_filters": 212,
  "method": {
   "weights": {
    "quality": 50,
@@ -179,12 +179,12 @@
    "name": "BLS International Services Limited",
    "sector": "Industrials",
    "industry": "Specialty Business Services",
-   "price": 233.6,
-   "mcap_cr": 9613.1596288,
+   "price": 233.95,
+   "mcap_cr": 9627.5628032,
    "eps": 16.63,
    "book_value": 59.856,
-   "pe": 14.046905,
-   "pb": 3.9027,
+   "pe": 14.06795,
+   "pb": 3.9085472,
    "roe": 30.142999999999997,
    "roa": 13.786000000000001,
    "opm": 21.951,
@@ -194,14 +194,14 @@
    "eps_growth": 31.4,
    "div_yield": 1.28,
    "cash_conv": 1.3148940662833004,
-   "pos_in_3y_range": 0.08202851278642255,
+   "pos_in_3y_range": 0.0832321272812817,
    "day_change_pct": 1.432914897103222,
    "volume_ratio": 0.7046388761331301,
    "last_session_date": "2026-07-24",
    "scores": {
     "total": 89.5,
     "quality": 93.2,
-    "value": 82.3,
+    "value": 82.2,
     "growth": 94.0,
     "coverage": 100,
     "detail": {
@@ -240,7 +240,7 @@
       },
       {
        "factor": "Price to book",
-       "score": 59,
+       "score": 58,
        "weight": 20
       },
       {
@@ -325,12 +325,12 @@
    "name": "The Bombay Burmah Trading Corporation Limited",
    "sector": "Consumer Defensive",
    "industry": "Packaged Foods",
-   "price": 1458.2,
-   "mcap_cr": 10174.1387776,
+   "price": 1462.0,
+   "mcap_cr": 10200.6521856,
    "eps": 178.05,
    "book_value": 1009.286,
-   "pe": 8.189834,
-   "pb": 1.4447837,
+   "pe": 8.211177,
+   "pb": 1.4485488,
    "roe": 28.709,
    "roa": 15.559000000000001,
    "opm": 16.669,
@@ -340,14 +340,14 @@
    "eps_growth": 43.8,
    "div_yield": 2.33,
    "cash_conv": 1.9463011216148656,
-   "pos_in_3y_range": 0.269998479674022,
+   "pos_in_3y_range": 0.2720570764362898,
    "day_change_pct": -0.7689723598587955,
    "volume_ratio": 1.0449435450292683,
    "last_session_date": "2026-07-24",
    "scores": {
     "total": 89.0,
     "quality": 89.9,
-    "value": 96.5,
+    "value": 96.4,
     "growth": 68.8,
     "coverage": 100,
     "detail": {
@@ -478,12 +478,12 @@
    "name": "The Shipping Corporation of India Limited",
    "sector": "Industrials",
    "industry": "Marine Shipping",
-   "price": 275.1,
-   "mcap_cr": 12814.1312,
+   "price": 275.5,
+   "mcap_cr": 12832.7622656,
    "eps": 29.05,
    "book_value": 195.37,
-   "pe": 9.46988,
-   "pb": 1.4080975,
+   "pe": 9.483649,
+   "pb": 1.4101449,
    "roe": null,
    "roa": null,
    "opm": 21.465999,
@@ -493,14 +493,14 @@
    "eps_growth": 118.9,
    "div_yield": 4.76,
    "cash_conv": null,
-   "pos_in_3y_range": 0.7410633099308392,
+   "pos_in_3y_range": 0.7426829219317879,
    "day_change_pct": 2.4199552689120076,
    "volume_ratio": 1.3832640095123634,
    "last_session_date": "2026-07-24",
    "scores": {
     "total": 82.1,
     "quality": 77.1,
-    "value": 87.8,
+    "value": 87.7,
     "growth": 85.5,
     "coverage": 68,
     "detail": {
@@ -625,12 +625,12 @@
    "name": "EMMVEE PHOTOVOLTAIC PWR L",
    "sector": "Technology",
    "industry": "Solar",
-   "price": 331.0,
-   "mcap_cr": 22916.620288,
+   "price": 330.9,
+   "mcap_cr": 22909.6964096,
    "eps": 18.4,
    "book_value": 53.393,
-   "pe": 17.98913,
-   "pb": 6.199314,
+   "pe": 17.983696,
+   "pb": 6.197441,
    "roe": null,
    "roa": null,
    "opm": 29.842999999999996,
@@ -640,7 +640,7 @@
    "eps_growth": 73.7,
    "div_yield": null,
    "cash_conv": null,
-   "pos_in_3y_range": 0.8402582752782263,
+   "pos_in_3y_range": 0.8396867487846471,
    "day_change_pct": 3.5183737294761532,
    "volume_ratio": 0.5873210206622124,
    "last_session_date": "2026-07-24",
@@ -714,7 +714,7 @@
      ]
     }
    },
-   "sector_median_pe": 30.3,
+   "sector_median_pe": 30.1,
    "news": {
     "headlines": [],
     "red": [],
@@ -728,12 +728,12 @@
    "name": "The Great Eastern Shipping Company Limited",
    "sector": "Industrials",
    "industry": "Marine Shipping",
-   "price": 1437.9,
-   "mcap_cr": 20528.8521728,
+   "price": 1430.3,
+   "mcap_cr": 20420.3474944,
    "eps": 205.62,
    "book_value": 1188.123,
-   "pe": 6.992997,
-   "pb": 1.2102282,
+   "pe": 6.9560356,
+   "pb": 1.2038316,
    "roe": 18.849,
    "roa": 6.662,
    "opm": 37.112,
@@ -743,14 +743,14 @@
    "eps_growth": 187.5,
    "div_yield": 3.25,
    "cash_conv": 0.9698727840424539,
-   "pos_in_3y_range": 0.7656760515448605,
+   "pos_in_3y_range": 0.7578720980006656,
    "day_change_pct": -0.2774117436904448,
    "volume_ratio": 0.4281497995438184,
    "last_session_date": "2026-07-24",
    "scores": {
     "total": 81.7,
     "quality": 71.9,
-    "value": 87.9,
+    "value": 88.0,
     "growth": 100.0,
     "coverage": 100,
     "detail": {
@@ -799,7 +799,7 @@
       },
       {
        "factor": "Position in 3-year range",
-       "score": 23,
+       "score": 24,
        "weight": 15
       }
      ],
@@ -874,12 +874,12 @@
    "name": "NMDC Limited",
    "sector": "Basic Materials",
    "industry": "Steel",
-   "price": 83.56,
-   "mcap_cr": 73464.4207616,
+   "price": 83.6,
+   "mcap_cr": 73499.5873792,
    "eps": 8.47,
    "book_value": 38.814,
-   "pe": 9.865407,
-   "pb": 2.1528316,
+   "pe": 9.87013,
+   "pb": 2.153862,
    "roe": 23.363,
    "roa": 12.29,
    "opm": 21.968001,
@@ -889,7 +889,7 @@
    "eps_growth": 37.7,
    "div_yield": 4.19,
    "cash_conv": 0.670538583516545,
-   "pos_in_3y_range": 0.8444610823539038,
+   "pos_in_3y_range": 0.8451272018067331,
    "day_change_pct": 1.1132601352131088,
    "volume_ratio": 0.9419275946669826,
    "last_session_date": "2026-07-24",
@@ -1020,12 +1020,12 @@
    "name": "Oberoi Realty Limited",
    "sector": "Real Estate",
    "industry": "Real Estate - Development",
-   "price": 1821.2,
-   "mcap_cr": 66219.2390144,
+   "price": 1815.0,
+   "mcap_cr": 65993.8082816,
    "eps": 72.3,
    "book_value": 492.891,
-   "pe": 25.189487,
-   "pb": 3.6949346,
+   "pe": 25.103733,
+   "pb": 3.6823559,
    "roe": null,
    "roa": null,
    "opm": 53.744,
@@ -1035,14 +1035,14 @@
    "eps_growth": 28.9,
    "div_yield": 0.44,
    "cash_conv": null,
-   "pos_in_3y_range": 0.6165675840477558,
+   "pos_in_3y_range": 0.6115667326419159,
    "day_change_pct": 0.1705063323010298,
    "volume_ratio": 0.4342933971899143,
    "last_session_date": "2026-07-24",
    "scores": {
-    "total": 80.3,
+    "total": 80.5,
     "quality": 92.5,
-    "value": 54.6,
+    "value": 55.0,
     "growth": 100.0,
     "coverage": 68,
     "detail": {
@@ -1086,7 +1086,7 @@
       },
       {
        "factor": "P/E vs sector median",
-       "score": 87,
+       "score": 88,
        "weight": 30
       },
       {
@@ -1109,7 +1109,7 @@
      ]
     }
    },
-   "sector_median_pe": 34.6,
+   "sector_median_pe": 34.8,
    "news": {
     "headlines": [
      {
@@ -1173,12 +1173,12 @@
    "name": "Hero MotoCorp Limited",
    "sector": "Consumer Cyclical",
    "industry": "Auto Manufacturers",
-   "price": 5011.1,
-   "mcap_cr": 100268.5792256,
+   "price": 5010.8,
+   "mcap_cr": 100262.5695744,
    "eps": 286.63,
    "book_value": 1080.075,
-   "pe": 17.482817,
-   "pb": 4.6395855,
+   "pe": 17.48177,
+   "pb": 4.6393075,
    "roe": 28.027,
    "roa": 12.540000000000001,
    "opm": 13.216,
@@ -1188,7 +1188,7 @@
    "eps_growth": 25.7,
    "div_yield": 3.69,
    "cash_conv": 1.4481036241102088,
-   "pos_in_3y_range": 0.6789008832461304,
+   "pos_in_3y_range": 0.6788154609609104,
    "day_change_pct": -1.7200068720216213,
    "volume_ratio": 1.0557017910988762,
    "last_session_date": "2026-07-24",
@@ -1262,7 +1262,7 @@
      ]
     }
    },
-   "sector_median_pe": 39.9,
+   "sector_median_pe": 40.9,
    "news": {
     "headlines": [
      {
@@ -1301,8 +1301,8 @@
       "source": "Google News"
      },
      {
-      "title": "Olectra Greentech Share Price Today, Olectra Greentech Stock Price Live NSE/BSE Updates - The Economic Times",
-      "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxObHZJWS1qQ3dFTUNId3FxWGFOYjd5QWZ1QzVvblFwZEZhbzVpd0lhLVQwRUppZmJQc1hYWnc4Z0Y5RGlTT1N2Wjd1MmpqX0ZLSjNJa0VldTZPakJGMWxaZTZwRm1RUi1ja1l5c2pkM282RzJSa3ZOcjlsd2J6MjBPTUVyMTEzTUlIYTMtRQ?oc=5",
+      "title": "Hero MotoCorp debuts VIDA electric brand in Nepal via CG Motors tie-up - scanx.trade",
+      "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxOTEZBdHk3MkFLR1JjSVgyYkctTmdWRzBrT0hOLXdmOGxGOXJJZ1ZKZGF4cmVyQ21ZbGdzN2NHVGYwMnB1NHdlVS1OeHM1OEtnMndXczVZcjlHLWwyVlZaT3I2NmRQdElQMTBKYy1YYm1kWTlEdmRMUDE2VFkzemJTZzVyQklUaWdjelp0Ulp0SWVVQWdXYlhrWko2b1MxYXVSVE5HTXR2cGVKWVFwSDVQdHdfUDlJWW1XUFZ1UFJFOWVFNDQzMVE?oc=5",
       "source": "Google News"
      }
     ],
@@ -1320,12 +1320,12 @@
    "name": "Coal India Limited",
    "sector": "Energy",
    "industry": "Thermal Coal",
-   "price": 427.4,
-   "mcap_cr": 263395.0035968,
+   "price": 426.45,
+   "mcap_cr": 262809.5574016,
    "eps": 50.48,
    "book_value": 193.28,
-   "pe": 8.46672,
-   "pb": 2.2112997,
+   "pe": 8.447901,
+   "pb": 2.2063847,
    "roe": 28.124001999999997,
    "roa": 7.123,
    "opm": 20.922,
@@ -1335,14 +1335,14 @@
    "eps_growth": 12.9,
    "div_yield": 4.91,
    "cash_conv": 1.3897921473873944,
-   "pos_in_3y_range": 0.8173742901462578,
+   "pos_in_3y_range": 0.8141644032789523,
    "day_change_pct": 0.081959047774357,
    "volume_ratio": 1.0256299429787241,
    "last_session_date": "2026-07-24",
    "scores": {
-    "total": 79.9,
+    "total": 80.0,
     "quality": 84.6,
-    "value": 79.0,
+    "value": 79.2,
     "growth": 66.3,
     "coverage": 100,
     "detail": {
@@ -1386,7 +1386,7 @@
       },
       {
        "factor": "P/E vs sector median",
-       "score": 83,
+       "score": 84,
        "weight": 30
       },
       {
@@ -1418,6 +1418,11 @@
       "source": "Google News"
      },
      {
+      "title": "Coal India Ltd Share/Stock Price Live Today | The HinduBusinessLine - BusinessLine",
+      "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE54cGI3dlR3Tl9temhsdE44dWZiTV9FWEdRNGZObzFXQVYzYWdXLXhlSlpLaTFMa2x3LXFkYnlEcGZDV3VtV21oMU12QVVFRVg1OXI4bmJDSk4tajdORElOenVYOVRQa2d2MEh3?oc=5",
+      "source": "Google News"
+     },
+     {
       "title": "COALINDIA Outlook for the Week (July 27, 2026 – July 31, 2026) - Equitypandit",
       "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE5NVnlSSGhvcUg5MGhOTW5fV01CWXYxcm80WVhtQ0U5SHNOSmJUbGJLVDU2Y19WRzBxU1l1bUs4eVA4THFJRHZrOTlnQlR2ZTZRRktidk0yVmhHVjk1SnZtZG10Uld4MVlGdE8wag?oc=5",
       "source": "Google News"
@@ -1446,11 +1451,6 @@
       "title": "Bharat Coking Coal shares drop over 7% after Q1 net loss, lower offtake - CNBC TV18",
       "url": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxQN2Qwc3B4NEJZZHVNSm9xcGd6dmlMajEwYkM0U1hGSUQtTkNpdjl3LUQ0V04tUEpxcWRJOVZROTRpVDJCc0FDSnQyUUV0azQxWUlZRGxudEE0Rk8wenR2eFhRdXlWa2FvQlJ0ZExLZVFUMjlNYkhOZ2JhSkVsLU5HNzZVUXFlVVRpVWlCZXhWc3FXWFNVVGJxaVExLWhMZWN4OGNLR01kYjh6RTRJSzh4U1dnRDVUQnFwVnl5bE1CQWxPbzNpSDdnNzRYckJ3QVhJcWJYS0luQnRyRTBiY1lDdkpR0gHnAUFVX3lxTFBsYk9FRE96cXR2UHprWXUzLTdlbTJPNG5BUDk5ajVEcm83YTZLdHFUd1phdzJESWRGMjJxOVJhRXQwVGcyWGplWWxpSUxlTTVFeDZudWNGOVV0bUQ1V1k2QUQ5Z00zT0lGR3RnV0x2S3M5amVTclVNcUlfQ2lFa2YzbUFQQjZpMnEyaXVFTTFNR0pYTFp2OGQ4YWt2UGFmbThjdnRKZUN5ZERyMllkNWJoM2hKOXY1YS02b1pwU0liRWY0RmIzc3Z4eFVIMWt4TFA1MGY5cDFISUFVMzNOQ1NYbVlCMVZaQQ?oc=5",
       "source": "Google News"
-     },
-     {
-      "title": "Coal India fixes Sept 4 record date for ₹5.25 dividend - scanx.trade",
-      "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxPRTB2RWNCaHhHeWJKUFJvRExRQ2QyMnVaSHhQTmM4M1M0SGdUalBRRUhFVVJodk5VTUkxdjJMVnJXdG5PV000RzVxZlZkUEtiNU9rOTlCMDJFalk3dW9CNnByUHVNalhYc00yWk9ZWF9UUVowS3d2UmFvc1YzR0lpd2NiZTF4VTFia2N6bEI4b0dJaWRTT0J2YlE3azMzNnJFdTZsRExPTU92SkJyZlpN?oc=5",
-      "source": "Google News"
      }
     ],
     "red": [],
@@ -1466,12 +1466,12 @@
    "name": "Lupin Limited",
    "sector": "Healthcare",
    "industry": "Drug Manufacturers - Specialty & Generic",
-   "price": 2370.5,
-   "mcap_cr": 108387.5262464,
+   "price": 2371.0,
+   "mcap_cr": 108410.3917568,
    "eps": 116.39,
    "book_value": 491.017,
-   "pe": 20.36687,
-   "pb": 4.827735,
+   "pe": 20.371166,
+   "pb": 4.8287535,
    "roe": 26.906999999999996,
    "roa": 12.708999000000002,
    "opm": 24.219999,
@@ -1481,7 +1481,7 @@
    "eps_growth": 89.0,
    "div_yield": 0.76,
    "cash_conv": 1.375345948797773,
-   "pos_in_3y_range": 0.9291295710420199,
+   "pos_in_3y_range": 0.9294581940013992,
    "day_change_pct": -1.0766618663110294,
    "volume_ratio": 0.9598214787718304,
    "last_session_date": "2026-07-24",
@@ -1555,14 +1555,9 @@
      ]
     }
    },
-   "sector_median_pe": 43.6,
+   "sector_median_pe": 43.9,
    "news": {
     "headlines": [
-     {
-      "title": "Lupin Limited (LUPIN.NS) Stock Price, News, Quote &amp; History - Yahoo! Finance Canada",
-      "url": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE9ZTlF1U01jM3I1RkR1bGxqOXo2dEU5U0ZKZGVWY0RUcmdKdkxWV0xpcnRJMUxncXh4bUEwZHpFQk5acjJmS0FVbTBLQjJoLVRaQ1VDWXU1QQ?oc=5",
-      "source": "Google News"
-     },
      {
       "title": "LUPIN Outlook for the Week (July 27, 2026 – July 31, 2026) - Equitypandit",
       "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE9vTlNLX2E5N0ZCOW5VVzhDUzd5VHd4MjV2dndWWWh2aVlBVEY2c1IzMjRiLXVjQVpvZ3VBZlRrQXJXVmNSMHVTcXdhQjVLTXpLTFYxOVItY19JTW5Idk1lNDhfSUhpV1k?oc=5",
@@ -1597,6 +1592,11 @@
       "title": "Lupin to Host Q1 FY27 Earnings Call on August 7 at 16:30 IST - scanx.trade",
       "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxPa1lBNzJTWmZfZ1pIVzhxNmdyajlrOTkwOHhlOVNtS3pUanNxR2FBaXE3WVM1WlNQRERVNVZFeVQxcFhDTWhyeWxVRlF5V1FKSF95dzhqRU1qLVdSMWVwdEMxWjVNbzgwSmJJS0VYcVlvU2JLUGRmbWhXMVZna0RDOVBLc1FoNFFXQ0Nyd1cxVlJmVmNIdlVKZDF0b25ncVl3WWNzN2xvNA?oc=5",
       "source": "Google News"
+     },
+     {
+      "title": "Lupin, Aurobindo, Sun Pharma fall up to 4%: Why are pharma stocks falling today? - India Today",
+      "url": "https://news.google.com/rss/articles/CBMi9AFBVV95cUxNRUxGT0taUXFpUUNpZFg0V2hTd3p1Ylk4bkhqbVhyaUV3VG5zWlFUWXctcWZnS3BxY1dpYUNXd0F0M2pqaWdnZW1aWGJ0VzJ4U0hDODNqX0hrbTNUQzBNV1ZCaVoyc25TUnlHWU1FQm9kSWZ2amlVczBrVnFuUmZVMW1pMldJS1UtbnJ1cnhEeVJIZWd4OE9GQjZPXzQ2a1R4LUJwVzBBTDNVRWNtdF9HZ1ZMRDdCSTFmc2FRcXM5SXBwYWxmTDdMTkFTOHJwVF9zYm5VRzJlSko2bEpNZjdyV0RBUjRHNmVuSmxrT0ZoRnJTNW9M0gH6AUFVX3lxTFBrMzFhVFpYdmxxRXh4b1htZmtGdmV3cnFacjNaTUZfNFcySXM3S0Qwc1VGRThoRWh1U1NkRzNLMjBEZ3pDVkYwbXhnNTBTS1pSSk1SaVRISXJiSV9wVHlSZkh0UmlHemw5UU5RTk5ndjFpeEZIa1FXSkIzUXduZUs2RkozUllIYkl0RGI3azFMT2hlaHk2ZFBvU25hejUySVJwVExIdjBoQTRHcE1kazZYbzZjUG5BLVdpTC1PVnByS2VMNEdyOUw5bERSdzZUV21nMHFIN002QURoOXlpYTZlMWlleWxzTlhyTVBZTElBRDI1cjZDcl9JX1E?oc=5",
+      "source": "Google News"
      }
     ],
     "red": [],
@@ -1615,16 +1615,176 @@
    }
   },
   {
+   "symbol": "INFY",
+   "name": "Infosys Limited",
+   "sector": "Technology",
+   "industry": "Information Technology Services",
+   "price": 1039.0,
+   "mcap_cr": 420807.835648,
+   "eps": 78.17,
+   "book_value": 233.15013,
+   "pe": 13.291544,
+   "pb": 4.456356,
+   "roe": 32.0,
+   "roa": 15.296999999999999,
+   "opm": 21.173000000000002,
+   "npm": 16.370001000000002,
+   "de": 0.09541000000000001,
+   "rev_growth": 2.9000000000000004,
+   "eps_growth": 5.3,
+   "div_yield": 4.8,
+   "cash_conv": 1.2314173702044202,
+   "pos_in_3y_range": 0.0,
+   "day_change_pct": -0.6205842895255073,
+   "volume_ratio": 2.5839770746863606,
+   "last_session_date": "2026-07-24",
+   "scores": {
+    "total": 79.2,
+    "quality": 95.0,
+    "value": 82.7,
+    "growth": 17.9,
+    "coverage": 100,
+    "detail": {
+     "quality": [
+      {
+       "factor": "Return on equity",
+       "score": 100,
+       "weight": 30
+      },
+      {
+       "factor": "Return on assets",
+       "score": 100,
+       "weight": 15
+      },
+      {
+       "factor": "Operating margin",
+       "score": 77,
+       "weight": 15
+      },
+      {
+       "factor": "Low debt",
+       "score": 92,
+       "weight": 20
+      },
+      {
+       "factor": "Profit converts to cash",
+       "score": 100,
+       "weight": 20
+      }
+     ],
+     "value": [
+      {
+       "factor": "Earnings yield",
+       "score": 79,
+       "weight": 35
+      },
+      {
+       "factor": "Price to book",
+       "score": 51,
+       "weight": 20
+      },
+      {
+       "factor": "P/E vs sector median",
+       "score": 100,
+       "weight": 30
+      },
+      {
+       "factor": "Position in 3-year range",
+       "score": 100,
+       "weight": 15
+      }
+     ],
+     "growth": [
+      {
+       "factor": "Revenue growth",
+       "score": 15,
+       "weight": 50
+      },
+      {
+       "factor": "Earnings growth",
+       "score": 21,
+       "weight": 50
+      }
+     ]
+    }
+   },
+   "sector_median_pe": 30.1,
+   "news": {
+    "headlines": [
+     {
+      "title": "11:11 | US imposes 10% tariff on India; Nvidia inks $1.5 billion AI chip deal, Infosys slips after Q1",
+      "url": "https://www.cnbctv18.com/business/us-imposes-10-tariff-on-india-nvidia-inks-1-5-billion-ai-chip-deal-infosys-slips-after-q1-19952944.htm",
+      "source": "CNBC-TV18 — business"
+     },
+     {
+      "title": "Top Stories | Brent at $100, Infosys new CEO, Adani Airline ambition, Blinkit's dominance",
+      "url": "https://www.cnbctv18.com/business/top-10-stories-brent-at-100-infosys-new-ceo-adani-airline-ambition-blinkits-dominance-19952731.htm",
+      "source": "CNBC-TV18 — business"
+     },
+     {
+      "title": "As AI reshapes IT jobs, Infosys bets on 20,000 fresh graduates",
+      "url": "https://www.cnbctv18.com/business/companies/infosys-jobs-india-second-largest-it-firm-plans-hiring-20000-college-graduates-fy27-19952551.htm",
+      "source": "CNBC-TV18 — business"
+     },
+     {
+      "title": "Infosys Limited Stock 12‑Month Price Target Cut to INR 1277.32, Implies 21% Upside - TradingView",
+      "url": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxQaE9CbmFCVHVoaWI3X1BCU3JLRWdYdmZWVURudGk5TVdOd2ZpM2VkZGNlV0JLMFJ3ZjFKakdQN0huR3dQRDNheVhJcFJ6WnYxbVoycXNkTFhNX3lHMTdfUmdXZjF1Qy0xNXdoem9jX253aTlwN3NhTFRWRlpjUS1JN2ZPNzRxQmQ1WEMyZ3liSkROV1VqUmhuem5CVVdYS0tRLTZIS2xZUmdpQmNuZi1KLXB1SUpPcmV1NWRENVFUbldOY1hMeWZodzQ1YUhWNUZqRlVlOEUwcVdhdw?oc=5",
+      "source": "Google News"
+     },
+     {
+      "title": "Infosys shares fall 2%, top Nifty loser after Q1 miss, guidance cut; brokerages remain largely cautious - Moneycontrol.com",
+      "url": "https://news.google.com/rss/articles/CBMi9wFBVV95cUxNVVRJa1ZfSTdsYTJ6VkF5M1NrVF9XUXJoTV9ERU9HRWZJTWJuMFhRX2FaU3JxOGN1ZUVXdVE0OGgyVjdGQkVPSzBSNHRuQmFJT1lELXFfejV3UUtuTDJsX2NJMXFwdUdfb1A1Skh5d0lpVHlZXzRJZXp1d1ZyOG5xSF9ZRWR1d051TFVUVURxLU8tc1dmY0p0eTB5Yk83NGZ0VkRlNmFiMW1zUjhYNGlWRFRxQkxwN0xzYVdwcmhHbjRFUTVfdzVYeVMwcHR0Sk1udEtCMTdQWDFDTzlUUFNNVk5mRWdSWldNS0RtT2FFQnFSZ0NZSGtV0gH8AUFVX3lxTE1od3BnS2Y1QU15S3ZhV2VSY3BmcnZpQld4eXhuRDB5QkxBOGh6czdCU1RqUFZaazc2YjFsMER3bUR1WjRzT214R0xzTVZYb2U0VElzaGdRQkZOUHNMZmRWajFtNEhKNm1ieWwzbVJYeDRZTHZDYkxFSkdJdEVER3JjYjZQc1lhN0RVcWxwd2NnLTdFem5rN0lKMENlWDN0MWlaY0c0dUVMOEtyelJPclhvaEI0SVhIaGlDWkw1TVRyTWxka3JvZVRHQzRtVUFjS21MNWJ3dllfSnBBVVBYZlJudVY2OVpCV2JiSEVLNWx4SkZyaVhCWmt4cWZQdA?oc=5",
+      "source": "Google News"
+     },
+     {
+      "title": "Red Flags For IT: TCS, Infosys Drop 2% As Weak Guidance, High Valuations Spooks Investors - NDTV Profit",
+      "url": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxQcEphNV9DbkxqLW1LQmNXZXlXTTF0eEVZa19sTXdPYk9hMnpyUWt4M2hLQjBKczNMVjJKZlYxOHlwQ3RJZXctY291eTdOV2E4M0ZYeGxwU2Vyd01HUkJKSU9hd0ljSXo3VDRNQWEtcHBHU3g3ZVRSN2o3OERMcDJwMVBsOEg3d21Ka3A5QmN1ZklkWEhTVmJNa1Y4Z3FXelBxUEZwWkR5ZGZKdnVQUzNad2x5SGRvMFJ6T2ZzMEt0QXRPbU14RjU0TUVfWHNwT2FBc18tT3dNd1FCbF9HUzA3VtIB6AFBVV95cUxNNHJrSmQ2WVFrVGFNTzdWLWlRUHY5cnNfT2JoQnduOVp1cVVLb01sR2g4dmMzbWhiZzlIUFRsWjR0Y1ZLLXlLOFJlZWMzMmVnX3huaDJLWUlGUFFZWkFFZ3paYUpEaTNpc0pWdHY4RGozSjdnb2Q3T25Ed2UzbjVMLUI2UzYzTlJNeUxkWVFGMmJjYS1kMy1wZUdpbWlscC1jaWUzZThXeldpRGF6dFBLcDBwVE9BajJOdHR6ZjUzbGpHeVNHUFBxanJJSG1nMnFCNHBaSno1VXdYQWptd1Z6Z3lGOW96bU8w?oc=5",
+      "source": "Google News"
+     },
+     {
+      "title": "Infosys shares fall 2% after multiple downgrades, price target cuts after Q1 results - CNBC TV18",
+      "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxOUGtIWGt3SXdGdl9CQkRfQVprNGVfRmU5T0RNb0N4MmljcGVmelVqMTJrOThxWVdsUzBuMV9XTndoemczclpveGk0X2xIOVFhck5ac2RQTGJuMDNwQk5vU1ZTeXJBbEwxbFhiVTBKdDhBQXc3THp1a0tHMUlUZ1BmZDI5ekhTSlJyNEgtR2J5V2NQWjlTY19SZVdUamhNR0lmZjJQUURvb3JjYjlacTJKSTZnSU1JcnRQbnFEY1NFenNzZlNYZnhQMGxpdEJVZTNf0gHWAUFVX3lxTE1QSE9EOXdNN2tHdXBaU2V6QWF0a2NicmhsWXozbWdtSHJHWURmWVNyWkNGVGlrSmxOV0I5M2VjenFJcjM2N18xZERDQzlFbjZaQWt5Z0FFeDMzYW9yTDhYM0JRZ0ZIM0tiSmYxcWREN1UtaFplcmRUU3NLbTZJdTZtZTFzcmJtM3ItUk12VWRiQldpYWdkTmh6RFNXZzYtdEY2Ym5yNDQyZi1VYUJiLU1LU1UzRklObF83aXNNWGVEYlg3c2NYc1RQczJQZWpzZnJfZUNsaEE?oc=5",
+      "source": "Google News"
+     },
+     {
+      "title": "Infosys share price falls 1% ahead of Q1 results 2026. Should you buy or sell the IT stock? - livemint.com",
+      "url": "https://news.google.com/rss/articles/CBMi7wFBVV95cUxPdlVORVRUMUtxU1hnMHVFR1RRS1c0WEtySEQtYXR2Vm1mOUk5c3k3eTNEbEdPcFRyLTdLaklNNDNFZlRMaDVpMldNcmdsbEdrQ1R5YXlMajl6eV9oa01Vb29nY1JLTHBsSzFSX1F4OFZfZ3RGdkR1Q0dwQ3VTTS1TOEFjR3d6bHpFZ2prYUFKLU5sVDR4UEtFTHFkNmQ3WUo3SUxyWm5xbjZQeF9BR19VRUNVanpJekp5YmNJdFZReFRlZVBPMlRrdVRPOUgzcU93LVhOWGM2SlV4Y1JmcGFNb1lSRnAyeFdZbnZCTXBub9IB9AFBVV95cUxOdS1jaGdwR2xXZ1RwQzdTMnFhQW1JZUhXOW1qZ0NxZU1JZ09YV2lHXzNLSnBROElVU2ZQd1FpdzVqZ0c3dWZJQkJTMHB5RmJkaDlxTnQ4ZkRrZUJQRU5pUENXdkNJRkZjOEtYZkJJVlVpeDlBUExsdUtjOHFadDB1M0tVUnh6T1k1WUpKTThDM1RUamdzc2d4S05ZNVk4X2RTVXM0NGdfYWYtNUlfaUdfbjVKUmxmd084TlJpSGVkZDJhZlFYY3JGQ0s3TDk4ZEFOSk13U2dYQjQ4d0FLQlNKczZtVy1Da2dqeG5CSUo5WUl0TTF4?oc=5",
+      "source": "Google News"
+     }
+    ],
+    "red": [],
+    "watch": [
+     {
+      "keyword": "guidance cut",
+      "headline": "Infosys shares fall 2%, top Nifty loser after Q1 miss, guidance cut; brokerages remain largely cautious - Moneycontrol.com",
+      "url": "https://news.google.com/rss/articles/CBMi9wFBVV95cUxNVVRJa1ZfSTdsYTJ6VkF5M1NrVF9XUXJoTV9ERU9HRWZJTWJuMFhRX2FaU3JxOGN1ZUVXdVE0OGgyVjdGQkVPSzBSNHRuQmFJT1lELXFfejV3UUtuTDJsX2NJMXFwdUdfb1A1Skh5d0lpVHlZXzRJZXp1d1ZyOG5xSF9ZRWR1d051TFVUVURxLU8tc1dmY0p0eTB5Yk83NGZ0VkRlNmFiMW1zUjhYNGlWRFRxQkxwN0xzYVdwcmhHbjRFUTVfdzVYeVMwcHR0Sk1udEtCMTdQWDFDTzlUUFNNVk5mRWdSWldNS0RtT2FFQnFSZ0NZSGtV0gH8AUFVX3lxTE1od3BnS2Y1QU15S3ZhV2VSY3BmcnZpQld4eXhuRDB5QkxBOGh6czdCU1RqUFZaazc2YjFsMER3bUR1WjRzT214R0xzTVZYb2U0VElzaGdRQkZOUHNMZmRWajFtNEhKNm1ieWwzbVJYeDRZTHZDYkxFSkdJdEVER3JjYjZQc1lhN0RVcWxwd2NnLTdFem5rN0lKMENlWDN0MWlaY0c0dUVMOEtyelJPclhvaEI0SVhIaGlDWkw1TVRyTWxka3JvZVRHQzRtVUFjS21MNWJ3dllfSnBBVVBYZlJudVY2OVpCV2JiSEVLNWx4SkZyaVhCWmt4cWZQdA?oc=5",
+      "source": "Google News"
+     },
+     {
+      "keyword": "guidance cut",
+      "headline": "Infosys stock ratings downgraded: Brokerages turn cautious after Q1 miss, guidance cut; check target... - Moneycontrol.com",
+      "url": "https://news.google.com/rss/articles/CBMigwJBVV95cUxOY0dMNHM2UFc5YXl6Tm55UXcyVGJ1OU1mRlFmb2tqdnRqcTdZS1VnVzVzcXFzSkhjSVpNd1pYdVBvYmFoQzFqUi14bVZnaFJ4a19laW5PWFFrZndBQXpEelFhdmR1YWcyazBMOUtaTy1DNDhQUUpJbjlfVzdnanQ0MkpYWThpaUpNQURvY2ZHb3EtOEloZGVQLVBiSmxhV1RjRDUwY1dhek8zYzItM2xGejFmZ3pEZUxVTWlEakQtMndLWk5FM25SXzhPM2dnVzV0UVZ6ZGozVTdJU2MtSWMzazF3N1lrT2tYSTU4MjBvc2JTQUp3ejlaOE1FQVBXSkJOcThR0gGDAkFVX3lxTE5jR0w0czZQVzlheXpObnlRdzJUYnU5TWZGUWZva2p2dGpxN1lLVWdXNXNxcXNKSGNJWk13Wlh1UG9iYWhDMWpSLXhtVmdoUnhrX2Vpbk9YUWtmd0FBekR6UWF2ZHVhZzJrMEw5S1pPLUM0OFBRSkluOV9XN2dqdDQySlhZOGlpSk1BRG9jZkdvcS04SWhkZVAtUGJKbGFXVGNENTBjV2F6TzNjMi0zbEZ6MWZnekRlTFVNaURqRC0yd0taTkUzblJfOE8zZ2dXNXRRVnpkajNVN0lTYy1JYzNrMXc3WWtPa1hJNTgyMG9zYlNBSnd6OVo4TUVBUFdKQk5xOFE?oc=5",
+      "source": "Google News"
+     }
+    ],
+    "checked": true,
+    "sources": [
+     "CNBC-TV18 — business",
+     "Google News"
+    ]
+   }
+  },
+  {
    "symbol": "NATIONALUM",
    "name": "National Aluminium Company Limited",
    "sector": "Basic Materials",
    "industry": "Aluminum",
-   "price": 343.9,
-   "mcap_cr": 63161.7683456,
+   "price": 344.6,
+   "mcap_cr": 63290.3303168,
    "eps": 33.43,
    "book_value": 117.649,
-   "pe": 10.287167,
-   "pb": 2.9231017,
+   "pe": 10.308106,
+   "pb": 2.9290516,
    "roe": 29.42,
    "roa": 18.198,
    "opm": 42.758,
@@ -1634,14 +1794,14 @@
    "eps_growth": -16.7,
    "div_yield": 2.33,
    "cash_conv": 1.1105673653430799,
-   "pos_in_3y_range": 0.7425956231147701,
+   "pos_in_3y_range": 0.7445398692196071,
    "day_change_pct": -0.606938180206828,
    "volume_ratio": 0.3190264762809776,
    "last_session_date": "2026-07-24",
    "scores": {
-    "total": 79.2,
+    "total": 79.1,
     "quality": 100.0,
-    "value": 83.4,
+    "value": 83.3,
     "growth": 0.0,
     "coverage": 100,
     "detail": {
@@ -1680,7 +1840,7 @@
       },
       {
        "factor": "Price to book",
-       "score": 73,
+       "score": 72,
        "weight": 20
       },
       {
@@ -1768,176 +1928,16 @@
    }
   },
   {
-   "symbol": "INFY",
-   "name": "Infosys Limited",
-   "sector": "Technology",
-   "industry": "Information Technology Services",
-   "price": 1040.9,
-   "mcap_cr": 421577.35936,
-   "eps": 78.17,
-   "book_value": 233.15013,
-   "pe": 13.31585,
-   "pb": 4.464505,
-   "roe": 32.0,
-   "roa": 15.296999999999999,
-   "opm": 21.173000000000002,
-   "npm": 16.370001000000002,
-   "de": 0.09541000000000001,
-   "rev_growth": 2.9000000000000004,
-   "eps_growth": 5.3,
-   "div_yield": 4.8,
-   "cash_conv": 1.2314173702044202,
-   "pos_in_3y_range": -2.8382405697674578e-08,
-   "day_change_pct": -0.6205842895255073,
-   "volume_ratio": 2.5839770746863606,
-   "last_session_date": "2026-07-24",
-   "scores": {
-    "total": 79.1,
-    "quality": 95.0,
-    "value": 82.7,
-    "growth": 17.9,
-    "coverage": 100,
-    "detail": {
-     "quality": [
-      {
-       "factor": "Return on equity",
-       "score": 100,
-       "weight": 30
-      },
-      {
-       "factor": "Return on assets",
-       "score": 100,
-       "weight": 15
-      },
-      {
-       "factor": "Operating margin",
-       "score": 77,
-       "weight": 15
-      },
-      {
-       "factor": "Low debt",
-       "score": 92,
-       "weight": 20
-      },
-      {
-       "factor": "Profit converts to cash",
-       "score": 100,
-       "weight": 20
-      }
-     ],
-     "value": [
-      {
-       "factor": "Earnings yield",
-       "score": 79,
-       "weight": 35
-      },
-      {
-       "factor": "Price to book",
-       "score": 51,
-       "weight": 20
-      },
-      {
-       "factor": "P/E vs sector median",
-       "score": 100,
-       "weight": 30
-      },
-      {
-       "factor": "Position in 3-year range",
-       "score": 100,
-       "weight": 15
-      }
-     ],
-     "growth": [
-      {
-       "factor": "Revenue growth",
-       "score": 15,
-       "weight": 50
-      },
-      {
-       "factor": "Earnings growth",
-       "score": 21,
-       "weight": 50
-      }
-     ]
-    }
-   },
-   "sector_median_pe": 30.3,
-   "news": {
-    "headlines": [
-     {
-      "title": "11:11 | US imposes 10% tariff on India; Nvidia inks $1.5 billion AI chip deal, Infosys slips after Q1",
-      "url": "https://www.cnbctv18.com/business/us-imposes-10-tariff-on-india-nvidia-inks-1-5-billion-ai-chip-deal-infosys-slips-after-q1-19952944.htm",
-      "source": "CNBC-TV18 — business"
-     },
-     {
-      "title": "Top Stories | Brent at $100, Infosys new CEO, Adani Airline ambition, Blinkit's dominance",
-      "url": "https://www.cnbctv18.com/business/top-10-stories-brent-at-100-infosys-new-ceo-adani-airline-ambition-blinkits-dominance-19952731.htm",
-      "source": "CNBC-TV18 — business"
-     },
-     {
-      "title": "As AI reshapes IT jobs, Infosys bets on 20,000 fresh graduates",
-      "url": "https://www.cnbctv18.com/business/companies/infosys-jobs-india-second-largest-it-firm-plans-hiring-20000-college-graduates-fy27-19952551.htm",
-      "source": "CNBC-TV18 — business"
-     },
-     {
-      "title": "Infosys Limited Stock 12‑Month Price Target Cut to INR 1277.32, Implies 21% Upside - TradingView",
-      "url": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxQaE9CbmFCVHVoaWI3X1BCU3JLRWdYdmZWVURudGk5TVdOd2ZpM2VkZGNlV0JLMFJ3ZjFKakdQN0huR3dQRDNheVhJcFJ6WnYxbVoycXNkTFhNX3lHMTdfUmdXZjF1Qy0xNXdoem9jX253aTlwN3NhTFRWRlpjUS1JN2ZPNzRxQmQ1WEMyZ3liSkROV1VqUmhuem5CVVdYS0tRLTZIS2xZUmdpQmNuZi1KLXB1SUpPcmV1NWRENVFUbldOY1hMeWZodzQ1YUhWNUZqRlVlOEUwcVdhdw?oc=5",
-      "source": "Google News"
-     },
-     {
-      "title": "Infosys shares fall 2%, top Nifty loser after Q1 miss, guidance cut; brokerages remain largely cautious - Moneycontrol.com",
-      "url": "https://news.google.com/rss/articles/CBMi9wFBVV95cUxNVVRJa1ZfSTdsYTJ6VkF5M1NrVF9XUXJoTV9ERU9HRWZJTWJuMFhRX2FaU3JxOGN1ZUVXdVE0OGgyVjdGQkVPSzBSNHRuQmFJT1lELXFfejV3UUtuTDJsX2NJMXFwdUdfb1A1Skh5d0lpVHlZXzRJZXp1d1ZyOG5xSF9ZRWR1d051TFVUVURxLU8tc1dmY0p0eTB5Yk83NGZ0VkRlNmFiMW1zUjhYNGlWRFRxQkxwN0xzYVdwcmhHbjRFUTVfdzVYeVMwcHR0Sk1udEtCMTdQWDFDTzlUUFNNVk5mRWdSWldNS0RtT2FFQnFSZ0NZSGtV0gH8AUFVX3lxTE1od3BnS2Y1QU15S3ZhV2VSY3BmcnZpQld4eXhuRDB5QkxBOGh6czdCU1RqUFZaazc2YjFsMER3bUR1WjRzT214R0xzTVZYb2U0VElzaGdRQkZOUHNMZmRWajFtNEhKNm1ieWwzbVJYeDRZTHZDYkxFSkdJdEVER3JjYjZQc1lhN0RVcWxwd2NnLTdFem5rN0lKMENlWDN0MWlaY0c0dUVMOEtyelJPclhvaEI0SVhIaGlDWkw1TVRyTWxka3JvZVRHQzRtVUFjS21MNWJ3dllfSnBBVVBYZlJudVY2OVpCV2JiSEVLNWx4SkZyaVhCWmt4cWZQdA?oc=5",
-      "source": "Google News"
-     },
-     {
-      "title": "Red Flags For IT: TCS, Infosys Drop 2% As Weak Guidance, High Valuations Spooks Investors - NDTV Profit",
-      "url": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxQcEphNV9DbkxqLW1LQmNXZXlXTTF0eEVZa19sTXdPYk9hMnpyUWt4M2hLQjBKczNMVjJKZlYxOHlwQ3RJZXctY291eTdOV2E4M0ZYeGxwU2Vyd01HUkJKSU9hd0ljSXo3VDRNQWEtcHBHU3g3ZVRSN2o3OERMcDJwMVBsOEg3d21Ka3A5QmN1ZklkWEhTVmJNa1Y4Z3FXelBxUEZwWkR5ZGZKdnVQUzNad2x5SGRvMFJ6T2ZzMEt0QXRPbU14RjU0TUVfWHNwT2FBc18tT3dNd1FCbF9HUzA3VtIB6AFBVV95cUxNNHJrSmQ2WVFrVGFNTzdWLWlRUHY5cnNfT2JoQnduOVp1cVVLb01sR2g4dmMzbWhiZzlIUFRsWjR0Y1ZLLXlLOFJlZWMzMmVnX3huaDJLWUlGUFFZWkFFZ3paYUpEaTNpc0pWdHY4RGozSjdnb2Q3T25Ed2UzbjVMLUI2UzYzTlJNeUxkWVFGMmJjYS1kMy1wZUdpbWlscC1jaWUzZThXeldpRGF6dFBLcDBwVE9BajJOdHR6ZjUzbGpHeVNHUFBxanJJSG1nMnFCNHBaSno1VXdYQWptd1Z6Z3lGOW96bU8w?oc=5",
-      "source": "Google News"
-     },
-     {
-      "title": "Infosys shares fall 2% after multiple downgrades, price target cuts after Q1 results - CNBC TV18",
-      "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxOUGtIWGt3SXdGdl9CQkRfQVprNGVfRmU5T0RNb0N4MmljcGVmelVqMTJrOThxWVdsUzBuMV9XTndoemczclpveGk0X2xIOVFhck5ac2RQTGJuMDNwQk5vU1ZTeXJBbEwxbFhiVTBKdDhBQXc3THp1a0tHMUlUZ1BmZDI5ekhTSlJyNEgtR2J5V2NQWjlTY19SZVdUamhNR0lmZjJQUURvb3JjYjlacTJKSTZnSU1JcnRQbnFEY1NFenNzZlNYZnhQMGxpdEJVZTNf0gHWAUFVX3lxTE1QSE9EOXdNN2tHdXBaU2V6QWF0a2NicmhsWXozbWdtSHJHWURmWVNyWkNGVGlrSmxOV0I5M2VjenFJcjM2N18xZERDQzlFbjZaQWt5Z0FFeDMzYW9yTDhYM0JRZ0ZIM0tiSmYxcWREN1UtaFplcmRUU3NLbTZJdTZtZTFzcmJtM3ItUk12VWRiQldpYWdkTmh6RFNXZzYtdEY2Ym5yNDQyZi1VYUJiLU1LU1UzRklObF83aXNNWGVEYlg3c2NYc1RQczJQZWpzZnJfZUNsaEE?oc=5",
-      "source": "Google News"
-     },
-     {
-      "title": "Infosys share price falls 1% ahead of Q1 results 2026. Should you buy or sell the IT stock? - livemint.com",
-      "url": "https://news.google.com/rss/articles/CBMi7wFBVV95cUxPdlVORVRUMUtxU1hnMHVFR1RRS1c0WEtySEQtYXR2Vm1mOUk5c3k3eTNEbEdPcFRyLTdLaklNNDNFZlRMaDVpMldNcmdsbEdrQ1R5YXlMajl6eV9oa01Vb29nY1JLTHBsSzFSX1F4OFZfZ3RGdkR1Q0dwQ3VTTS1TOEFjR3d6bHpFZ2prYUFKLU5sVDR4UEtFTHFkNmQ3WUo3SUxyWm5xbjZQeF9BR19VRUNVanpJekp5YmNJdFZReFRlZVBPMlRrdVRPOUgzcU93LVhOWGM2SlV4Y1JmcGFNb1lSRnAyeFdZbnZCTXBub9IB9AFBVV95cUxOdS1jaGdwR2xXZ1RwQzdTMnFhQW1JZUhXOW1qZ0NxZU1JZ09YV2lHXzNLSnBROElVU2ZQd1FpdzVqZ0c3dWZJQkJTMHB5RmJkaDlxTnQ4ZkRrZUJQRU5pUENXdkNJRkZjOEtYZkJJVlVpeDlBUExsdUtjOHFadDB1M0tVUnh6T1k1WUpKTThDM1RUamdzc2d4S05ZNVk4X2RTVXM0NGdfYWYtNUlfaUdfbjVKUmxmd084TlJpSGVkZDJhZlFYY3JGQ0s3TDk4ZEFOSk13U2dYQjQ4d0FLQlNKczZtVy1Da2dqeG5CSUo5WUl0TTF4?oc=5",
-      "source": "Google News"
-     }
-    ],
-    "red": [],
-    "watch": [
-     {
-      "keyword": "guidance cut",
-      "headline": "Infosys shares fall 2%, top Nifty loser after Q1 miss, guidance cut; brokerages remain largely cautious - Moneycontrol.com",
-      "url": "https://news.google.com/rss/articles/CBMi9wFBVV95cUxNVVRJa1ZfSTdsYTJ6VkF5M1NrVF9XUXJoTV9ERU9HRWZJTWJuMFhRX2FaU3JxOGN1ZUVXdVE0OGgyVjdGQkVPSzBSNHRuQmFJT1lELXFfejV3UUtuTDJsX2NJMXFwdUdfb1A1Skh5d0lpVHlZXzRJZXp1d1ZyOG5xSF9ZRWR1d051TFVUVURxLU8tc1dmY0p0eTB5Yk83NGZ0VkRlNmFiMW1zUjhYNGlWRFRxQkxwN0xzYVdwcmhHbjRFUTVfdzVYeVMwcHR0Sk1udEtCMTdQWDFDTzlUUFNNVk5mRWdSWldNS0RtT2FFQnFSZ0NZSGtV0gH8AUFVX3lxTE1od3BnS2Y1QU15S3ZhV2VSY3BmcnZpQld4eXhuRDB5QkxBOGh6czdCU1RqUFZaazc2YjFsMER3bUR1WjRzT214R0xzTVZYb2U0VElzaGdRQkZOUHNMZmRWajFtNEhKNm1ieWwzbVJYeDRZTHZDYkxFSkdJdEVER3JjYjZQc1lhN0RVcWxwd2NnLTdFem5rN0lKMENlWDN0MWlaY0c0dUVMOEtyelJPclhvaEI0SVhIaGlDWkw1TVRyTWxka3JvZVRHQzRtVUFjS21MNWJ3dllfSnBBVVBYZlJudVY2OVpCV2JiSEVLNWx4SkZyaVhCWmt4cWZQdA?oc=5",
-      "source": "Google News"
-     },
-     {
-      "keyword": "guidance cut",
-      "headline": "Infosys stock ratings downgraded: Brokerages turn cautious after Q1 miss, guidance cut; check target... - Moneycontrol.com",
-      "url": "https://news.google.com/rss/articles/CBMigwJBVV95cUxOY0dMNHM2UFc5YXl6Tm55UXcyVGJ1OU1mRlFmb2tqdnRqcTdZS1VnVzVzcXFzSkhjSVpNd1pYdVBvYmFoQzFqUi14bVZnaFJ4a19laW5PWFFrZndBQXpEelFhdmR1YWcyazBMOUtaTy1DNDhQUUpJbjlfVzdnanQ0MkpYWThpaUpNQURvY2ZHb3EtOEloZGVQLVBiSmxhV1RjRDUwY1dhek8zYzItM2xGejFmZ3pEZUxVTWlEakQtMndLWk5FM25SXzhPM2dnVzV0UVZ6ZGozVTdJU2MtSWMzazF3N1lrT2tYSTU4MjBvc2JTQUp3ejlaOE1FQVBXSkJOcThR0gGDAkFVX3lxTE5jR0w0czZQVzlheXpObnlRdzJUYnU5TWZGUWZva2p2dGpxN1lLVWdXNXNxcXNKSGNJWk13Wlh1UG9iYWhDMWpSLXhtVmdoUnhrX2Vpbk9YUWtmd0FBekR6UWF2ZHVhZzJrMEw5S1pPLUM0OFBRSkluOV9XN2dqdDQySlhZOGlpSk1BRG9jZkdvcS04SWhkZVAtUGJKbGFXVGNENTBjV2F6TzNjMi0zbEZ6MWZnekRlTFVNaURqRC0yd0taTkUzblJfOE8zZ2dXNXRRVnpkajNVN0lTYy1JYzNrMXc3WWtPa1hJNTgyMG9zYlNBSnd6OVo4TUVBUFdKQk5xOFE?oc=5",
-      "source": "Google News"
-     }
-    ],
-    "checked": true,
-    "sources": [
-     "CNBC-TV18 — business",
-     "Google News"
-    ]
-   }
-  },
-  {
    "symbol": "IGIL",
    "name": "International Gemological Institute Limited",
    "sector": "Basic Materials",
    "industry": "Other Precious Metals & Mining",
-   "price": 338.15,
-   "mcap_cr": 14613.479424,
+   "price": 337.0,
+   "mcap_cr": 14563.7818368,
    "eps": 11.84,
    "book_value": 34.467,
-   "pe": 28.559965,
-   "pb": 9.810834,
+   "pe": 28.462837,
+   "pb": 9.777469,
    "roe": null,
    "roa": null,
    "opm": 56.596000000000004,
@@ -1947,14 +1947,14 @@
    "eps_growth": 32.0,
    "div_yield": 1.48,
    "cash_conv": null,
-   "pos_in_3y_range": 0.14134561317602506,
+   "pos_in_3y_range": 0.13760657173999,
    "day_change_pct": -2.1556747903528075,
    "volume_ratio": 6.574810329951859,
    "last_session_date": "2026-07-24",
    "scores": {
     "total": 78.3,
     "quality": 95.4,
-    "value": 44.4,
+    "value": 44.5,
     "growth": 100.0,
     "coverage": 68,
     "detail": {
@@ -1988,7 +1988,7 @@
      "value": [
       {
        "factor": "Earnings yield",
-       "score": 21,
+       "score": 22,
        "weight": 35
       },
       {
@@ -2078,12 +2078,12 @@
    "name": "Hindustan Zinc Limited",
    "sector": "Basic Materials",
    "industry": "Other Industrial Metals & Mining",
-   "price": 531.95,
-   "mcap_cr": 224765.8569728,
+   "price": 533.65,
+   "mcap_cr": 225484.1577472,
    "eps": 40.38,
    "book_value": 53.556,
-   "pe": 13.173601,
-   "pb": 9.932594,
+   "pe": 13.215701,
+   "pb": 9.964337,
    "roe": null,
    "roa": null,
    "opm": 54.706999999999994,
@@ -2093,14 +2093,14 @@
    "eps_growth": 144.6,
    "div_yield": 3.95,
    "cash_conv": null,
-   "pos_in_3y_range": 0.6296744338171915,
+   "pos_in_3y_range": 0.6336681196002065,
    "day_change_pct": 0.15061428150196465,
    "volume_ratio": 2.0887197351582096,
    "last_session_date": "2026-07-24",
    "scores": {
-    "total": 78.1,
+    "total": 78.0,
     "quality": 81.4,
-    "value": 64.0,
+    "value": 63.8,
     "growth": 100.0,
     "coverage": 68,
     "detail": {
@@ -2232,12 +2232,12 @@
    "name": "Jaiprakash Power Ventures Limited",
    "sector": "Utilities",
    "industry": "Utilities - Independent Power Producers",
-   "price": 16.95,
-   "mcap_cr": 11616.6131712,
+   "price": 17.04,
+   "mcap_cr": 11678.2948352,
    "eps": 0.7,
    "book_value": 13.025,
-   "pe": 24.214287,
-   "pb": 1.3013437,
+   "pe": 24.34286,
+   "pb": 1.3082535,
    "roe": null,
    "roa": null,
    "opm": 36.141,
@@ -2247,14 +2247,14 @@
    "eps_growth": 67.7,
    "div_yield": null,
    "cash_conv": null,
-   "pos_in_3y_range": 0.6221719793106606,
+   "pos_in_3y_range": 0.6272624772349356,
    "day_change_pct": -0.644775536028151,
    "volume_ratio": 0.5544470519723228,
    "last_session_date": "2026-07-24",
    "scores": {
-    "total": 76.3,
+    "total": 76.2,
     "quality": 87.3,
-    "value": 58.7,
+    "value": 58.3,
     "growth": 80.5,
     "coverage": 68,
     "detail": {
@@ -2298,12 +2298,12 @@
       },
       {
        "factor": "P/E vs sector median",
-       "score": 76,
+       "score": 75,
        "weight": 30
       },
       {
        "factor": "Position in 3-year range",
-       "score": 41,
+       "score": 40,
        "weight": 15
       }
      ],
@@ -2382,8 +2382,8 @@
     "symbol": "ACE",
     "name": "Action Construction Equipment Limited",
     "sector": "Industrials",
-    "price": 1039.4,
-    "mcap_cr": 12371.759104,
+    "price": 1040.9,
+    "mcap_cr": 12389.6127488,
     "day_change_pct": 6.17,
     "volume_ratio": 2.21,
     "news": {
@@ -2441,8 +2441,8 @@
     "symbol": "KPITTECH",
     "name": "KPIT Technologies Limited",
     "sector": "Technology",
-    "price": 583.2,
-    "mcap_cr": 15876.292608,
+    "price": 583.3,
+    "mcap_cr": 15879.0139904,
     "day_change_pct": 5.86,
     "volume_ratio": 3.46,
     "news": {
@@ -2495,8 +2495,8 @@
     "symbol": "PVRINOX",
     "name": "PVR INOX Limited",
     "sector": "Communication Services",
-    "price": 1063.95,
-    "mcap_cr": 10447.9842304,
+    "price": 1055.0,
+    "mcap_cr": 10360.0955392,
     "day_change_pct": 5.61,
     "volume_ratio": 5.18,
     "news": {
@@ -2555,8 +2555,8 @@
     "symbol": "RRKABEL",
     "name": "R R Kabel Limited",
     "sector": "Industrials",
-    "price": 2493.6,
-    "mcap_cr": 28203.99104,
+    "price": 2506.0,
+    "mcap_cr": 28344.23808,
     "day_change_pct": 4.85,
     "volume_ratio": 1.79,
     "news": {
@@ -2614,8 +2614,8 @@
     "symbol": "ATUL",
     "name": "Atul Ltd",
     "sector": "Basic Materials",
-    "price": 6407.5,
-    "mcap_cr": 18864.8046592,
+    "price": 6490.0,
+    "mcap_cr": 19107.6990976,
     "day_change_pct": 4.53,
     "volume_ratio": 9.89,
     "news": {
@@ -2673,8 +2673,8 @@
     "symbol": "LALPATHLAB",
     "name": "Dr. Lal PathLabs Limited",
     "sector": "Healthcare",
-    "price": 1759.2,
-    "mcap_cr": 29374.7294208,
+    "price": 1775.0,
+    "mcap_cr": 29638.5544192,
     "day_change_pct": 4.27,
     "volume_ratio": 6.45,
     "news": {
@@ -2740,8 +2740,8 @@
     "symbol": "GODFRYPHLP",
     "name": "Godfrey Phillips India Limited",
     "sector": "Consumer Defensive",
-    "price": 2129.6,
-    "mcap_cr": 33217.8784256,
+    "price": 2131.0,
+    "mcap_cr": 33239.711744,
     "day_change_pct": 4.06,
     "volume_ratio": 2.43,
     "news": {
@@ -2806,8 +2806,8 @@
     "symbol": "PERSISTENT",
     "name": "Persistent Systems Limited",
     "sector": "Technology",
-    "price": 5200.5,
-    "mcap_cr": 81247.9545344,
+    "price": 5195.0,
+    "mcap_cr": 81162.0237312,
     "day_change_pct": 3.97,
     "volume_ratio": 1.23,
     "news": {
@@ -2872,8 +2872,8 @@
     "symbol": "ASTRAL",
     "name": "Astral Limited",
     "sector": "Industrials",
-    "price": 1468.1,
-    "mcap_cr": 39440.531456,
+    "price": 1460.1,
+    "mcap_cr": 39225.6126976,
     "day_change_pct": 3.87,
     "volume_ratio": 1.87,
     "news": {
@@ -2938,8 +2938,8 @@
     "symbol": "EMMVEE",
     "name": "EMMVEE PHOTOVOLTAIC PWR L",
     "sector": "Technology",
-    "price": 331.0,
-    "mcap_cr": 22916.620288,
+    "price": 330.9,
+    "mcap_cr": 22909.6964096,
     "day_change_pct": 3.52,
     "volume_ratio": 0.59,
     "news": {
@@ -2956,8 +2956,8 @@
     "symbol": "GODIGIT",
     "name": "GO DIGIT GENERAL INS LTD",
     "sector": "Financial Services",
-    "price": 256.2,
-    "mcap_cr": 23685.6655872,
+    "price": 256.0,
+    "mcap_cr": 23667.1746048,
     "day_change_pct": -8.78,
     "volume_ratio": 6.21,
     "news": {
@@ -3022,8 +3022,8 @@
     "symbol": "MOTILALOFS",
     "name": "Motilal Oswal Financial Services Limited",
     "sector": "Financial Services",
-    "price": 871.95,
-    "mcap_cr": 52504.182784,
+    "price": 873.0,
+    "mcap_cr": 52567.4053632,
     "day_change_pct": -7.26,
     "volume_ratio": 22.3,
     "news": {
@@ -3083,8 +3083,8 @@
     "symbol": "ACUTAAS",
     "name": "Acutaas Chemicals Limited",
     "sector": "Basic Materials",
-    "price": 3259.5,
-    "mcap_cr": 26685.8921984,
+    "price": 3251.9,
+    "mcap_cr": 26623.6690432,
     "day_change_pct": -5.77,
     "volume_ratio": 5.37,
     "news": {
@@ -3215,8 +3215,8 @@
     "symbol": "HFCL",
     "name": "HFCL Limited",
     "sector": "Technology",
-    "price": 196.85,
-    "mcap_cr": 30123.2422912,
+    "price": 197.05,
+    "mcap_cr": 30153.8476032,
     "day_change_pct": -4.91,
     "volume_ratio": 1.4,
     "news": {
@@ -3274,8 +3274,8 @@
     "symbol": "CHENNPETRO",
     "name": "Chennai Petroleum Corporation Limited",
     "sector": "Energy",
-    "price": 1214.8,
-    "mcap_cr": 18089.7562624,
+    "price": 1216.9,
+    "mcap_cr": 18121.0284032,
     "day_change_pct": -4.32,
     "volume_ratio": 0.54,
     "news": {
@@ -3346,8 +3346,8 @@
     "symbol": "GVT&D",
     "name": "GE Vernova T&D India Ltd",
     "sector": "Industrials",
-    "price": 4157.4,
-    "mcap_cr": 106448.781312,
+    "price": 4211.0,
+    "mcap_cr": 107821.1903488,
     "day_change_pct": -3.95,
     "volume_ratio": 1.94,
     "news": {
@@ -3405,8 +3405,8 @@
     "symbol": "PWL",
     "name": "Physicswallah Limited",
     "sector": "Consumer Defensive",
-    "price": 128.05,
-    "mcap_cr": 36618.3645184,
+    "price": 127.0,
+    "mcap_cr": 36318.0949504,
     "day_change_pct": -3.9,
     "volume_ratio": 1.84,
     "news": {
@@ -3464,8 +3464,8 @@
     "symbol": "M&MFIN",
     "name": "Mahindra & Mahindra Financial Services Limited",
     "sector": "Financial Services",
-    "price": 356.5,
-    "mcap_cr": 49537.286144,
+    "price": 358.35,
+    "mcap_cr": 49794.3543808,
     "day_change_pct": -3.74,
     "volume_ratio": 0.44,
     "news": {
@@ -3523,8 +3523,8 @@
     "symbol": "CANHLIFE",
     "name": "CANARA HSBC LIFE INS CO L",
     "sector": "Financial Services",
-    "price": 147.31,
-    "mcap_cr": 13957.4001664,
+    "price": 147.15,
+    "mcap_cr": 13942.2400512,
     "day_change_pct": -3.66,
     "volume_ratio": 0.07,
     "news": {
@@ -3580,6 +3580,299 @@
    }
   ]
  },
+ "buzz": {
+  "note": "How many of today's Moneycontrol and CNBC-TV18 headlines mention each company. Attention only — not quality, not value, and not a forecast. Heavy coverage is often the sign of a move that already happened, not one still to come. This ranks by volume of mentions alone; it is not a suggestion to buy anything on this list.",
+  "sources": [
+   "CNBC — world markets",
+   "CNBC-TV18 — business",
+   "CNBC-TV18 — markets",
+   "Moneycontrol — business",
+   "Moneycontrol — markets",
+   "Moneycontrol — results"
+  ],
+  "top": [
+   {
+    "symbol": "HDFCBANK",
+    "name": "HDFC Bank Limited",
+    "sector": "Financial Services",
+    "price": 743.5,
+    "mcap_cr": 1145363.4445312,
+    "mentions": 3,
+    "headlines": [
+     {
+      "title": "HDFC Bank built its in-house AI platform Neev with just ₹2 crore, says CIO Lakshminarayanan",
+      "url": "https://www.cnbctv18.com/business/hdfc-bank-built-its-in-house-ai-platform-neev-with-just-%25e2%2582%25b92-crore-says-cio-lakshminarayanan-19953664.htm",
+      "source": "CNBC-TV18 — markets"
+     },
+     {
+      "title": "HDFC Bank under investigation from three US law firms for potential securities violations",
+      "url": "https://www.cnbctv18.com/market/hdfc-bank-share-price-investigation-us-three-law-firms-msrdc-potential-securities-violation-19953031.htm",
+      "source": "CNBC-TV18 — markets"
+     },
+     {
+      "title": "HDFC Bank US shareholder probe only a preliminary fact-finding exercise: HP Ranina",
+      "url": "https://www.cnbctv18.com/business/hdfc-bank-us-law-firm-investigation-not-lawsuit-hp-ranina-shareholder-probe-19953283.htm",
+      "source": "CNBC-TV18 — business"
+     }
+    ]
+   },
+   {
+    "symbol": "INFY",
+    "name": "Infosys Limited",
+    "sector": "Technology",
+    "price": 1039.0,
+    "mcap_cr": 420807.835648,
+    "mentions": 3,
+    "headlines": [
+     {
+      "title": "11:11 | US imposes 10% tariff on India; Nvidia inks $1.5 billion AI chip deal, Infosys slips after Q1",
+      "url": "https://www.cnbctv18.com/business/us-imposes-10-tariff-on-india-nvidia-inks-1-5-billion-ai-chip-deal-infosys-slips-after-q1-19952944.htm",
+      "source": "CNBC-TV18 — business"
+     },
+     {
+      "title": "Top Stories | Brent at $100, Infosys new CEO, Adani Airline ambition, Blinkit's dominance",
+      "url": "https://www.cnbctv18.com/business/top-10-stories-brent-at-100-infosys-new-ceo-adani-airline-ambition-blinkits-dominance-19952731.htm",
+      "source": "CNBC-TV18 — business"
+     },
+     {
+      "title": "As AI reshapes IT jobs, Infosys bets on 20,000 fresh graduates",
+      "url": "https://www.cnbctv18.com/business/companies/infosys-jobs-india-second-largest-it-firm-plans-hiring-20000-college-graduates-fy27-19952551.htm",
+      "source": "CNBC-TV18 — business"
+     }
+    ]
+   },
+   {
+    "symbol": "AUROPHARMA",
+    "name": "Aurobindo Pharma Limited",
+    "sector": "Healthcare",
+    "price": 1527.1,
+    "mcap_cr": 87865.9633152,
+    "mentions": 2,
+    "headlines": [
+     {
+      "title": "Aurobindo Pharma signs licensing pact with Merck to supply generic HIV drug in 129 countries",
+      "url": "https://www.cnbctv18.com/market/stocks/aurobindo-pharma-share-price-signs-licensing-pact-with-merck-to-supply-generic-hiv-drug-in-129-countries-19953684.htm",
+      "source": "CNBC-TV18 — markets"
+     },
+     {
+      "title": "Aurobindo Pharma arm Apitoria to acquire 80% stake in A1 Biochem Group for $17 million",
+      "url": "https://www.cnbctv18.com/market/stocks/aurobindo-pharma-share-price-arm-apitoria-to-acquire-80-stake-in-a1-biochem-group-for-17-million-19952790.htm",
+      "source": "CNBC-TV18 — business"
+     }
+    ]
+   },
+   {
+    "symbol": "COFORGE",
+    "name": "Coforge Limited",
+    "sector": "Technology",
+    "price": 1486.0,
+    "mcap_cr": 65783.857152,
+    "mentions": 2,
+    "headlines": [
+     {
+      "title": "Coforge bags over $230 million AI-led transformation deal with European client",
+      "url": "https://www.cnbctv18.com/market/coforge-share-price-bags-over-usd-230-million-ai-led-transformation-deal-with-european-client-19953044.htm",
+      "source": "CNBC-TV18 — markets"
+     },
+     {
+      "title": "Coforge launches Nuuron AI platform to unify enterprise workflows and AI agents",
+      "url": "https://www.cnbctv18.com/market/stocks/coforge-share-price-launches-nuuron-ai-platform-to-unify-enterprise-workflows-and-ai-agents-19952727.htm",
+      "source": "CNBC-TV18 — business"
+     }
+    ]
+   },
+   {
+    "symbol": "CYIENT",
+    "name": "Cyient Limited",
+    "sector": "Industrials",
+    "price": 836.0,
+    "mcap_cr": 8701.9618304,
+    "mentions": 2,
+    "headlines": [
+     {
+      "title": "Cyient DLM#39;s profit after tax in FY24 surges 93%",
+      "url": "https://www.moneycontrol.com/news/business/cyient-dlm39s-profit-after-taxfy24-surges-93_17532091.html",
+      "source": "Moneycontrol — business"
+     },
+     {
+      "title": "Cyient Q1 net profit doubles sequentially; EBIT margin improves to 9%",
+      "url": "https://www.cnbctv18.com/market/stocks/cyient-share-price-q1-net-profit-doubles-sequentially-ebit-margin-improves-to-9-19952558.htm",
+      "source": "CNBC-TV18 — business"
+     }
+    ]
+   },
+   {
+    "symbol": "HCLTECH",
+    "name": "HCL Technologies Limited",
+    "sector": "Technology",
+    "price": 1269.0,
+    "mcap_cr": 343361.7948672,
+    "mentions": 2,
+    "headlines": [
+     {
+      "title": "HCLTech to invest over ₹14,000 cr in Odisha AI data centre; technology centre to employ 5,000",
+      "url": "https://www.cnbctv18.com/market/hcltech-to-invest-over-rs-14000-cr-odisha-ai-data-centre-tech-centre-to-employ-5000-19953153.htm",
+      "source": "CNBC-TV18 — markets"
+     },
+     {
+      "title": "Companies are focusing too much on AI and too little on people, says former HCLTech CEO",
+      "url": "https://www.cnbctv18.com/business/vineet-nayar-ai-bubble-human-creativity-future-of-work-19952684.htm",
+      "source": "CNBC-TV18 — business"
+     }
+    ]
+   },
+   {
+    "symbol": "HINDZINC",
+    "name": "Hindustan Zinc Limited",
+    "sector": "Basic Materials",
+    "price": 533.65,
+    "mcap_cr": 225484.1577472,
+    "mentions": 2,
+    "headlines": [
+     {
+      "title": "Hindustan Zinc to spend up to ₹5,000 crore on capex in FY27: CEO Arun Misra",
+      "url": "https://www.cnbctv18.com/market/hindustan-zinc-share-price-spend-up-to-rs-5000-crore-on-capex-in-fy27-ceo-arun-misra-q1-results-19954009.htm",
+      "source": "CNBC-TV18 — markets"
+     },
+     {
+      "title": "Hindustan Zinc Q1 Results: Vedanta-unit shares recover from lows after strong earnings beat",
+      "url": "https://www.cnbctv18.com/market/hindustan-zinc-q1-results-lowest-quarterly-zinc-production-cost-margin-expands-profit-doubles-share-price-19953313.htm",
+      "source": "CNBC-TV18 — markets"
+     }
+    ]
+   },
+   {
+    "symbol": "INDIGO",
+    "name": "InterGlobe Aviation Limited",
+    "sector": "Industrials",
+    "price": 5000.0,
+    "mcap_cr": 193333.297152,
+    "mentions": 2,
+    "headlines": [
+     {
+      "title": "IndiGo faces tough September quarter; profits could improve in FY28 if fuel prices ease",
+      "url": "https://www.cnbctv18.com/market/indigo-faces-tough-september-quarter-profits-could-improve-in-fy28-if-fuel-prices-ease-19953097.htm",
+      "source": "CNBC-TV18 — markets"
+     },
+     {
+      "title": "Sole IndiGo 'bear' expects airline stock to fall 19% even as majority still say 'buy'",
+      "url": "https://www.cnbctv18.com/market/indigo-share-price-sole-interglobe-aviation-bear-expects-airline-stock-to-fall-even-as-majority-still-say-buy-19953131.htm",
+      "source": "CNBC-TV18 — markets"
+     }
+    ]
+   },
+   {
+    "symbol": "MOTILALOFS",
+    "name": "Motilal Oswal Financial Services Limited",
+    "sector": "Financial Services",
+    "price": 873.0,
+    "mcap_cr": 52567.4053632,
+    "mentions": 2,
+    "headlines": [
+     {
+      "title": "Motilal Oswal shares fall 9%, most in over two years after mixed core biz trends in Q1",
+      "url": "https://www.cnbctv18.com/market/motilal-oswal-shares-fall-most-in-over-two-years-after-mixed-core-biz-trends-in-q1-19953077.htm",
+      "source": "CNBC-TV18 — markets"
+     },
+     {
+      "title": "Motilal Oswal Q1 operating profit growth led by Asset Management; AUM surges 31%",
+      "url": "https://www.cnbctv18.com/market/stocks/motilal-oswal-financial-services-share-price-q1-operating-profit-growth-led-by-asset-management-aum-surges-31-19952611.htm",
+      "source": "CNBC-TV18 — business"
+     }
+    ]
+   },
+   {
+    "symbol": "AUBANK",
+    "name": "AU Small Finance Bank Limited",
+    "sector": "Financial Services",
+    "price": 1013.1,
+    "mcap_cr": 75846.9885952,
+    "mentions": 1,
+    "headlines": [
+     {
+      "title": "AU Small Finance Bank Q1 net profit rises 37%, NII up 31.8%",
+      "url": "https://www.cnbctv18.com/market/au-small-finance-bank-share-price-q1-results-net-profit-nii-npa-provisions-asset-quality-19953818.htm",
+      "source": "CNBC-TV18 — markets"
+     }
+    ]
+   },
+   {
+    "symbol": "ADANIPOWER",
+    "name": "Adani Power Limited",
+    "sector": "Utilities",
+    "price": 213.52,
+    "mcap_cr": 411766.8036608,
+    "mentions": 1,
+    "headlines": [
+     {
+      "title": "Adani Power evaluates nuclear technologies, awaits policy clarity",
+      "url": "https://www.cnbctv18.com/business/companies/adani-power-evaluates-nuclear-technologies-awaits-policy-clarity-19952532.htm",
+      "source": "CNBC-TV18 — business"
+     }
+    ]
+   },
+   {
+    "symbol": "ACUTAAS",
+    "name": "Acutaas Chemicals Limited",
+    "sector": "Basic Materials",
+    "price": 3251.9,
+    "mcap_cr": 26623.6690432,
+    "mentions": 1,
+    "headlines": [
+     {
+      "title": "Acutaas Chemicals Q1 Results: Multibagger stock falls 6% despite strong Q1, guidance held",
+      "url": "https://www.cnbctv18.com/market/acutaas-chemicals-q1-results-share-price-fall-strong-q1-guidance-fy27-maintained-earnings-19953194.htm",
+      "source": "CNBC-TV18 — markets"
+     }
+    ]
+   },
+   {
+    "symbol": "ADANIENSOL",
+    "name": "Adani Energy Solutions Limited",
+    "sector": "Utilities",
+    "price": 1702.0,
+    "mcap_cr": 204458.3084032,
+    "mentions": 1,
+    "headlines": [
+     {
+      "title": "Adani Energy wins ₹8,500 crore Andhra Pradesh transmission project for green hydrogen hub",
+      "url": "https://www.cnbctv18.com/energy/adani-energy-wins-rs-8500-crore-andhra-pradesh-transmission-project-for-green-hydrogen-hub-19953371.htm",
+      "source": "CNBC-TV18 — markets"
+     }
+    ]
+   },
+   {
+    "symbol": "CGPOWER",
+    "name": "CG Power and Industrial Solutions Limited",
+    "sector": "Industrials",
+    "price": 883.0,
+    "mcap_cr": 139073.7227776,
+    "mentions": 1,
+    "headlines": [
+     {
+      "title": "CG Power Q1 profit up, misses estimates as margins shrink; semiconductor losses widen",
+      "url": "https://www.cnbctv18.com/market/earnings/cg-power-q1-profit-up-misses-estimates-as-margins-shrink-semiconductor-losses-widen-19953452.htm",
+      "source": "CNBC-TV18 — markets"
+     }
+    ]
+   },
+   {
+    "symbol": "CONCOR",
+    "name": "Container Corporation of India Limited",
+    "sector": "Industrials",
+    "price": 481.45,
+    "mcap_cr": 36668.096512,
+    "mentions": 1,
+    "headlines": [
+     {
+      "title": "CONCOR Q1 net profit flat at ₹267 crore as revenue stays muted; declares ₹1.60 dividend",
+      "url": "https://www.cnbctv18.com/market/stocks/concor-share-price-q1-net-profit-flat-at-rs-267-crore-as-revenue-stays-muted-declares-rs-1-60-dividend-19953559.htm",
+      "source": "CNBC-TV18 — markets"
+     }
+    ]
+   }
+  ]
+ },
  "removed_on_news": [],
  "rejected_sample": [
   {
@@ -3588,14 +3881,14 @@
    "reason": "Lender or insurer — the quality tests here do not apply to their business model"
   },
   {
-   "symbol": "360ONE",
-   "name": "360 One Wam Limited",
-   "reason": "Lender or insurer — the quality tests here do not apply to their business model"
-  },
-  {
    "symbol": "ACMESOLAR",
    "name": "ACME SOLAR HOLDINGS LTD",
    "reason": "Debt/equity of 3.93x is too high"
+  },
+  {
+   "symbol": "360ONE",
+   "name": "360 One Wam Limited",
+   "reason": "Lender or insurer — the quality tests here do not apply to their business model"
   },
   {
    "symbol": "AARTIIND",
@@ -3608,14 +3901,14 @@
    "reason": "Lender or insurer — the quality tests here do not apply to their business model"
   },
   {
+   "symbol": "ADANIGREEN",
+   "name": "Adani Green Energy Limited",
+   "reason": "Debt/equity of 3.47x is too high"
+  },
+  {
    "symbol": "AADHARHFC",
    "name": "AADHAR HOUSING FINANCE L",
    "reason": "Lender or insurer — the quality tests here do not apply to their business model"
-  },
-  {
-   "symbol": "ABB",
-   "name": "ABB India Limited",
-   "reason": "P/E of 101 leaves no margin for error"
   },
   {
    "symbol": "ACUTAAS",
@@ -3623,24 +3916,19 @@
    "reason": "P/E of 93 leaves no margin for error"
   },
   {
+   "symbol": "ADANIENT",
+   "name": "Adani Enterprises Limited",
+   "reason": "Profits are not converting to cash (CFO/PAT 0.26x)"
+  },
+  {
    "symbol": "ADANIENSOL",
    "name": "Adani Energy Solutions Limited",
    "reason": "Debt/equity of 1.95x is too high"
   },
   {
-   "symbol": "ADANIGREEN",
-   "name": "Adani Green Energy Limited",
-   "reason": "Debt/equity of 3.47x is too high"
-  },
-  {
-   "symbol": "ATGL",
-   "name": "Adani Total Gas Limited",
-   "reason": "P/E of 114 leaves no margin for error"
-  },
-  {
-   "symbol": "ABCAPITAL",
-   "name": "Aditya Birla Capital Limited",
-   "reason": "Lender or insurer — the quality tests here do not apply to their business model"
+   "symbol": "ABB",
+   "name": "ABB India Limited",
+   "reason": "P/E of 101 leaves no margin for error"
   },
   {
    "symbol": "ABFRL",
@@ -3648,29 +3936,9 @@
    "reason": "Loss-making on a trailing basis"
   },
   {
-   "symbol": "ABLBL",
-   "name": "ADITYA BIRLA LIFES BRAN L",
-   "reason": "Debt/equity of 2.14x is too high"
-  },
-  {
-   "symbol": "ADANIENT",
-   "name": "Adani Enterprises Limited",
-   "reason": "Profits are not converting to cash (CFO/PAT 0.26x)"
-  },
-  {
-   "symbol": "ABREL",
-   "name": "Aditya Birla Real Estate Limited",
-   "reason": "Loss-making on a trailing basis"
-  },
-  {
-   "symbol": "ABSLAMC",
-   "name": "Aditya Birla Sun Life AMC Limited",
-   "reason": "Lender or insurer — the quality tests here do not apply to their business model"
-  },
-  {
    "symbol": "CPPLUS",
    "name": "ADITYA INFOTECH LIMITED",
-   "reason": "P/E of 111 leaves no margin for error"
+   "reason": "P/E of 110 leaves no margin for error"
   },
   {
    "symbol": "AFCONS",
@@ -3678,19 +3946,14 @@
    "reason": "Profits are not converting to cash (CFO/PAT -0.51x)"
   },
   {
-   "symbol": "AEGISVOPAK",
-   "name": "AEGIS VOPAK TERMINALS LTD",
-   "reason": "P/E of 103 leaves no margin for error"
-  },
-  {
-   "symbol": "AMBUJACEM",
-   "name": "Ambuja Cements Limited",
-   "reason": "ROE of 8.3% is below the 10% floor"
-  },
-  {
-   "symbol": "ANANDRATHI",
-   "name": "Anand Rathi Wealth Limited",
+   "symbol": "ABSLAMC",
+   "name": "Aditya Birla Sun Life AMC Limited",
    "reason": "Lender or insurer — the quality tests here do not apply to their business model"
+  },
+  {
+   "symbol": "ATGL",
+   "name": "Adani Total Gas Limited",
+   "reason": "P/E of 114 leaves no margin for error"
   },
   {
    "symbol": "AMBER",
@@ -3703,19 +3966,44 @@
    "reason": "Profits are not converting to cash (CFO/PAT -0.78x)"
   },
   {
+   "symbol": "ABLBL",
+   "name": "ADITYA BIRLA LIFES BRAN L",
+   "reason": "Debt/equity of 2.14x is too high"
+  },
+  {
+   "symbol": "AEGISVOPAK",
+   "name": "AEGIS VOPAK TERMINALS LTD",
+   "reason": "P/E of 103 leaves no margin for error"
+  },
+  {
+   "symbol": "ANANDRATHI",
+   "name": "Anand Rathi Wealth Limited",
+   "reason": "Lender or insurer — the quality tests here do not apply to their business model"
+  },
+  {
+   "symbol": "ABCAPITAL",
+   "name": "Aditya Birla Capital Limited",
+   "reason": "Lender or insurer — the quality tests here do not apply to their business model"
+  },
+  {
    "symbol": "ANGELONE",
    "name": "Angel One Limited",
    "reason": "Lender or insurer — the quality tests here do not apply to their business model"
   },
   {
-   "symbol": "ANURAS",
-   "name": "Anupam Rasayan India Ltd",
-   "reason": "P/E of 81 leaves no margin for error"
+   "symbol": "AMBUJACEM",
+   "name": "Ambuja Cements Limited",
+   "reason": "ROE of 8.3% is below the 10% floor"
   },
   {
-   "symbol": "APOLLOTYRE",
-   "name": "Apollo Tyres Limited",
-   "reason": "ROE of 8.7% is below the 10% floor"
+   "symbol": "ABREL",
+   "name": "Aditya Birla Real Estate Limited",
+   "reason": "Loss-making on a trailing basis"
+  },
+  {
+   "symbol": "ANURAS",
+   "name": "Anupam Rasayan India Ltd",
+   "reason": "P/E of 80 leaves no margin for error"
   },
   {
    "symbol": "APTUS",
@@ -3725,7 +4013,12 @@
   {
    "symbol": "ASTERDM",
    "name": "Aster DM Quality Care Limited",
-   "reason": "P/E of 104 leaves no margin for error"
+   "reason": "P/E of 105 leaves no margin for error"
+  },
+  {
+   "symbol": "APOLLOTYRE",
+   "name": "Apollo Tyres Limited",
+   "reason": "ROE of 8.7% is below the 10% floor"
   },
   {
    "symbol": "ATHERENERG",
@@ -3738,14 +4031,14 @@
    "reason": "Debt/equity of 3.45x is too high"
   },
   {
-   "symbol": "AIIL",
-   "name": "Authum Investment & Infrastructure Limited",
-   "reason": "Lender or insurer — the quality tests here do not apply to their business model"
-  },
-  {
    "symbol": "AUROPHARMA",
    "name": "Aurobindo Pharma Limited",
    "reason": "ROE of 9.9% is below the 10% floor"
+  },
+  {
+   "symbol": "AIIL",
+   "name": "Authum Investment & Infrastructure Limited",
+   "reason": "Lender or insurer — the quality tests here do not apply to their business model"
   },
   {
    "symbol": "DMART",
@@ -3753,14 +4046,14 @@
    "reason": "P/E of 85 leaves no margin for error"
   },
   {
-   "symbol": "BEML",
-   "name": "BEML Limited",
-   "reason": "P/E of 101 leaves no margin for error"
-  },
-  {
    "symbol": "AXISBANK",
    "name": "Axis Bank Limited",
    "reason": "Lender or insurer — the quality tests here do not apply to their business model"
+  },
+  {
+   "symbol": "BEML",
+   "name": "BEML Limited",
+   "reason": "P/E of 101 leaves no margin for error"
   },
   {
    "symbol": "BSE",
@@ -3768,8 +4061,8 @@
    "reason": "Lender or insurer — the quality tests here do not apply to their business model"
   },
   {
-   "symbol": "BAJAJFINSV",
-   "name": "Bajaj Finserv Ltd.",
+   "symbol": "BAJFINANCE",
+   "name": "Bajaj Finance Limited",
    "reason": "Lender or insurer — the quality tests here do not apply to their business model"
   },
   {
@@ -3778,8 +4071,8 @@
    "reason": "Lender or insurer — the quality tests here do not apply to their business model"
   },
   {
-   "symbol": "BAJFINANCE",
-   "name": "Bajaj Finance Limited",
+   "symbol": "BAJAJFINSV",
+   "name": "Bajaj Finserv Ltd.",
    "reason": "Lender or insurer — the quality tests here do not apply to their business model"
   }
  ],
