@@ -121,6 +121,7 @@ button.rf{width:100%;background:var(--accent);color:#08131f;border:none;padding:
   <div class="tabs">
     <button class="on" data-p="today">Shortlist</button>
     <button data-p="movers">Yesterday's Movers</button>
+    <button data-p="buzz">Most Talked About</button>
     <button data-p="method">How it ranks</button>
     <button data-p="out">Removed</button>
     <button data-p="about">Read me</button>
@@ -141,6 +142,20 @@ button.rf{width:100%;background:var(--accent);color:#08131f;border:none;padding:
     <div id="moversGainers"></div>
     <h4 style="margin:20px 0 8px">Biggest losers</h4>
     <div id="moversLosers"></div>
+  </section>
+
+  <section id="buzz" class="pane">
+    <div class="banner" style="background:#1a1027;border-color:#3a2a4d;color:#c9a9e0">
+      <b>Attention, not a recommendation.</b> This counts how many of today's
+      Moneycontrol and CNBC-TV18 headlines mention each company — nothing more.
+      It says nothing about whether the business is good, cheap, or worth owning.
+      Heavy coverage is very often the sign of a move that has <i>already</i>
+      happened and that the crowd is arriving late to, not a hint of one still
+      to come. Nothing on this list is ranked by quality — only by how loudly
+      it's being talked about right now.
+    </div>
+    <div class="card" id="buzzMeta"></div>
+    <div id="buzzList"></div>
   </section>
 
   <section id="method" class="pane">
@@ -373,6 +388,21 @@ function moverRow(r, isGainer) {
   </div>`;
 }
 
+function buzzRow(r) {
+  const heads = (r.headlines || []).map(h => `<div class="hl">
+    <a href="${esc(h.url)}" target="_blank" rel="noopener">${esc(h.title)}</a>
+    ${h.source ? `<div style="color:var(--muted);font-size:10.5px;margin-top:2px">${esc(h.source)}</div>` : ''}
+  </div>`).join('');
+  return `<div class="rowc">
+    <div class="top">
+      <div class="sym">${esc(r.symbol)}</div>
+      <div style="margin-left:auto"><span class="chip c-warn">${r.mentions} mention${r.mentions === 1 ? '' : 's'} today</span></div>
+    </div>
+    <div class="nm">${esc(r.name)} · ${esc(r.sector || '')}${r.price ? ' · ₹' + n0(r.price) : ''}</div>
+    <details open><summary>Headlines</summary>${heads || '<p class="note">—</p>'}</details>
+  </div>`;
+}
+
 function render(d) {
   $('#sub').textContent = `Updated ${d.generated_ist} IST · ${d.passed_filters} of ${d.fetched} passed the filters`;
 
@@ -422,6 +452,14 @@ function render(d) {
   $('#moversLosers').innerHTML = (mv.losers && mv.losers.length)
     ? mv.losers.map(r => moverRow(r, false)).join('')
     : '<p class="note">No data.</p>';
+
+  // buzz — attention only, explicitly not a ranking of what to buy
+  const bz = d.buzz || {};
+  $('#buzzMeta').innerHTML = `<div class="note">Sources: ${esc((bz.sources || []).join(', ') || '—')}.
+    ${esc(bz.note || '')}</div>`;
+  $('#buzzList').innerHTML = (bz.top && bz.top.length)
+    ? bz.top.map(r => buzzRow(r)).join('')
+    : '<p class="note">Nothing stood out in today\'s headlines above the noise floor.</p>';
 
   // method
   const m = d.method || {};

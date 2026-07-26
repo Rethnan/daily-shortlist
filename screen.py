@@ -348,6 +348,16 @@ BROAD_FEEDS = [
      "https://search.cnbc.com/rs/search/combinedcms/view.xml?partnerId=wrss01&id=20910258"),
 ]
 
+# Single words that, on their own, name a whole business group rather than
+# one listed company — several unrelated group companies would otherwise all
+# match headlines about any one of them (the Adani, Reliance/Anil Ambani,
+# Aditya Birla and Essar groups all have multiple separately listed entities
+# sharing one root name).
+AMBIGUOUS_GROUP_ROOTS = {
+    "adani", "reliance", "birla", "essar", "videocon", "jaypee", "unitech",
+    "sahara", "hinduja", "shriram", "srei", "religare",
+}
+
 # Words stripped before matching a company name against a headline.
 NAME_NOISE = re.compile(
     r"\b(limited|ltd|ltd\.|corporation|corp|company|co\.|"
@@ -394,17 +404,31 @@ def name_keys(rec):
     """Distinctive strings that identify this company in a headline."""
     keys = set()
     sym = (rec.get("symbol") or "").strip()
-    if len(sym) >= 4:
+    if len(sym) >= 4 and sym.lower() not in AMBIGUOUS_GROUP_ROOTS:
         keys.add(sym.lower())
     core = NAME_NOISE.sub(" ", rec.get("name") or "")
     core = re.sub(r"[^A-Za-z0-9 ]", " ", core)
     core = " ".join(core.split())
-    if len(core) >= 5:
+    parts = core.split()
+    if len(parts) >= 2:
+        # A multi-word remainder is specific enough to use whole.
         keys.add(core.lower())
-        # also the first two words, which is how the press usually writes it
-        parts = core.split()
-        if len(parts) >= 2 and len(" ".join(parts[:2])) >= 6:
+        # Also the first two words, which is how the press usually writes it.
+        if len(" ".join(parts[:2])) >= 6:
             keys.add(" ".join(parts[:2]).lower())
+    elif len(parts) == 1 and len(parts[0]) >= 7 and parts[0].lower() not in AMBIGUOUS_GROUP_ROOTS:
+        # A single leftover word is only safe to use if it's long enough to
+        # be distinctive, and not itself a business-group name shared by many
+        # unrelated listed companies. Short single words are exactly what
+        # group-company names collapse to once suffixes are stripped — e.g.
+        # "Adani Enterprises Limited" reduces to "Adani", which would then
+        # match headlines about Adani Power, Adani Energy, Adani Green and
+        # every other sibling company. "Reliance Industries" similarly
+        # collapses to "Reliance", shared with the unrelated Anil Ambani
+        # group's Reliance Power, Reliance Capital and Reliance
+        # Infrastructure. Dropping these avoids attributing one company's
+        # coverage to the wrong business.
+        keys.add(parts[0].lower())
     return {k for k in keys if len(k) >= 5}
 
 
@@ -585,6 +609,32 @@ def main():
             card["news"] = news_by_symbol.get(card["symbol"],
                                                {"headlines": [], "red": [], "watch": []})
 
+    # ------------------------------------------------------------------------
+    # Buzz — which stocks are getting unusually heavy coverage today, purely
+    # as an observed fact. This is deliberately NOT a ranking of what to buy.
+    #
+    # It counts how many of today's Moneycontrol / CNBC-TV18 headlines mention
+    # each company. That is the entire signal: attention, not quality, not
+    # value, not a forecast. Heavy coverage is at least as often the mark of a
+    # trade that has already happened and that retail is arriving late to, as
+    # it is a sign of anything worth owning. The count can only tell you where
+    # to look; it says nothing about what you'll find.
+    # ------------------------------------------------------------------------
+    buzz_top = []
+    if not args.no_news and pool:
+        print("Counting today's headline mentions across the universe...", flush=True)
+        for r in recs:
+            hits = match_pool(r, pool)
+            if hits:
+                buzz_top.append({
+                    "symbol": r["symbol"], "name": r["name"], "sector": r["sector"],
+                    "price": r.get("price"), "mcap_cr": r.get("mcap_cr"),
+                    "mentions": len(hits),
+                    "headlines": hits[:6],
+                })
+        buzz_top.sort(key=lambda x: x["mentions"], reverse=True)
+        buzz_top = buzz_top[:15]
+
     out = {
         "generated_ist": datetime.now(IST).strftime("%Y-%m-%d %H:%M"),
         "universe_size": len(universe),
@@ -622,6 +672,15 @@ def main():
                     "yesterday is exactly as likely to reverse as to continue.",
             "gainers": movers_gainers,
             "losers": movers_losers,
+        },
+        "buzz": {
+            "note": "How many of today's Moneycontrol and CNBC-TV18 headlines mention "
+                    "each company. Attention only — not quality, not value, and not a "
+                    "forecast. Heavy coverage is often the sign of a move that already "
+                    "happened, not one still to come. This ranks by volume of mentions "
+                    "alone; it is not a suggestion to buy anything on this list.",
+            "sources": feed_sources or [],
+            "top": buzz_top,
         },
         "removed_on_news": removed,
         "rejected_sample": rejected[:40],
