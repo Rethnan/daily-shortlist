@@ -145,6 +145,30 @@ def fetch_one(stock):
         except Exception:
             pass
 
+        # Last completed session's move and volume, for the pre-market "movers"
+        # list. This is what already happened yesterday — never a prediction of
+        # what happens today. Computed from daily bars, not from currentPrice vs
+        # previousClose, because before market open those two are often identical
+        # (no new trade has happened yet) and would show a false 0% change.
+        day_change_pct, volume_ratio, last_session_date = None, None, None
+        try:
+            d = t.history(period="1mo", interval="1d")
+            d = d[d["Volume"] > 0]
+            if len(d) >= 2:
+                last_close = float(d["Close"].iloc[-1])
+                prior_close = float(d["Close"].iloc[-2])
+                if prior_close > 0:
+                    day_change_pct = (last_close - prior_close) / prior_close * 100
+                last_session_date = str(d.index[-1].date())
+                if len(d) >= 6:
+                    last_vol = float(d["Volume"].iloc[-1])
+                    avg_vol = float(d["Volume"].iloc[-11:-1].mean()) if len(d) >= 11 \
+                        else float(d["Volume"].iloc[:-1].mean())
+                    if avg_vol > 0:
+                        volume_ratio = last_vol / avg_vol
+        except Exception:
+            pass
+
         rec = {
             "symbol": sym,
             "name": i.get("longName") or i.get("shortName") or stock["name"],
@@ -166,6 +190,9 @@ def fetch_one(stock):
             "div_yield": g(i, "dividendYield"),
             "cash_conv": (ocf / ni) if (ocf and ni and ni > 0) else None,
             "pos_in_3y_range": pos_in_range,
+            "day_change_pct": day_change_pct,
+            "volume_ratio": volume_ratio,
+            "last_session_date": last_session_date,
         }
         return rec
     except Exception:
@@ -515,6 +542,49 @@ def main():
         if len(final) >= args.top:
             break
 
+    # ------------------------------------------------------------------------
+    # Movers — yesterday's biggest price moves, purely descriptive.
+    #
+    # This is NOT a prediction of what moves today, and it is NOT a ranking of
+    # what to trade. It reports a fact that already happened (the last
+    # completed session's % change) and attaches whatever real news exists for
+    # it. Sorted only by the size of an observed, past move — never by a
+    # forecast, because nothing here forecasts anything.
+    # ------------------------------------------------------------------------
+    liquid = [r for r in recs
+              if r.get("day_change_pct") is not None
+              and r.get("mcap_cr") and r["mcap_cr"] >= 500]
+    session_date = None
+    if liquid:
+        from collections import Counter
+        session_date = Counter(r.get("last_session_date") for r in liquid).most_common(1)[0][0]
+
+    gainers = sorted(liquid, key=lambda r: r["day_change_pct"], reverse=True)[:10]
+    losers = sorted(liquid, key=lambda r: r["day_change_pct"])[:10]
+
+    def mover_card(r):
+        return {
+            "symbol": r["symbol"], "name": r["name"], "sector": r["sector"],
+            "price": r["price"], "mcap_cr": r["mcap_cr"],
+            "day_change_pct": round(r["day_change_pct"], 2),
+            "volume_ratio": round(r["volume_ratio"], 2) if r.get("volume_ratio") else None,
+        }
+
+    movers_gainers = [mover_card(r) for r in gainers]
+    movers_losers = [mover_card(r) for r in losers]
+
+    if not args.no_news and liquid:
+        print("Checking headlines behind yesterday's biggest movers...", flush=True)
+        mover_recs = {r["symbol"]: r for r in gainers + losers}
+        with cf.ThreadPoolExecutor(max_workers=10) as ex:
+            news_by_symbol = dict(zip(
+                mover_recs.keys(),
+                ex.map(lambda s: news_check(mover_recs[s], pool), mover_recs.keys())
+            ))
+        for card in movers_gainers + movers_losers:
+            card["news"] = news_by_symbol.get(card["symbol"],
+                                               {"headlines": [], "red": [], "watch": []})
+
     out = {
         "generated_ist": datetime.now(IST).strftime("%Y-%m-%d %H:%M"),
         "universe_size": len(universe),
@@ -544,6 +614,15 @@ def main():
         },
         "market_headlines": market_headlines,
         "shortlist": final,
+        "movers": {
+            "session_date": session_date,
+            "note": "The last COMPLETED trading session's move, reported after it "
+                    "happened. Not a forecast, not a ranking of what to trade next, "
+                    "and not a list of what will keep moving. A stock that jumped "
+                    "yesterday is exactly as likely to reverse as to continue.",
+            "gainers": movers_gainers,
+            "losers": movers_losers,
+        },
         "removed_on_news": removed,
         "rejected_sample": rejected[:40],
         "disclaimer": "Not investment advice and not a buy list. This is a reproducible "
@@ -560,6 +639,13 @@ def main():
         print(f"  {i:2d}. {r['symbol']:<14} {r['scores']['total']:5.1f}  "
               f"Q{r['scores']['quality']:.0f} V{r['scores']['value']:.0f} "
               f"G{r['scores']['growth']:.0f}  {r['name'][:38]}")
+
+    print(f"\nMovers, session {session_date}: "
+          f"{len(movers_gainers)} gainers, {len(movers_losers)} losers")
+    for r in movers_gainers[:5]:
+        print(f"  UP   {r['symbol']:<14} {r['day_change_pct']:+6.2f}%")
+    for r in movers_losers[:5]:
+        print(f"  DOWN {r['symbol']:<14} {r['day_change_pct']:+6.2f}%")
 
 
 if __name__ == "__main__":
