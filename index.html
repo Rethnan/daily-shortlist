@@ -147,12 +147,15 @@ button.rf{width:100%;background:var(--accent);color:#08131f;border:none;padding:
   <section id="buzz" class="pane">
     <div class="banner" style="background:#1a1027;border-color:#3a2a4d;color:#c9a9e0">
       <b>Attention, not a recommendation.</b> This counts how many of today's
-      Moneycontrol and CNBC-TV18 headlines mention each company — nothing more.
-      It says nothing about whether the business is good, cheap, or worth owning.
-      Heavy coverage is very often the sign of a move that has <i>already</i>
-      happened and that the crowd is arriving late to, not a hint of one still
-      to come. Nothing on this list is ranked by quality — only by how loudly
-      it's being talked about right now.
+      CNBC-TV18 / CNBC headlines mention each company — nothing more. It says
+      nothing about whether the business is good, cheap, or worth owning. Heavy
+      coverage is very often the sign of a move that has <i>already</i> happened
+      and that the crowd is arriving late to, not a hint of one still to come.
+      Nothing on this list is ranked by quality — only by how loudly it's being
+      talked about right now. Headlines are shown newest first, with the
+      publish time next to each one; a red or amber tag means the same
+      red-flag / watch-word check used on the Shortlist tab found something —
+      an untagged headline is simply untagged, not "good news".
     </div>
     <div class="card" id="buzzMeta"></div>
     <div id="buzzList"></div>
@@ -325,9 +328,11 @@ function newsBlock(r) {
     });
   }
   if (nw.headlines && nw.headlines.length) {
-    h += `<h4>Recent headlines</h4>`;
+    h += `<h4>Recent headlines, newest first</h4>`;
     nw.headlines.slice(0, 4).forEach(x => {
-      h += `<div class="hl"><a href="${esc(x.url)}" target="_blank" rel="noopener">${esc(x.title)}</a></div>`;
+      const when = x.date ? esc(x.date) + ' IST' : 'date unknown';
+      h += `<div class="hl"><a href="${esc(x.url)}" target="_blank" rel="noopener">${esc(x.title)}</a>
+        <div style="color:var(--muted);font-size:10.5px;margin-top:2px">${when}${x.source ? ' · ' + esc(x.source) : ''}</div></div>`;
     });
   }
   return h;
@@ -364,8 +369,12 @@ function moverNews(nw) {
       <a href="${esc(x.url)}" target="_blank" rel="noopener">${esc(x.headline)}</a></div>`).join('');
   }
   if (nw.headlines && nw.headlines.length) {
-    h += nw.headlines.slice(0, 3).map(x => `<div class="hl">
-      <a href="${esc(x.url)}" target="_blank" rel="noopener">${esc(x.title)}</a></div>`).join('');
+    h += nw.headlines.slice(0, 3).map(x => {
+      const when = x.date ? esc(x.date) + ' IST' : 'date unknown';
+      return `<div class="hl">
+      <a href="${esc(x.url)}" target="_blank" rel="noopener">${esc(x.title)}</a>
+      <div style="color:var(--muted);font-size:10.5px;margin-top:2px">${when}${x.source ? ' · ' + esc(x.source) : ''}</div></div>`;
+    }).join('');
   } else if (!h) {
     h = '<p class="note">No matching headline found — the move may be sector-wide, technical, or simply not covered by these feeds.</p>';
   }
@@ -390,17 +399,33 @@ function moverRow(r, isGainer) {
 }
 
 function buzzRow(r) {
-  const heads = (r.headlines || []).map(h => `<div class="hl">
-    <a href="${esc(h.url)}" target="_blank" rel="noopener">${esc(h.title)}</a>
-    ${h.source ? `<div style="color:var(--muted);font-size:10.5px;margin-top:2px">${esc(h.source)}</div>` : ''}
-  </div>`).join('');
+  // Headlines are already sorted newest-first by the screener. Any headline
+  // that tripped a red-flag or watch-word keyword elsewhere gets the same
+  // colour treatment as the Shortlist tab — red for a real flag, amber for
+  // "worth a look". Everything else stays neutral: we don't have a reliable
+  // way to call a headline "good news", and colouring things green here
+  // would start to look like a buy signal, which this list deliberately is not.
+  const redTitles = new Set((r.red || []).map(x => x.headline.toLowerCase()));
+  const watchTitles = new Set((r.watch || []).map(x => x.headline.toLowerCase()));
+  const heads = (r.headlines || []).map(h => {
+    const low = h.title.toLowerCase();
+    const isRed = redTitles.has(low);
+    const isWatch = !isRed && watchTitles.has(low);
+    const chip = isRed ? '<span class="chip c-bad">red flag</span> '
+               : isWatch ? '<span class="chip c-warn">watch</span> ' : '';
+    const when = h.date ? esc(h.date) + ' IST' : 'date unknown';
+    return `<div class="hl${isRed ? ' red' : ''}">
+      ${chip}<a href="${esc(h.url)}" target="_blank" rel="noopener">${esc(h.title)}</a>
+      <div style="color:var(--muted);font-size:10.5px;margin-top:2px">${when}${h.source ? ' · ' + esc(h.source) : ''}</div>
+    </div>`;
+  }).join('');
   return `<div class="rowc">
     <div class="top">
       <div class="sym">${esc(r.symbol)}</div>
       <div style="margin-left:auto"><span class="chip c-warn">${r.mentions} mention${r.mentions === 1 ? '' : 's'} today</span></div>
     </div>
     <div class="nm">${esc(r.name)} · ${esc(r.sector || '')}${r.price ? ' · ₹' + n0(r.price) : ''}</div>
-    <details open><summary>Headlines</summary>${heads || '<p class="note">—</p>'}</details>
+    <details open><summary>Headlines, newest first</summary>${heads || '<p class="note">—</p>'}</details>
   </div>`;
 }
 

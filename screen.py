@@ -38,6 +38,7 @@ Usage:  python screen.py                 # full Nifty Total Market (~750 names)
 import argparse
 import concurrent.futures as cf
 import csv
+import email.utils
 import io
 import json
 import math
@@ -335,20 +336,24 @@ def median(xs):
 # ----------------------------------------------------------------------------
 # news — used only to remove or annotate, never to promote
 #
-# Two layers:
-#   (a) BROAD FEEDS — Moneycontrol and CNBC-TV18 RSS, fetched once each. These are
-#       market-wide, so six HTTP calls cover every stock in the shortlist. Indian
-#       financial press catches things that a generic search misses, particularly
-#       results announcements and regulatory news.
+# Three layers:
+#   (a) BROAD FEEDS — CNBC-TV18 and CNBC RSS, fetched once each. Market-wide,
+#       so a handful of HTTP calls cover every stock in the shortlist.
 #   (b) PER-STOCK SEARCH — Google News RSS query per shortlisted name, for depth.
+#   (c) YAHOO FINANCE NEWS — per stock, from the same source as the fundamentals.
 #
-# Both are used strictly to REMOVE or annotate. Nothing in the news can promote a
-# stock up the ranking, because news coverage tracks promotion, not quality.
+# All three are used strictly to REMOVE or annotate. Nothing in the news can
+# promote a stock up the ranking, because news coverage tracks promotion, not
+# quality. Every headline carries its publish date, and lists are sorted
+# newest-first, so old and current news are never presented side by side
+# without a way to tell them apart.
 # ----------------------------------------------------------------------------
+# NOTE (2026-07-28): Moneycontrol's marketreports/business/results RSS feeds
+# were dropped — checked directly and found them frozen on April-August 2024
+# content while still carrying today's-looking pubDates in the feed metadata.
+# They were quietly mixing 2+ year old headlines into "today's" news. Only
+# feeds confirmed live (checked their actual pubDate/lastBuildDate) are kept.
 BROAD_FEEDS = [
-    ("Moneycontrol — markets",  "https://www.moneycontrol.com/rss/marketreports.xml"),
-    ("Moneycontrol — business", "https://www.moneycontrol.com/rss/business.xml"),
-    ("Moneycontrol — results",  "https://www.moneycontrol.com/rss/results.xml"),
     ("CNBC-TV18 — markets",     "https://www.cnbctv18.com/commonfeeds/v1/cne/rss/market.xml"),
     ("CNBC-TV18 — business",    "https://www.cnbctv18.com/commonfeeds/v1/cne/rss/business.xml"),
     ("CNBC — world markets",
@@ -372,13 +377,37 @@ NAME_NOISE = re.compile(
     r"the|and|of|&|private|pvt|plc|inc)\b", re.I)
 
 
+def parse_rfc822(s):
+    """Parse an RSS <pubDate> (RFC 822-ish) into (epoch_seconds, short_display) or (None, None)."""
+    if not s:
+        return None, None
+    try:
+        dt = email.utils.parsedate_to_datetime(s)
+        if dt.tzinfo is None:
+            dt = dt.replace(tzinfo=timezone.utc)
+        return dt.timestamp(), dt.astimezone(IST).strftime("%d %b, %H:%M")
+    except Exception:
+        return None, None
+
+
+def parse_iso(s):
+    """Parse an ISO 8601 timestamp (Yahoo Finance's format) into (epoch_seconds, short_display)."""
+    if not s:
+        return None, None
+    try:
+        dt = datetime.fromisoformat(s.replace("Z", "+00:00"))
+        return dt.timestamp(), dt.astimezone(IST).strftime("%d %b, %H:%M")
+    except Exception:
+        return None, None
+
+
 def parse_feed(url, source):
-    """Return [{title,url,source}] from an RSS feed. Tolerant of encoding oddities."""
+    """Return [{title,url,source,ts,date}] from an RSS feed. Tolerant of encoding oddities."""
     out = []
     try:
         req = urllib.request.Request(url, headers=UA)
         raw = urllib.request.urlopen(req, timeout=15).read()
-        # Moneycontrol serves ISO-8859-1; CNBC serves UTF-8. Try both.
+        # Some Indian financial feeds serve ISO-8859-1 instead of UTF-8. Try both.
         try:
             xml = raw.decode("utf-8")
         except UnicodeDecodeError:
@@ -386,13 +415,15 @@ def parse_feed(url, source):
         for it in re.findall(r"<item[ >](.*?)</item>", xml, re.S)[:80]:
             m = re.search(r"<title>\s*(?:<!\[CDATA\[)?(.*?)(?:\]\]>)?\s*</title>", it, re.S)
             l = re.search(r"<link>\s*(?:<!\[CDATA\[)?(.*?)(?:\]\]>)?\s*</link>", it, re.S)
+            d = re.search(r"<pubDate>\s*(?:<!\[CDATA\[)?(.*?)(?:\]\]>)?\s*</pubDate>", it, re.S)
             if not m:
                 continue
             title = re.sub(r"<[^>]+>", "", m.group(1)).strip()
             if title:
+                ts, disp = parse_rfc822(d.group(1).strip()) if d else (None, None)
                 out.append({"title": title,
                             "url": (l.group(1).strip() if l else ""),
-                            "source": source})
+                            "source": source, "ts": ts, "date": disp})
     except Exception:
         pass
     return out
@@ -405,6 +436,29 @@ def fetch_broad_feeds():
         for items in ex.map(lambda f: parse_feed(f[1], f[0]), BROAD_FEEDS):
             pool.extend(items)
     return pool
+
+
+def fetch_yahoo_news(symbol, limit=8):
+    """Per-stock news straight from Yahoo Finance — same data source as the
+    fundamentals, so no new site to trust. Dated, so it sorts cleanly with
+    everything else."""
+    out = []
+    try:
+        items = yf.Ticker(symbol + ".NS").news or []
+        for it in items[:limit]:
+            c = it.get("content", it)  # yfinance has changed this shape before; tolerate both
+            title = (c.get("title") or "").strip()
+            if not title:
+                continue
+            link = ((c.get("canonicalUrl") or {}).get("url")
+                    or (c.get("clickThroughUrl") or {}).get("url") or "")
+            provider = (c.get("provider") or {}).get("displayName") or "Yahoo Finance"
+            ts, disp = parse_iso(c.get("pubDate") or c.get("displayTime"))
+            out.append({"title": title, "url": link,
+                        "source": f"Yahoo Finance — {provider}", "ts": ts, "date": disp})
+    except Exception:
+        pass
+    return out
 
 
 def name_keys(rec):
@@ -475,7 +529,7 @@ def classify(heads):
 def news_check(rec, pool=None):
     heads, ok = [], False
 
-    # (a) matches from the Moneycontrol / CNBC market-wide pool
+    # (a) matches from the CNBC market-wide pool
     if pool:
         heads.extend(match_pool(rec, pool))
         ok = True
@@ -490,18 +544,27 @@ def news_check(rec, pool=None):
     except Exception:
         pass
 
+    # (c) Yahoo Finance's own per-stock news — same source as the fundamentals
+    try:
+        heads.extend(fetch_yahoo_news(rec["symbol"]))
+        ok = True
+    except Exception:
+        pass
+
     if not ok:
         return {"headlines": [], "red": [], "watch": [], "checked": False}
 
-    # de-duplicate on title, preferring the Indian financial press
-    order = {"Moneycontrol": 0, "CNBC": 1, "Google News": 2}
-    heads.sort(key=lambda h: order.get(h.get("source", "").split(" ")[0], 3))
+    # de-duplicate on title
     seen, uniq = set(), []
     for h in heads:
         t = h["title"].lower()[:90]
         if t not in seen:
             seen.add(t)
             uniq.append(h)
+
+    # newest first. Undated items (a feed's pubDate failed to parse) sort
+    # after everything dated, rather than being mistaken for "just in".
+    uniq.sort(key=lambda h: h.get("ts") if h.get("ts") is not None else -1, reverse=True)
 
     red, watch = classify(uniq)
     return {"headlines": uniq[:8], "red": red, "watch": watch, "checked": True,
@@ -547,12 +610,13 @@ def main():
     # Take a generous slice, then let news thin it out.
     shortlist = passed[: args.top * 2]
     market_headlines, feed_sources = [], []
+    pool = []
     if not args.no_news:
-        print("Fetching Moneycontrol and CNBC feeds...", flush=True)
+        print("Fetching CNBC-TV18 / CNBC feeds...", flush=True)
         pool = fetch_broad_feeds()
         feed_sources = sorted({h["source"] for h in pool})
         print(f"  {len(pool)} headlines from {len(feed_sources)} feeds", flush=True)
-        market_headlines = pool[:25]
+        market_headlines = sorted(pool, key=lambda h: h.get("ts") or -1, reverse=True)[:25]
 
         print("Matching headlines to the shortlist...", flush=True)
         with cf.ThreadPoolExecutor(max_workers=10) as ex:
@@ -620,7 +684,7 @@ def main():
     # Buzz — which stocks are getting unusually heavy coverage today, purely
     # as an observed fact. This is deliberately NOT a ranking of what to buy.
     #
-    # It counts how many of today's Moneycontrol / CNBC-TV18 headlines mention
+    # It counts how many of today's CNBC-TV18 / CNBC headlines mention
     # each company. That is the entire signal: attention, not quality, not
     # value, not a forecast. Heavy coverage is at least as often the mark of a
     # trade that has already happened and that retail is arriving late to, as
@@ -630,17 +694,31 @@ def main():
     buzz_top = []
     if not args.no_news and pool:
         print("Counting today's headline mentions across the universe...", flush=True)
+        counted = []
         for r in recs:
             hits = match_pool(r, pool)
             if hits:
-                buzz_top.append({
+                counted.append({
                     "symbol": r["symbol"], "name": r["name"], "sector": r["sector"],
                     "price": r.get("price"), "mcap_cr": r.get("mcap_cr"),
-                    "mentions": len(hits),
-                    "headlines": hits[:6],
+                    "mentions": len(hits), "_rec": r,
                 })
-        buzz_top.sort(key=lambda x: x["mentions"], reverse=True)
-        buzz_top = buzz_top[:15]
+        counted.sort(key=lambda x: x["mentions"], reverse=True)
+        counted = counted[:15]
+
+        # For just this short top-15 list, do the same deep per-stock news
+        # pass used for the Shortlist and Movers tabs (Google News + Yahoo
+        # Finance news, deduped, dated, sorted newest-first, red/watch
+        # flagged). Cheap because it only runs for 15 names, not all 751.
+        print("Fetching full headline detail for the top 15...", flush=True)
+        with cf.ThreadPoolExecutor(max_workers=10) as ex:
+            news_list = list(ex.map(lambda c: news_check(c["_rec"], pool), counted))
+        for card, n in zip(counted, news_list):
+            card.pop("_rec", None)
+            card["headlines"] = n["headlines"]
+            card["red"] = n["red"]
+            card["watch"] = n["watch"]
+        buzz_top = counted
 
     out = {
         "generated_ist": datetime.now(IST).strftime("%Y-%m-%d %H:%M"),
@@ -666,8 +744,8 @@ def main():
             "news_policy": "Headlines can only REMOVE a name from the list. "
                            "They never promote one onto it.",
             "news_sources": feed_sources or ["(news pass skipped)"],
-            "data_source": "Yahoo Finance (fundamentals and prices) · "
-                           "Moneycontrol, CNBC-TV18 and Google News (headlines only)",
+            "data_source": "Yahoo Finance (fundamentals, prices and per-stock news) · "
+                           "CNBC-TV18, CNBC and Google News (headlines only)",
         },
         "market_headlines": market_headlines,
         "shortlist": final,
@@ -681,11 +759,14 @@ def main():
             "losers": movers_losers,
         },
         "buzz": {
-            "note": "How many of today's Moneycontrol and CNBC-TV18 headlines mention "
-                    "each company. Attention only — not quality, not value, and not a "
-                    "forecast. Heavy coverage is often the sign of a move that already "
-                    "happened, not one still to come. This ranks by volume of mentions "
-                    "alone; it is not a suggestion to buy anything on this list.",
+            "note": "How many of today's CNBC-TV18 / CNBC headlines mention each "
+                    "company — that count decides the ranking. Attention only — not "
+                    "quality, not value, and not a forecast. Heavy coverage is often "
+                    "the sign of a move that already happened, not one still to come. "
+                    "The headlines shown below each name also pull in Google News and "
+                    "Yahoo Finance for fuller detail, newest first, with any red-flag "
+                    "or watch-word wording highlighted the same way as the Shortlist "
+                    "tab. This is not a suggestion to buy anything on this list.",
             "sources": feed_sources or [],
             "top": buzz_top,
         },
