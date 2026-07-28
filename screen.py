@@ -3,7 +3,8 @@
 Daily screener — quality at a reasonable price, Indian equities (NSE).
 
 WHAT THIS DOES
-  1. Fetches the current Nifty 500 constituent list from NSE.
+  1. Fetches the current Nifty Total Market list from NSE (top ~750 NSE
+     companies by size — Nifty 500 plus the next 250 midcap/smallcap names).
   2. Pulls fundamentals for each name from Yahoo Finance.
   3. Applies hard disqualifiers (loss-making, over-leveraged, no cash conversion).
   4. Scores every survivor on Quality (50), Value (35) and Growth (15).
@@ -29,7 +30,7 @@ DATA CAVEAT
   company's own filings before you act on anything. If a number looks wrong,
   it may well be wrong.
 
-Usage:  python screen.py                 # full Nifty 500
+Usage:  python screen.py                 # full Nifty Total Market (~750 names)
         python screen.py --limit 60      # first 60 names, for a quick test
         python screen.py --no-news       # skip the news pass (much faster)
 """
@@ -55,7 +56,13 @@ except ImportError:
 
 IST = timezone(timedelta(hours=5, minutes=30))
 UA = {"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)"}
-NIFTY500_CSV = "https://archives.nseindia.com/content/indices/ind_nifty500list.csv"
+# Nifty Total Market = the 750 largest NSE-listed companies (Nifty 500 + Nifty
+# Midsmallcap 250). Widened from Nifty 500 on 2026-07-28 after a user check
+# showed a smaller name (Pyramid Technoplast, ~Rs 720 cr mcap) wasn't covered.
+# Note: even this wider list is still the top ~750 by size — anything smaller
+# still won't appear, and that's intentional (see hard filters: mcap > Rs 1,000 cr
+# for the shortlist; anything under ~Rs 5,000 cr is flagged as thin in the UI).
+NIFTY_UNIVERSE_CSV = "https://archives.nseindia.com/content/indices/ind_niftytotalmarket_list.csv"
 
 # Sectors excluded from ranking. Banks, NBFCs and insurers borrow and lend as
 # their business, so debt/equity, ROCE and cash-conversion tests are meaningless
@@ -91,7 +98,7 @@ def fetch_universe(limit=None):
     ctx = ssl.create_default_context()
     ctx.check_hostname = False
     ctx.verify_mode = ssl.CERT_NONE
-    req = urllib.request.Request(NIFTY500_CSV, headers=UA)
+    req = urllib.request.Request(NIFTY_UNIVERSE_CSV, headers=UA)
     raw = urllib.request.urlopen(req, timeout=30, context=ctx).read().decode("utf-8-sig")
     rows = list(csv.DictReader(io.StringIO(raw)))
     out = [
@@ -512,7 +519,7 @@ def main():
     ap.add_argument("--out", default="data.json")
     args = ap.parse_args()
 
-    print("Fetching Nifty 500 list...", flush=True)
+    print("Fetching Nifty Total Market list (top ~750 by size)...", flush=True)
     universe = fetch_universe(args.limit)
     print(f"  {len(universe)} names", flush=True)
 

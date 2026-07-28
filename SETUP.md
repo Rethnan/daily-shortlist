@@ -1,6 +1,6 @@
 # Daily Shortlist — setup
 
-An installable phone app that shows a ranked shortlist of Nifty 500 stocks each
+An installable phone app that shows a ranked shortlist of NSE stocks each
 morning, scored on fixed criteria you can inspect. Total cost: nothing.
 
 **What it is:** a reproducible screener. **What it is not:** advice, or a buy list.
@@ -10,9 +10,8 @@ Rank 1 means "read this annual report first", not "buy this".
 
 ## Try it right now, on this laptop
 
-Double-click `index.html`. A real ranking is already in `data.json` — generated from
-130 live Nifty 500 names, so you can see exactly how it looks and works before setting
-anything up.
+Double-click `index.html`. A real ranking is already in `data.json` so you can see
+exactly how it looks and works before setting anything up.
 
 To generate a fresh full-universe ranking yourself:
 
@@ -21,8 +20,11 @@ pip install -r requirements.txt
 python screen.py
 ```
 
-Takes about four minutes for all 500 names. Add `--limit 100` for a quick test, or
-`--no-news` to skip the headline pass.
+Takes a few minutes for the full Nifty Total Market list (the ~750 largest NSE
+companies — widened from 500 on 2026-07-28 for broader coverage; note that even
+this list only covers the larger, more liquid names, so a small enough company
+can still fall outside it). Add `--limit 100` for a quick test, or `--no-news` to
+skip the headline pass.
 
 ---
 
