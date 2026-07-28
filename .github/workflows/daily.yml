@@ -40,7 +40,7 @@ jobs:
           d = json.load(open('data.json'))
           n = len(d.get('shortlist', []))
           print(f"shortlist: {n} names, {d.get('fetched')} fetched, {d.get('passed_filters')} passed")
-          if d.get('fetched', 0) < 200:
+          if d.get('fetched', 0) < 300:
               sys.exit("Fetched too few stocks — the data source is probably rate-limiting. "
                        "Not publishing this run.")
           PY
