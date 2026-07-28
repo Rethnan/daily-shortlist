@@ -526,6 +526,106 @@ def classify(heads):
     return red, watch
 
 
+
+# ----------------------------------------------------------------------------
+# track record — what actually happened to names this tool has shortlisted
+#
+# data.json is overwritten every run, so on its own the app has no memory:
+# there was no way to tell whether a name that ranked #1 a month ago actually
+# went anywhere. history.json fixes that. It is a separate, small, persistent
+# file, committed alongside data.json, that logs one entry per stock the FIRST
+# day it is ever shortlisted (price and score at that moment), then updates
+# its current price on every later run using data already fetched for that
+# day's universe scan — no extra network calls. A stock reappearing on later
+# shortlists does not create a new entry; the original call stands, and we
+# watch what happened after it, which is the only honest test of whether the
+# ranking method is worth anything.
+# ----------------------------------------------------------------------------
+def load_history(path):
+    try:
+        with open(path, encoding="utf-8") as f:
+            data = json.load(f)
+            return data if isinstance(data, list) else []
+    except Exception:
+        return []
+
+
+def update_history(history, recs, final, today):
+    by_symbol = {r["symbol"]: r for r in recs if r.get("price")}
+    seen = {e["symbol"] for e in history}
+
+    # Refresh every existing entry with today's price, if we have one.
+    for e in history:
+        r = by_symbol.get(e["symbol"])
+        if not r or not r.get("price"):
+            continue
+        price = r["price"]
+        e["last_price"] = price
+        e["last_updated"] = today
+        e["return_pct"] = (round((price - e["price_then"]) / e["price_then"] * 100, 2)
+                            if e.get("price_then") else None)
+        e["max_price_since"] = max(e.get("max_price_since", price), price)
+        e["min_price_since"] = min(e.get("min_price_since", price), price)
+        try:
+            d0 = datetime.strptime(e["first_shortlisted"], "%Y-%m-%d")
+            e["days_tracked"] = (datetime.strptime(today, "%Y-%m-%d") - d0).days
+        except Exception:
+            e["days_tracked"] = None
+
+    # Log today's shortlist names that have never been logged before.
+    for r in final:
+        if r["symbol"] in seen:
+            continue
+        price = r["price"]
+        history.append({
+            "symbol": r["symbol"], "name": r["name"], "sector": r.get("sector"),
+            "first_shortlisted": today, "price_then": price, "score_then": r["scores"]["total"],
+            "last_price": price, "last_updated": today, "return_pct": 0.0,
+            "max_price_since": price, "min_price_since": price, "days_tracked": 0,
+        })
+        seen.add(r["symbol"])
+
+    shortlisted_now = {r["symbol"] for r in final}
+    for e in history:
+        e["still_shortlisted"] = e["symbol"] in shortlisted_now
+
+    # Bound growth — most recent 300 calls by first-shortlisted date.
+    history.sort(key=lambda e: e["first_shortlisted"], reverse=True)
+    return history[:300]
+
+
+def track_record_summary(history):
+    # A name logged today at 0% tells you nothing yet — only count entries
+    # that have had at least one full day for the price to actually move.
+    matured = [e for e in history
+               if e.get("days_tracked") and e["days_tracked"] >= 1 and e.get("return_pct") is not None]
+    up = sum(1 for e in matured if e["return_pct"] > 0)
+    down = sum(1 for e in matured if e["return_pct"] < 0)
+    flat = len(matured) - up - down
+    avg = round(sum(e["return_pct"] for e in matured) / len(matured), 2) if matured else None
+    best = max(matured, key=lambda e: e["return_pct"]) if matured else None
+    worst = min(matured, key=lambda e: e["return_pct"]) if matured else None
+    recent = sorted(history, key=lambda e: e["first_shortlisted"], reverse=True)[:25]
+    return {
+        "note": "What actually happened, after the fact, to every name this tool "
+                "has ever shortlisted — the only honest way to judge whether the "
+                "ranking method finds anything. One entry per name, logged the "
+                "first day it was shortlisted and never re-logged while it stays "
+                "on the list. This is not a record of trades — nothing here "
+                "assumes any of these were actually bought, held, or sold. Past "
+                "results say nothing about what happens next, and with a small "
+                "number of names tracked so far, a handful of outliers can swing "
+                "the average a lot.",
+        "total_tracked": len(matured),
+        "total_logged": len(history),
+        "up": up, "down": down, "flat": flat,
+        "avg_return_pct": avg,
+        "best": ({"symbol": best["symbol"], "return_pct": best["return_pct"]} if best else None),
+        "worst": ({"symbol": worst["symbol"], "return_pct": worst["return_pct"]} if worst else None),
+        "entries": recent,
+    }
+
+
 def news_check(rec, pool=None):
     heads, ok = [], False
 
@@ -580,6 +680,8 @@ def main():
     ap.add_argument("--no-news", action="store_true")
     ap.add_argument("--top", type=int, default=15, help="how many names to shortlist")
     ap.add_argument("--out", default="data.json")
+    ap.add_argument("--history", default="history.json",
+                     help="persistent track-record file, updated and read back each run")
     args = ap.parse_args()
 
     print("Fetching Nifty Total Market list (top ~750 by size)...", flush=True)
@@ -720,6 +822,20 @@ def main():
             card["watch"] = n["watch"]
         buzz_top = counted
 
+    # ------------------------------------------------------------------------
+    # Track record — see the block comment above update_history() for why.
+    # ------------------------------------------------------------------------
+    today_str = datetime.now(IST).strftime("%Y-%m-%d")
+    history = load_history(args.history)
+    history = update_history(history, recs, final, today_str)
+    with open(args.history, "w", encoding="utf-8") as f:
+        json.dump(history, f, indent=1, ensure_ascii=False, default=str)
+    track_record = track_record_summary(history)
+    print(f"\nTrack record: {track_record['total_logged']} names ever logged, "
+          f"{track_record['total_tracked']} with at least a day of price history "
+          f"({track_record['up']} up, {track_record['down']} down, {track_record['flat']} flat, "
+          f"avg {track_record['avg_return_pct']}%)", flush=True)
+
     out = {
         "generated_ist": datetime.now(IST).strftime("%Y-%m-%d %H:%M"),
         "universe_size": len(universe),
@@ -770,6 +886,7 @@ def main():
             "sources": feed_sources or [],
             "top": buzz_top,
         },
+        "track_record": track_record,
         "removed_on_news": removed,
         "rejected_sample": rejected[:40],
         "disclaimer": "Not investment advice and not a buy list. This is a reproducible "

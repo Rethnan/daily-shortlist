@@ -123,6 +123,7 @@ button.rf{width:100%;background:var(--accent);color:#08131f;border:none;padding:
     <button data-p="movers">Yesterday's Movers</button>
     <button data-p="buzz">Most Talked About</button>
     <button data-p="method">How it ranks</button>
+    <button data-p="track">Track Record</button>
     <button data-p="out">Removed</button>
     <button data-p="about">Read me</button>
   </div>
@@ -199,6 +200,21 @@ button.rf{width:100%;background:var(--accent);color:#08131f;border:none;padding:
       All of them require reading the annual report. That is the actual work; this app
       only decides which report to read first.</p>
     </div>
+  </section>
+
+  <section id="track" class="pane">
+    <div class="banner" style="background:#0f1f18;border-color:#204030;color:#a9d6bd">
+      <b>An accountability record, not a promise.</b> This shows what actually
+      happened to every name this tool has ever shortlisted — logged the day it
+      first appeared, tracked from that price onward, whether or not anyone
+      actually bought it. It's the only honest way to judge whether this
+      ranking method finds anything real. Past results say nothing about what
+      happens next, and with only a small number of names tracked so far, one
+      or two outliers can swing the average a lot. Give it months, not days,
+      before drawing conclusions.
+    </div>
+    <div class="card" id="trackMeta"></div>
+    <div id="trackList"></div>
   </section>
 
   <section id="out" class="pane">
@@ -429,6 +445,30 @@ function buzzRow(r) {
   </div>`;
 }
 
+function trackRow(e) {
+  // Realized, after-the-fact performance is the one place colouring green/red
+  // is honest — this reports a fact that already happened, not a forecast or
+  // a nudge to act. Everywhere else in this app that distinction is why we
+  // deliberately don't do this.
+  const hasReturn = e.days_tracked != null && e.days_tracked >= 1 && e.return_pct != null;
+  const col2 = !hasReturn ? 'var(--muted)' : e.return_pct > 0 ? 'var(--good)' : e.return_pct < 0 ? 'var(--bad)' : 'var(--muted)';
+  const retTxt = !hasReturn ? 'just added — check back tomorrow'
+    : `${e.return_pct >= 0 ? '+' : ''}${n2(e.return_pct)}% since ${esc(e.first_shortlisted)}`;
+  return `<div class="rowc">
+    <div class="top">
+      <div class="sym">${esc(e.symbol)}</div>
+      <div style="margin-left:auto;font-size:18px;font-weight:800;color:${col2};font-variant-numeric:tabular-nums">
+        ${hasReturn ? (e.return_pct >= 0 ? '+' : '') + n2(e.return_pct) + '%' : '—'}</div>
+    </div>
+    <div class="nm">${esc(e.name)} · ${esc(e.sector || '')}</div>
+    <div class="note" style="margin-top:6px">
+      Shortlisted ${esc(e.first_shortlisted)} at ₹${n0(e.price_then)} (score ${n1(e.score_then)}) ·
+      now ₹${n0(e.last_price)}${e.days_tracked != null ? ' · ' + e.days_tracked + ' day' + (e.days_tracked === 1 ? '' : 's') + ' tracked' : ''}
+    </div>
+    ${e.still_shortlisted ? '<span class="chip c-mut" style="margin-top:8px;display:inline-block">still on today\'s shortlist</span>' : ''}
+  </div>`;
+}
+
 function render(d) {
   $('#sub').textContent = `Updated ${d.generated_ist} IST · ${d.passed_filters} of ${d.fetched} passed the filters`;
 
@@ -486,6 +526,30 @@ function render(d) {
   $('#buzzList').innerHTML = (bz.top && bz.top.length)
     ? bz.top.map(r => buzzRow(r)).join('')
     : '<p class="note">Nothing stood out in today\'s headlines above the noise floor.</p>';
+
+  // track record — realized performance of every past shortlisted name
+  const tr = d.track_record || {};
+  if (!tr.total_logged) {
+    $('#trackMeta').innerHTML = `<div class="note">No history yet — this starts building from the first day the daily job runs with this feature. Check back tomorrow.</div>`;
+    $('#trackList').innerHTML = '';
+  } else if (!tr.total_tracked) {
+    $('#trackMeta').innerHTML = `<div class="note">${tr.total_logged} name${tr.total_logged === 1 ? '' : 's'} logged so far, all added today or since the last run — none has had a full day to move yet. Check back tomorrow.</div>`;
+    $('#trackList').innerHTML = (tr.entries || []).map(e => trackRow(e)).join('');
+  } else {
+    const avgCol = tr.avg_return_pct > 0 ? 'var(--good)' : tr.avg_return_pct < 0 ? 'var(--bad)' : 'var(--muted)';
+    $('#trackMeta').innerHTML = `
+      <div class="trio">
+        <div><div class="v" style="color:${avgCol}">${tr.avg_return_pct >= 0 ? '+' : ''}${n2(tr.avg_return_pct)}%</div><div class="k">Avg return</div></div>
+        <div><div class="v" style="color:var(--good)">${tr.up}</div><div class="k">Up</div></div>
+        <div><div class="v" style="color:var(--bad)">${tr.down}</div><div class="k">Down</div></div>
+      </div>
+      <div class="note" style="margin-top:12px">
+        ${tr.total_tracked} of ${tr.total_logged} logged names have at least a day of price history.
+        ${tr.best ? `Best so far: <b>${esc(tr.best.symbol)}</b> ${tr.best.return_pct >= 0 ? '+' : ''}${n2(tr.best.return_pct)}%.` : ''}
+        ${tr.worst ? `Worst so far: <b>${esc(tr.worst.symbol)}</b> ${tr.worst.return_pct >= 0 ? '+' : ''}${n2(tr.worst.return_pct)}%.` : ''}
+      </div>`;
+    $('#trackList').innerHTML = (tr.entries || []).map(e => trackRow(e)).join('');
+  }
 
   // method
   const m = d.method || {};
