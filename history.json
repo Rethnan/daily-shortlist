@@ -21,12 +21,12 @@
   "first_shortlisted": "2026-08-19",
   "price_then": 542.55,
   "score_then": 85.7,
-  "last_price": 587.5,
-  "last_updated": "2026-09-02",
-  "return_pct": 8.28,
+  "last_price": 581.5,
+  "last_updated": "2026-09-03",
+  "return_pct": 7.18,
   "max_price_since": 638.8,
   "min_price_since": 537.5,
-  "days_tracked": 14,
+  "days_tracked": 15,
   "still_shortlisted": true
  },
  {
@@ -36,12 +36,12 @@
   "first_shortlisted": "2026-08-19",
   "price_then": 772.75,
   "score_then": 80.6,
-  "last_price": 742.0,
-  "last_updated": "2026-09-02",
-  "return_pct": -3.98,
+  "last_price": 744.0,
+  "last_updated": "2026-09-03",
+  "return_pct": -3.72,
   "max_price_since": 786.85,
   "min_price_since": 742.0,
-  "days_tracked": 14,
+  "days_tracked": 15,
   "still_shortlisted": true
  },
  {
@@ -51,12 +51,12 @@
   "first_shortlisted": "2026-08-18",
   "price_then": 395.7,
   "score_then": 77.1,
-  "last_price": 421.3,
-  "last_updated": "2026-09-02",
-  "return_pct": 6.47,
+  "last_price": 423.45,
+  "last_updated": "2026-09-03",
+  "return_pct": 7.01,
   "max_price_since": 437.8,
   "min_price_since": 393.6,
-  "days_tracked": 15,
+  "days_tracked": 16,
   "still_shortlisted": false
  },
  {
@@ -87,7 +87,7 @@
   "max_price_since": 11.01,
   "min_price_since": 9.66,
   "days_tracked": 16,
-  "still_shortlisted": true
+  "still_shortlisted": false
  },
  {
   "symbol": "MSTCLTD",
@@ -102,7 +102,7 @@
   "max_price_since": 722.25,
   "min_price_since": 625.5,
   "days_tracked": 16,
-  "still_shortlisted": true
+  "still_shortlisted": false
  },
  {
   "symbol": "PETRONET",
@@ -117,7 +117,7 @@
   "max_price_since": 290.95,
   "min_price_since": 282.6,
   "days_tracked": 16,
-  "still_shortlisted": true
+  "still_shortlisted": false
  },
  {
   "symbol": "CAPLIPOINT",
@@ -126,12 +126,12 @@
   "first_shortlisted": "2026-08-14",
   "price_then": 2483.4,
   "score_then": 76.9,
-  "last_price": 2681.8,
-  "last_updated": "2026-09-02",
-  "return_pct": 7.99,
-  "max_price_since": 2681.8,
+  "last_price": 2836.3,
+  "last_updated": "2026-09-03",
+  "return_pct": 14.21,
+  "max_price_since": 2836.3,
   "min_price_since": 2471.8,
-  "days_tracked": 19,
+  "days_tracked": 20,
   "still_shortlisted": false
  },
  {
@@ -141,12 +141,12 @@
   "first_shortlisted": "2026-08-10",
   "price_then": 305.6,
   "score_then": 83.3,
-  "last_price": 286.3,
-  "last_updated": "2026-09-02",
-  "return_pct": -6.32,
+  "last_price": 290.5,
+  "last_updated": "2026-09-03",
+  "return_pct": -4.94,
   "max_price_since": 305.6,
   "min_price_since": 284.6,
-  "days_tracked": 23,
+  "days_tracked": 24,
   "still_shortlisted": false
  },
  {
@@ -156,12 +156,12 @@
   "first_shortlisted": "2026-08-10",
   "price_then": 1477.1,
   "score_then": 77.9,
-  "last_price": 1289.0,
-  "last_updated": "2026-09-02",
-  "return_pct": -12.73,
+  "last_price": 1280.9,
+  "last_updated": "2026-09-03",
+  "return_pct": -13.28,
   "max_price_since": 1490.2,
-  "min_price_since": 1289.0,
-  "days_tracked": 23,
+  "min_price_since": 1280.9,
+  "days_tracked": 24,
   "still_shortlisted": true
  },
  {
@@ -171,12 +171,12 @@
   "first_shortlisted": "2026-08-10",
   "price_then": 192.96,
   "score_then": 76.7,
-  "last_price": 186.13,
-  "last_updated": "2026-09-02",
-  "return_pct": -3.54,
+  "last_price": 185.5,
+  "last_updated": "2026-09-03",
+  "return_pct": -3.87,
   "max_price_since": 192.96,
   "min_price_since": 184.72,
-  "days_tracked": 23,
+  "days_tracked": 24,
   "still_shortlisted": false
  },
  {
@@ -192,7 +192,7 @@
   "max_price_since": 389.3,
   "min_price_since": 370.1,
   "days_tracked": 26,
-  "still_shortlisted": true
+  "still_shortlisted": false
  },
  {
   "symbol": "GNFC",
@@ -201,12 +201,12 @@
   "first_shortlisted": "2026-08-07",
   "price_then": 542.4,
   "score_then": 88.9,
-  "last_price": 573.0,
-  "last_updated": "2026-09-02",
-  "return_pct": 5.64,
+  "last_price": 587.55,
+  "last_updated": "2026-09-03",
+  "return_pct": 8.32,
   "max_price_since": 609.75,
   "min_price_since": 538.75,
-  "days_tracked": 26,
+  "days_tracked": 27,
   "still_shortlisted": true
  },
  {
@@ -237,7 +237,7 @@
   "max_price_since": 1872.9,
   "min_price_since": 1785.7,
   "days_tracked": 26,
-  "still_shortlisted": true
+  "still_shortlisted": false
  },
  {
   "symbol": "SUNTECK",
@@ -291,12 +291,12 @@
   "first_shortlisted": "2026-08-03",
   "price_then": 444.8,
   "score_then": 89.9,
-  "last_price": 434.15,
-  "last_updated": "2026-09-02",
-  "return_pct": -2.39,
+  "last_price": 436.35,
+  "last_updated": "2026-09-03",
+  "return_pct": -1.9,
   "max_price_since": 444.8,
   "min_price_since": 427.95,
-  "days_tracked": 30,
+  "days_tracked": 31,
   "still_shortlisted": false
  },
  {
@@ -321,12 +321,12 @@
   "first_shortlisted": "2026-08-03",
   "price_then": 1206.8,
   "score_then": 77.6,
-  "last_price": 1419.1,
-  "last_updated": "2026-09-02",
-  "return_pct": 17.59,
+  "last_price": 1412.2,
+  "last_updated": "2026-09-03",
+  "return_pct": 17.02,
   "max_price_since": 1430.5,
   "min_price_since": 1206.8,
-  "days_tracked": 30,
+  "days_tracked": 31,
   "still_shortlisted": false
  },
  {
@@ -336,12 +336,12 @@
   "first_shortlisted": "2026-07-30",
   "price_then": 312.45,
   "score_then": 76.5,
-  "last_price": 295.7,
-  "last_updated": "2026-09-02",
-  "return_pct": -5.36,
+  "last_price": 291.85,
+  "last_updated": "2026-09-03",
+  "return_pct": -6.59,
   "max_price_since": 328.0,
   "min_price_since": 287.95,
-  "days_tracked": 34,
+  "days_tracked": 35,
   "still_shortlisted": false
  },
  {
@@ -351,12 +351,12 @@
   "first_shortlisted": "2026-07-28",
   "price_then": 237.3,
   "score_then": 89.3,
-  "last_price": 234.7,
-  "last_updated": "2026-09-02",
-  "return_pct": -1.1,
+  "last_price": 240.0,
+  "last_updated": "2026-09-03",
+  "return_pct": 1.14,
   "max_price_since": 277.9,
   "min_price_since": 234.7,
-  "days_tracked": 36,
+  "days_tracked": 37,
   "still_shortlisted": true
  },
  {
@@ -366,12 +366,12 @@
   "first_shortlisted": "2026-07-28",
   "price_then": 1493.9,
   "score_then": 88.9,
-  "last_price": 1508.0,
-  "last_updated": "2026-09-02",
-  "return_pct": 0.94,
+  "last_price": 1504.6,
+  "last_updated": "2026-09-03",
+  "return_pct": 0.72,
   "max_price_since": 1613.6,
   "min_price_since": 1422.2,
-  "days_tracked": 36,
+  "days_tracked": 37,
   "still_shortlisted": false
  },
  {
@@ -381,12 +381,12 @@
   "first_shortlisted": "2026-07-28",
   "price_then": 148.31,
   "score_then": 86.1,
-  "last_price": 163.83,
-  "last_updated": "2026-09-02",
-  "return_pct": 10.46,
+  "last_price": 165.85,
+  "last_updated": "2026-09-03",
+  "return_pct": 11.83,
   "max_price_since": 169.1,
   "min_price_since": 148.31,
-  "days_tracked": 36,
+  "days_tracked": 37,
   "still_shortlisted": true
  },
  {
@@ -396,12 +396,12 @@
   "first_shortlisted": "2026-07-28",
   "price_then": 722.55,
   "score_then": 85.0,
-  "last_price": 695.05,
-  "last_updated": "2026-09-02",
-  "return_pct": -3.81,
+  "last_price": 696.75,
+  "last_updated": "2026-09-03",
+  "return_pct": -3.57,
   "max_price_since": 753.1,
   "min_price_since": 640.5,
-  "days_tracked": 36,
+  "days_tracked": 37,
   "still_shortlisted": true
  },
  {
@@ -411,12 +411,12 @@
   "first_shortlisted": "2026-07-28",
   "price_then": 329.35,
   "score_then": 82.1,
-  "last_price": 322.75,
-  "last_updated": "2026-09-02",
-  "return_pct": -2.0,
+  "last_price": 326.45,
+  "last_updated": "2026-09-03",
+  "return_pct": -0.88,
   "max_price_since": 333.7,
   "min_price_since": 308.6,
-  "days_tracked": 36,
+  "days_tracked": 37,
   "still_shortlisted": true
  },
  {
@@ -426,13 +426,13 @@
   "first_shortlisted": "2026-07-28",
   "price_then": 416.55,
   "score_then": 82.0,
-  "last_price": 417.4,
-  "last_updated": "2026-09-02",
-  "return_pct": 0.2,
-  "max_price_since": 417.4,
+  "last_price": 418.75,
+  "last_updated": "2026-09-03",
+  "return_pct": 0.53,
+  "max_price_since": 418.75,
   "min_price_since": 400.0,
-  "days_tracked": 36,
-  "still_shortlisted": false
+  "days_tracked": 37,
+  "still_shortlisted": true
  },
  {
   "symbol": "GESHIP",
@@ -441,12 +441,12 @@
   "first_shortlisted": "2026-07-28",
   "price_then": 1393.0,
   "score_then": 82.0,
-  "last_price": 1308.6,
-  "last_updated": "2026-09-02",
-  "return_pct": -6.06,
+  "last_price": 1341.1,
+  "last_updated": "2026-09-03",
+  "return_pct": -3.73,
   "max_price_since": 1441.5,
   "min_price_since": 1273.1,
-  "days_tracked": 36,
+  "days_tracked": 37,
   "still_shortlisted": true
  },
  {
@@ -456,13 +456,13 @@
   "first_shortlisted": "2026-07-28",
   "price_then": 191.53,
   "score_then": 80.7,
-  "last_price": 167.81,
-  "last_updated": "2026-09-02",
-  "return_pct": -12.38,
+  "last_price": 163.0,
+  "last_updated": "2026-09-03",
+  "return_pct": -14.9,
   "max_price_since": 201.25,
-  "min_price_since": 165.3,
-  "days_tracked": 36,
-  "still_shortlisted": false
+  "min_price_since": 163.0,
+  "days_tracked": 37,
+  "still_shortlisted": true
  },
  {
   "symbol": "BORORENEW",
@@ -471,12 +471,12 @@
   "first_shortlisted": "2026-07-28",
   "price_then": 579.5,
   "score_then": 80.0,
-  "last_price": 495.8,
-  "last_updated": "2026-09-02",
-  "return_pct": -14.44,
+  "last_price": 497.45,
+  "last_updated": "2026-09-03",
+  "return_pct": -14.16,
   "max_price_since": 583.7,
   "min_price_since": 495.8,
-  "days_tracked": 36,
+  "days_tracked": 37,
   "still_shortlisted": true
  },
  {
@@ -486,12 +486,12 @@
   "first_shortlisted": "2026-07-28",
   "price_then": 5124.9,
   "score_then": 79.8,
-  "last_price": 5233.5,
-  "last_updated": "2026-09-02",
-  "return_pct": 2.12,
+  "last_price": 5292.0,
+  "last_updated": "2026-09-03",
+  "return_pct": 3.26,
   "max_price_since": 5903.5,
   "min_price_since": 5124.9,
-  "days_tracked": 36,
+  "days_tracked": 37,
   "still_shortlisted": false
  },
  {
@@ -501,12 +501,12 @@
   "first_shortlisted": "2026-07-28",
   "price_then": 555.0,
   "score_then": 78.8,
-  "last_price": 507.6,
-  "last_updated": "2026-09-02",
-  "return_pct": -8.54,
+  "last_price": 502.9,
+  "last_updated": "2026-09-03",
+  "return_pct": -9.39,
   "max_price_since": 597.95,
   "min_price_since": 497.6,
-  "days_tracked": 36,
+  "days_tracked": 37,
   "still_shortlisted": false
  },
  {
@@ -516,12 +516,12 @@
   "first_shortlisted": "2026-07-28",
   "price_then": 524.4,
   "score_then": 78.4,
-  "last_price": 587.75,
-  "last_updated": "2026-09-02",
-  "return_pct": 12.08,
+  "last_price": 586.2,
+  "last_updated": "2026-09-03",
+  "return_pct": 11.78,
   "max_price_since": 622.0,
   "min_price_since": 524.4,
-  "days_tracked": 36,
+  "days_tracked": 37,
   "still_shortlisted": false
  },
  {
@@ -531,13 +531,13 @@
   "first_shortlisted": "2026-07-28",
   "price_then": 1111.7,
   "score_then": 78.4,
-  "last_price": 1138.7,
-  "last_updated": "2026-09-02",
-  "return_pct": 2.43,
+  "last_price": 1130.0,
+  "last_updated": "2026-09-03",
+  "return_pct": 1.65,
   "max_price_since": 1190.0,
   "min_price_since": 1107.9,
-  "days_tracked": 36,
-  "still_shortlisted": false
+  "days_tracked": 37,
+  "still_shortlisted": true
  },
  {
   "symbol": "IGIL",
@@ -546,13 +546,13 @@
   "first_shortlisted": "2026-07-28",
   "price_then": 331.55,
   "score_then": 77.5,
-  "last_price": 329.55,
-  "last_updated": "2026-09-02",
-  "return_pct": -0.6,
+  "last_price": 326.5,
+  "last_updated": "2026-09-03",
+  "return_pct": -1.52,
   "max_price_since": 366.65,
-  "min_price_since": 329.55,
-  "days_tracked": 36,
-  "still_shortlisted": false
+  "min_price_since": 326.5,
+  "days_tracked": 37,
+  "still_shortlisted": true
  },
  {
   "symbol": "JPPOWER",
@@ -561,12 +561,12 @@
   "first_shortlisted": "2026-07-28",
   "price_then": 16.95,
   "score_then": 76.1,
-  "last_price": 16.36,
-  "last_updated": "2026-09-02",
-  "return_pct": -3.48,
+  "last_price": 16.35,
+  "last_updated": "2026-09-03",
+  "return_pct": -3.54,
   "max_price_since": 19.03,
-  "min_price_since": 16.36,
-  "days_tracked": 36,
-  "still_shortlisted": false
+  "min_price_since": 16.35,
+  "days_tracked": 37,
+  "still_shortlisted": true
  }
 ]
